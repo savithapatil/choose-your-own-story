@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up Page</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <h1>Sign Up Page</h1>
+        <form>
+            <label for="username">Choose your username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            
+            <label for="pw">Choose your password:</label><br>
+            <input type="password" id="pw" name="pw"><br><br>
+
+            <label for="pw2">Re-enter your password:</label><br>
+            <input type="password" id="pw2" name="pw2"><br><br>
+
+
+
+            <!-- We used w3schools to find the logic for the show password checkbox -->
+            <!-- https://www.w3schools.com/howto/howto_js_toggle_password.asp -->
+            <input type="checkbox" onclick="showPassword()">Show Password<br>
+            <script>
+                function showPassword() {
+                    let x = document.getElementById("pw");
+                    let y = document.getElementById("pw2");
+                    if (x.type === "password") {
+                        x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+
+                    if (y.type === "password") {
+                        y.type = "text";
+                    } else {
+                        y.type = "password";
+                    }
+                }
+            </script>
+
+            <input type="submit" value="Submit" onclick="submitFn()">
+            <script>
+                function submitFn() {
+                    let pw = document.getElementById("pw");
+                    let pw2 = document.getElementById("pw2");
+                    if (pw !== pw2) {
+                        alert("Your passwords do not match");
+                    } else {
+                        // send it to the SOAP API
+                    }
+                }
+            </script>
+        </form>
+    </body>
+</html>
