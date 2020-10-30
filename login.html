@@ -3,19 +3,22 @@
     <head>
         <title>Login Page</title>
         <link href="style.css" type="text/css" rel="stylesheet"/>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <meta name = "google-signin-client_id" content = "420927849536-k2arc8nigvh0fc52kniloo5tq5u7012f.apps.googleusercontent.com">
     </head>
     <body>
-        <h1>Login Page</h1>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <!-- <h1>Login Page</h1>
         <form>
             <label for="username">Username:</label><br>
             <input type="text" id="username" name="username"><br>
             
             <label for="pw">Password:</label><br>
-            <input type="password" id="pw" name="pw"><br><br>
+            <input type="password" id="pw" name="pw"><br><br> -->
 
             <!-- We used w3schools to find the logic for the show password checkbox -->
             <!-- https://www.w3schools.com/howto/howto_js_toggle_password.asp -->
-            <input type="checkbox" onclick="showPassword()">Show Password<br>
+            <!-- <input type="checkbox" onclick="showPassword()">Show Password<br>
             <script>
                 function showPassword() {
                     let x = document.getElementById("pw");
@@ -28,6 +31,6 @@
             </script>
 
             <input type="submit" value="Submit">
-        </form>
+        </form> -->
     </body>
 </html>
