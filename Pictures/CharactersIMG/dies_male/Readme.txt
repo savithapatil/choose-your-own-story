@@ -1,0 +1,1 @@
+Male camper that dies

@@ -1,0 +1,1 @@
+Photos of smart character

@@ -1,1 +1,0 @@
-photos of snobby character
