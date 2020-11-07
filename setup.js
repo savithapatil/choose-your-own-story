@@ -1,3 +1,6 @@
 function clicked() {
-   alert("wrfhbfw");
-  }
+   console.log("wrfhbfw");
+   $('.myDiv').slideToggle("slow"); 
+  //  or .show
+}
+

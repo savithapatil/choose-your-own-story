@@ -1,0 +1,24 @@
+{
+  "name": "choose-your-own-story",
+  "version": "1.0.0",
+  "description": "COMP 426 Final Group Project",
+  "main": "Character.js",
+  "dependencies": {
+    "browser-sync": "^2.26.13",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savithapatil/choose-your-own-story.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/savithapatil/choose-your-own-story/issues"
+  },
+  "homepage": "https://github.com/savithapatil/choose-your-own-story#readme"
+}
