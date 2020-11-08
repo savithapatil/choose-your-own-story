@@ -1,12 +1,15 @@
 .choice {
     background-color: blueviolet;
     font-weight: bold;
+    width: 25%;
+    height: 50px;
 }
 
 body {
     background-color: rgb(195, 130, 204);
     width: 100%;
     text-align: center;
+    height: 100%;
 }
 
 .container {
