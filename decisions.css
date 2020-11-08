@@ -1,0 +1,17 @@
+.choice {
+    background-color: blueviolet;
+    font-weight: bold;
+}
+
+body {
+    background-color: rgb(195, 130, 204);
+    width: 800px;
+}
+
+.container {
+    position: relative;
+    display: block;
+    left: 50%;
+    /* width: 50%; */
+
+}
