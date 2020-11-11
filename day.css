@@ -1,0 +1,21 @@
+body {
+    background-color: rgba(183, 236, 211, 0.671);
+    text-align: center;
+}
+
+.choiceButton {
+    background-color: blueviolet;
+    font-weight: bold;
+    width: 25%;
+    height: 50px;
+}
+
+.nextButton {
+    background-color: blueviolet;
+    font-weight: bold;
+    width: 10%;
+    height: 30px;
+}
+
+
+
