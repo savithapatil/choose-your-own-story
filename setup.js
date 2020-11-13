@@ -4,6 +4,8 @@ function clicked() {
   //  or .show
 }
 
+///global variablel for points
+
 // still need to increment the score in this function
 function talkToYourMom() {
   const $replacementDiv = $("#replacementDiv");
@@ -96,55 +98,96 @@ function next3() {
 
   const $replacementDiv = $("#replacementDiv");
   $replacementDiv.replaceWith(`
-    <div id="replacementDiv">
-      <div>
+    <div id="replacementDiv" >
+        <div style="float: left; margin:5px;">
+          <img src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="asdfasdf" width="10%"> 
+          <p>My name is Katie</p>
+        </div>
 
-      <div style="float: left; margin:5px;">
-        <img src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="asdfasdf" width="10%"> 
-        <p>My name is Katie</p>
-      </div>
+        <div style="float: right; margin:5px;">
+          <img src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="kljhkh" width="10%">
+          <p>My name is Zach</p>
+        </div>
+        
+        <div style="float: left; margin:5px;">
+          <img src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Speaking.png" alt="kljhkh" width="10%">
+          <p>My name is Alex</p>
+        </div>
 
-      <div style="float: left; margin:5px;">
-        <img src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="kljhkh" width="10%">
-        <p>My name is Zach</p>
-      </div>
       
-      <div style="float: left; margin:5px;">
-        <img src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Speaking.png" alt="kljhkh" width="10%">
-        <p>My name is Alex</p>
-      </div>
-      <div>
 
       <br>
 
+      <div style="width:70%;">
+      
+        <div style="float: left; margin:5px;">
+          <img src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="kljhkh" width="10%">
+          <p>My name is Benjy</p>
+        </div>
 
-      <div style="float: left; margin:5px;">
-        <img src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="kljhkh" width="10%">
-        <p>My name is Benjy</p>
+        <div style="float: left; margin:5px;">
+          <img src="Pictures/CharactersIMG/Outdoor_camper/Outdoorsy_camper_Speaking.png" alt="kljhkh" width="10%">
+          <p>My name is Theo</p>
+        </div>
+
+        <div style="float: left; margin:5px;">
+          <img src="Pictures/CharactersIMG/smart_character/Smart_Camper_Speaking.png" alt="kljhkh" width="10%">
+          <p>My name is Gabby</p>
+        </div>
+
+        <div style="float: left; margin:5px;">
+          <img src="Pictures/CharactersIMG/snobby_character/Snobby_camper_speaking.png" alt="kljhkh" width="10%">
+          <p>My name is Ella</p>
+        </div>
+
       </div>
-
-      <div style="float: left; margin:5px;">
-        <img src="Pictures/CharactersIMG/Outdoor_camper/Outdoorsy_camper_Speaking.png" alt="kljhkh" width="10%">
-        <p>My name is Theo</p>
-      </div>
-
-      <div style="float: left; margin:5px;">
-        <img src="Pictures/CharactersIMG/smart_character/Smart_Camper_Speaking.png" alt="kljhkh" width="10%">
-        <p>My name is Gabby</p>
-      </div>
-
-      <div style="float: left; margin:5px;">
-        <img src="Pictures/CharactersIMG/snobby_character/Snobby_camper_speaking.png" alt="kljhkh" width="10%">
-        <p>My name is Ella</p>
-      </div>
-
-     
 
       <div>
         <h3>Choose who to talk to</h3>
-        <button class="choiceButton" onclick="">Person 1</button>
-        <button class="choiceButton" onclick="">Person 2</button>
+        <button class="nextButton" onclick="next4()">Next</button>
       </div>
+
+    </div>
+  `);
+}
+
+function next3() {
+  const $replacementDiv = $("#replacementDiv");
+  $replacementDiv.replaceWith(`
+    <div id="replacementDiv" >
+      <img src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Speaking.png" alt="kljhkh" width="10%">
+      <p> ALEX: "This is my first time at camp. Have you been here before?"</p>
+      <p>     YOU:"No, this is my first time at camp too."<p>
+      <p> ALEX: "That's great! I was worried everyone would know each other already from last year."
+      <p>"Hey, after dinner do you wanna go explore the woods"</p>
+      <button class="choiceButton" onclick="yesWoods()">Sure!</button>
+      <button class="choiceButton" onclick="noWoods()">Maybe later...</button>
+    </div>
+  `);
+}
+
+function yesWoods() {
+  
+  const $replacementDiv = $("#replacementDiv");
+  $replacementDiv.replaceWith(`
+    <div id="replacementDiv" >
+      <img src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Speaking.png" alt="kljhkh" width="10%">
+      <p> ALEX: "Great! I'll see you then!"</p>
+      
+      <button class="nextButton" onclick="">Next</button>
+    </div>
+  `);
+}
+
+function noWoods() {
+ 
+  const $replacementDiv = $("#replacementDiv");
+  $replacementDiv.replaceWith(`
+    <div id="replacementDiv" >
+      <img src="" alt="exists to die dissappointed" width="10%">
+      <p> ALEX: "Oh...okay then..."</p>
+     
+      <button class="nextButton" onclick="">Next</button>
     </div>
   `);
 }
