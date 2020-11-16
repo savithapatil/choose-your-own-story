@@ -33,14 +33,14 @@ function getOutOfCar() {
   const $backgroundImgDiv = $("#backgroundImgDiv");
   $backgroundImgDiv.replaceWith(`
     <div id="backgroundImgDiv">
-      <img src="Pictures/Background/Camp_Entrance.png" alt="camp entrance background image" width="35%" class="center">
+      <img src="/Pictures/Background/Camp_Entrance.png" alt="camp entrance background image" width="35%" class="center">
     </div> 
   `);
 
   const $replacementDiv = $("#replacementDiv");
   $replacementDiv.replaceWith(`
     <div id="replacementDiv">
-      <img src="Pictures/CharactersIMG/Female_counselor/Jodie_Speaking.png" alt="Counselor Jodie says hi" width="10%">
+      <img src="/Pictures/CharactersIMG/Female_counselor/Jodie_Speaking.png" alt="Counselor Jodie says hi" width="10%">
       <p>GINA: "Hi! Welcome to Camp Northway! We're so happy to have you!<br>Let me introduce you to the boys' counselor, Counselor Cody"</p>
       <button class="nextButton" onclick="next1()">Next</button>
     </div>
@@ -51,7 +51,7 @@ function next1() {
   const $replacementDiv = $("#replacementDiv");
   $replacementDiv.replaceWith(`
     <div id="replacementDiv">
-      <img src="Pictures/CharactersIMG/Male_counselor/Cody_Speaking.png" alt="Counselor Cody says hi" width ="10%">
+      <img src="/Pictures/CharactersIMG/Male_counselor/Cody_Speaking.png" alt="Counselor Cody says hi" width ="10%">
       <p>CODY: "Hi! Ready for a week of fun! This is going to be the most funfilled week of your lives!<br>Just don't go in the woods, because there have been a lot of bear sightings."</p>
       <button class="nextButton" onclick="next2()">Next</button>
     </div>
@@ -62,8 +62,8 @@ function next2() {
   const $replacementDiv = $("#replacementDiv");
   $replacementDiv.replaceWith(`
     <div id="replacementDiv">
-      <img src="Pictures/CharactersIMG/Male_counselor/Cody_Speaking.png" alt="Counselor Cody speaking" width="10%">
-      <img src="Pictures/CharactersIMG/Female_counselor/Jodie_Speaking.png" alt="Counselor Jodie speaking" width="10%">
+      <img src="/Pictures/CharactersIMG/Male_counselor/Cody_Speaking.png" alt="Counselor Cody speaking" width="10%">
+      <img src="/Pictures/CharactersIMG/Female_counselor/Jodie_Speaking.png" alt="Counselor Jodie speaking" width="10%">
       <p>CODY: "Now we're gonna have to ask for you to surrender your phones."</p>
       <p>JODIE: "This camp is a screen-free zone!"</p>
       <button class="nextButton" onclick="next3()">Next</button>
@@ -78,7 +78,7 @@ function next2() {
     <div id="replacementDiv">
       <img src="" alt="Snobby girl yelling">
       <p>GIRL WITH BLONDE HAIR: "You can't do that!"</p>
-      <img src="Pictures/CharactersIMG/Male_counselor/Cody_Speaking.png" alt="Bad counselor speaking" width="10%">
+      <img src="/Pictures/CharactersIMG/Male_counselor/Cody_Speaking.png" alt="Bad counselor speaking" width="10%">
       <p>CODY: "Oh but we can :)"</p>
       <p><em>A boy with blue hair walks past you. You hear him mutter under his breath.</em></p>
       <img src="" alt="Bad kid grumbling">
@@ -100,17 +100,17 @@ function next3() {
   $replacementDiv.replaceWith(`
     <div id="replacementDiv" >
         <div style="float: left; margin:5px;">
-          <img src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="asdfasdf" width="10%"> 
+          <img src="/Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="asdfasdf" width="10%"> 
           <p>My name is Katie</p>
         </div>
 
         <div style="float: right; margin:5px;">
-          <img src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="kljhkh" width="10%">
+          <img src="/Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="kljhkh" width="10%">
           <p>My name is Zach</p>
         </div>
         
         <div style="float: left; margin:5px;">
-          <img src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Speaking.png" alt="kljhkh" width="10%">
+          <img src="/Pictures/CharactersIMG/dies_female/Exists_to_Die_Speaking.png" alt="kljhkh" width="10%">
           <p>My name is Alex</p>
         </div>
 
@@ -121,22 +121,22 @@ function next3() {
       <div style="width:70%;">
       
         <div style="float: left; margin:5px;">
-          <img src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="kljhkh" width="10%">
+          <img src="/Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="kljhkh" width="10%">
           <p>My name is Benjy</p>
         </div>
 
         <div style="float: left; margin:5px;">
-          <img src="Pictures/CharactersIMG/Outdoor_camper/Outdoorsy_camper_Speaking.png" alt="kljhkh" width="10%">
+          <img src="/Pictures/CharactersIMG/Outdoor_camper/Outdoorsy_camper_Speaking.png" alt="kljhkh" width="10%">
           <p>My name is Theo</p>
         </div>
 
         <div style="float: left; margin:5px;">
-          <img src="Pictures/CharactersIMG/smart_character/Smart_Camper_Speaking.png" alt="kljhkh" width="10%">
+          <img src="/Pictures/CharactersIMG/smart_character/Smart_Camper_Speaking.png" alt="kljhkh" width="10%">
           <p>My name is Gabby</p>
         </div>
 
         <div style="float: left; margin:5px;">
-          <img src="Pictures/CharactersIMG/snobby_character/Snobby_camper_speaking.png" alt="kljhkh" width="10%">
+          <img src="/Pictures/CharactersIMG/snobby_character/Snobby_camper_speaking.png" alt="kljhkh" width="10%">
           <p>My name is Ella</p>
         </div>
 
@@ -155,7 +155,7 @@ function next3() {
   const $replacementDiv = $("#replacementDiv");
   $replacementDiv.replaceWith(`
     <div id="replacementDiv" >
-      <img src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Speaking.png" alt="kljhkh" width="10%">
+      <img src="/Pictures/CharactersIMG/dies_female/Exists_to_Die_Speaking.png" alt="kljhkh" width="10%">
       <p> ALEX: "This is my first time at camp. Have you been here before?"</p>
       <p>     YOU:"No, this is my first time at camp too."<p>
       <p> ALEX: "That's great! I was worried everyone would know each other already from last year."
@@ -171,7 +171,7 @@ function yesWoods() {
   const $replacementDiv = $("#replacementDiv");
   $replacementDiv.replaceWith(`
     <div id="replacementDiv" >
-      <img src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Speaking.png" alt="kljhkh" width="10%">
+      <img src="/Pictures/CharactersIMG/dies_female/Exists_to_Die_Speaking.png" alt="kljhkh" width="10%">
       <p> ALEX: "Great! I'll see you then!"</p>
       
       <button class="nextButton" onclick="">Next</button>
