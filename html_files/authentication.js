@@ -5,7 +5,7 @@
 //Signup code
 const signupform = document.querySelector('#signup-form');
 signupform.addEventListener('submit', (e) => {
-    event.preventDefault();
+    e.preventDefault();
     // Get user info
     const email = signupform['email_value'].value;
 
@@ -18,8 +18,29 @@ signupform.addEventListener('submit', (e) => {
    // signup.html because it was initialized before 
    // calling this file
    authentication.createUserWithEmailAndPassword(email, password).then(cred => {
-       console.log(cred);
-       
+       //Code to reset the form
+        signupform.reset();
+
+        //TODO: Code to jump to login page, idk how to do that tbh
    })
+
+
+})
+
+//Code to handle login information
+const loginform = document.querySelector('#login-form');
+loginform.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    // Get user info
+    const email = loginform['login-email'].value;
+
+    // Get password
+    const password = loginform['login-password'].value;
+
+    authentication.signInWithEmailAndPassword(email, password).then(cred => {
+        console.log(cred.user);
+        loginform.reset();
+    });
 
 })

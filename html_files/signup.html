@@ -13,7 +13,7 @@
             <input type="email" id="email_value" name="username">
             <br><br>
 
-            <label for="pw">Create a password:</label><br>
+            <label for="pw">Create a password (Mininmum 6 chars):</label><br>
             <input type="password" id="password_value" name="pw">
             <br><br>
 
@@ -48,7 +48,7 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-  firebase.auth();
+
   const authentication = firebase.auth();
   const database = firebase.firestore();
 </script>
