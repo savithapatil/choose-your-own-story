@@ -6,7 +6,6 @@
 const signupform = document.querySelector('#signup-form');
 signupform.addEventListener('submit', (e) => {
     event.preventDefault();
-    
     // Get user info
     const email = signupform['email_value'].value;
 
@@ -20,6 +19,7 @@ signupform.addEventListener('submit', (e) => {
    // calling this file
    authentication.createUserWithEmailAndPassword(email, password).then(cred => {
        console.log(cred);
+       
    })
 
 })
