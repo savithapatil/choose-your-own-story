@@ -14,10 +14,12 @@ body {
     
 }
 
-p {
+p, h1, span {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
+
+
 
 .choiceButton {
     background-color: rgb(177, 104, 35);;
@@ -26,6 +28,9 @@ p {
     font-weight: bold;
     width: 25%;
     height: 50px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 .nextButton {
@@ -37,6 +42,9 @@ p {
     margin: 2%;
     float: right;
     height: 50px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 .wrapper {
