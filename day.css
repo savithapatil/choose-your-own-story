@@ -1,10 +1,26 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}  
+
 body {
-    background-color: rgba(183, 236, 211, 0.671);
+    background-color:  rgba(79, 139, 111, 0.671);;
     text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 .choiceButton {
-    background-color: rgb(52, 112, 109);
+    background-color: rgb(177, 104, 35);;
     border-radius: 8px;
     color: white;
     font-weight: bold;
@@ -13,12 +29,42 @@ body {
 }
 
 .nextButton {
-    background-color:  rgb(52, 112, 109);
+    background-color: rgb(177, 104, 35);;
     border-radius: 8px;
     color: white;
     font-weight: bold;
-    width: 10%;
-    height: 30px;
+    width: 100px;
+    margin: 2%;
+    float: right;
+    height: 50px;
+}
+
+.wrapper {
+    display:inline-block; 
+    width: 100%; 
+    margin: 1%;
+}
+
+.textbox_border {
+    width:80%; 
+    float: left; 
+    margin-top: 5%; 
+    padding:1%; 
+    border-radius: 10px;
+}
+
+.textbox_text {
+    background:white;  
+    padding: 2%; 
+    border-radius: 10px;
+}
+
+.nametag {
+    float: left;
+    color: white; 
+    padding: 2%; 
+    margin-right: 2%; 
+    border-radius: 4px;
 }
 
 

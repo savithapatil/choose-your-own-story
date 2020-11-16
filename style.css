@@ -7,19 +7,19 @@
 }  
 
 a:link {
-    background-color: #fad8d6;
-    color: rgb(221, 105, 92);
+    
+    background-color: rgb(177, 104, 35);
+    color: white;
     padding: 15px 25px;
     font-family: fantasy;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     border-radius: 10px;
-    border: 2px solid #000000;
     display: block;
     width: 200px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
 }
 
 .button {
@@ -34,8 +34,13 @@ a:link {
   }
 
 body {
-    background-color: rgba(183, 236, 211, 0.671);
-}
+    background-color: rgba(79, 139, 111, 0.671);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+  }
+
 
 /* //https://stackoverflow.com/questions/48474/how-do-i-position-one-image-on-top-of-another-in-html */
 .parent {
@@ -85,6 +90,13 @@ body {
     cursor: pointer;
     border-radius: 5px;
     text-align: center; */
+  }
+
+  p {
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(30, 75, 72);
   }
 
  
