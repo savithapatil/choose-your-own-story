@@ -3,6 +3,11 @@ function clicked() {
   //  or .show
 }
 
+function friendAlertFN() {
+  $('.friendAlert').slideToggle("slow"); 
+ //  or .show
+}
+
 ///global variablel for points
 
 // still need to increment the score in this function
@@ -278,17 +283,60 @@ function next4() {
   </div>
 
 
-  <button class="nextButton" onclick="next5()">Next</button>
+  <button class="nextButton" onclick="go2dinner()">Next</button>
 
       
     </div>
   `);
 }
 
+//show we're at dinner here
+function go2dinner() {
+  //placeholder
+    const $replacementDiv = $("#replacementDiv");
+    $replacementDiv.replaceWith(`
+    <div id="replacementDiv" class="center">      
+  
+        <div class="wrapper">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Female_counselor/Jodie_Speaking.png">
+        <div class="textbox_border" style="background: rgb(146, 146, 146);">
+          <span  class="nametag" style="background: rgb(146, 146, 146);">JODY:</span> 
+            <div  class="textbox_text">
+              <p style=" margin: 15px; text-align: left;">"Now I'm sure you're all hungry, so lets head to the mess hall for dinner"</p>
+            </div>
+        </div>
+      </div>
+
+      <button class="nextButton" onclick="atdinner()">Next</button>
+
+      </div>
+    `);
+    //next button should go to cabin, asleep and then the bad kid bursts in saying Alex got eaten
+  }
+
+function atdinner() {
+//placeholder
+  const $replacementDiv = $("#replacementDiv");
+  $replacementDiv.replaceWith(`
+  <div id="replacementDiv" class="center">      
+
+        You're at dinner 
+        You're talking to Alex
+        <button class="nextButton" onclick="next5()">Next</button>
+    </div>
+  `);
+  //next button should go to cabin, asleep and then the bad kid bursts in saying Alex got eaten
+}
+
+
+//talk to and befriend exists to die
 function next5() {
   const $replacementDiv = $("#replacementDiv");
   $replacementDiv.replaceWith(`
   <div id="replacementDiv" class="center">
+
+      <p>A brown haired girl sits across from you. You remember her name is Alex.<p>
+
       <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Speaking.png" alt="alex">
         <div class="textbox_border" style="background: rgb(65, 84, 125);">
@@ -298,17 +346,27 @@ function next5() {
             </div>
         </div>
       </div>
+    
 
-      <div class="wrapper">
-        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
-        <div class="textbox_border" style="background: rgb(49, 151, 121);">
-          <span  class="nametag" style="background: rgb(49, 151, 121);">YOU</span> 
-            <div  class="textbox_text">
-              <p style=" margin: 15px; text-align: left;">"No, this is my first time at camp too."</p>
-            </div>
-        </div>
-      </div>      
+      <button class="choiceButton" onclick="friendAlertFN()">"This is my first time too."</button>
+      <button class="choiceButton" onclick="friendAlertFN()">"No, we can be new together!"</button>   
+      
+      <div class ="friendAlert" >
+        <p>Congratulations! You've befriended Alex!</p>
+        <button class="nextButton" onclick="invite()">"Next"</button>
+      </div>
 
+      
+
+    </div>
+  `);
+}
+
+function invite() {
+
+  const $replacementDiv = $("#replacementDiv");
+  $replacementDiv.replaceWith(`
+  <div id="replacementDiv" class="center">     
       <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Speaking.png" alt="alex">
         <div class="textbox_border" style="background: rgb(65, 84, 125);">
@@ -323,15 +381,18 @@ function next5() {
       <button class="choiceButton" onclick="yesWoods()">Sure!</button>
       <button class="choiceButton" onclick="noWoods()">Maybe later...</button>
 
-      <br>
-      <br>
+      
 
-    </div>
+
+      <br>
+      <br>
+  </div>
   `);
+  //next button should go to woods cut scene
 }
 
 function yesWoods() {
-  
+
   const $replacementDiv = $("#replacementDiv");
   $replacementDiv.replaceWith(`
   <div id="replacementDiv" class="center">     
@@ -340,7 +401,7 @@ function yesWoods() {
         <div class="textbox_border" style="background: rgb(65, 84, 125);">
           <span  class="nametag" style="background: rgb(65, 84, 125);">Alex</span> 
             <div  class="textbox_text">
-              <p style=" margin: 15px; text-align: left;">"Great! I'll see you then!"</p>
+              <p style=" margin: 15px; text-align: left;">"Great! Lemme invite Zach too!"</p>
             </div>
         </div>
       </div>
@@ -348,10 +409,11 @@ function yesWoods() {
       <button class="nextButton" onclick="">Next</button>
     </div>
   `);
+  //next button should go to woods cut scene
 }
 
 function noWoods() {
- 
+
   const $replacementDiv = $("#replacementDiv");
   $replacementDiv.replaceWith(`
   <div id="replacementDiv" class="center">      
@@ -359,9 +421,9 @@ function noWoods() {
       <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Disappointed_.png" alt="alex">
         <div class="textbox_border" style="background: rgb(65, 84, 125);">
-          <span  class="nametag" style="background: rgb(65, 84, 125);">Alex</span> 
+          <span class="nametag" style="background: rgb(65, 84, 125);">Alex</span> 
             <div  class="textbox_text">
-              <p style=" margin: 15px; text-align: left;">"Oh...okay then..."</p>
+              <p style=" margin: 15px; text-align: left;">"Oh...okay then. I'll see if Zach wants to go then."</p>
             </div>
         </div>
       </div>
@@ -369,6 +431,7 @@ function noWoods() {
       <button class="nextButton" onclick="">Next</button>
     </div>
   `);
+  //next button should go to cabin, asleep and then the bad kid bursts in saying Alex got eaten
 }
 
 
