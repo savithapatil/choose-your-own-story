@@ -1,33 +1,62 @@
 function friendAlertFN() {
     $('.friendAlert').slideToggle("slow"); 
-  //  or .show
   }
 
-  function clickPoster() {
-    $('.poster').slideToggle("slow"); 
-  //  or .show
+  function theoFriendAlert() {
+    $('#theoFriendAlert').slideToggle("slow"); 
+  }
+  function theoFriendAlertClose() {
+    $('#theoFriendAlert').hide(); 
   }
 
   function clickSoda() {
-    $('.soda').slideToggle("slow"); 
-  //  or .show
+    $('#soda').slideToggle("slow"); 
   } 
 
   function clickChips() {
-    $('.chips').slideToggle("slow"); 
-  //  or .show
+    $('#chips').slideToggle("slow"); 
   } 
 
   function clickSkateboard() {
-    $('.skateboard').slideToggle("slow"); 
-  //  or .show
+    $('#skateboard').slideToggle("slow"); 
   } 
 
   function clickFishingRod() {
-    $('.fishingRod').slideToggle("slow"); 
-  //  or .show
+    $('#fishingRod').slideToggle("slow"); 
   } 
 
+  function clickPoster() {
+    $('#poster').slideToggle("slow"); 
+  } 
+
+  function clickPoster1() {
+    $('#poster').hide(); 
+    $('#poster_btnDIV').remove();
+    $('#poster1').slideToggle("slow"); 
+  } 
+
+  function clickPoster2() {
+    $('#poster').hide(); 
+    $('#poster_btnDIV').remove();
+    $('#poster2').slideToggle("slow"); 
+  } 
+
+
+  //woods point and click functions
+  function clickRabbit() {
+    $('#rabbit').slideToggle("slow"); 
+  } 
+
+  function clickSign() {
+    $('#sign').slideToggle("slow"); 
+  } 
+
+  function clickMushrooms() {
+    $('#mushrooms').slideToggle("slow"); 
+  } 
+  function clickClawMarks() {
+    $('#clawMarks').slideToggle("slow"); 
+  } 
 
 
  function goToDiningHall() {
@@ -170,6 +199,7 @@ function doYouSupport() {
         <button class="choiceButton" onclick="friendAlertFN()">"I believe Zach, Alex wasn't sick at all last night."</button>
         <button class="choiceButton" onclick="dismissZach()">"Hey, isn't this better than there being a monster?"</button>   
         <br>
+        <br>
         <div class ="friendAlert" >
           <p>Congratulations! You've befriended Zach!</p>
           <button class="nextButton" onclick="believeZach()">"Next"</button>
@@ -263,15 +293,17 @@ function goToWoodsWithBadKid() {
     const $backgroundImgDiv = $("#backgroundImgDiv");
     $backgroundImgDiv.replaceWith(`
       <div id="backgroundImgDiv">
-        <img src="Pictures/Background/Dining_Hall.png" alt="goo on hand" width="35%" class="center">
+        <img src="Pictures/Background/woods.png" alt="woods" width="35%" class="center">
+        <button class="rabbit_btn" width="50%" onclick="clickRabbit()">Click me</button> 
+        <button class="sign_btn" width="50%" onclick="clickSign()">Click me</button> 
+        <button class="mushrooms_btn" width="50%" onclick="clickMushrooms()">Click me</button> 
+        <button class="clawMarks_btn" width="50%" onclick="clickClawMarks()">Click me</button> 
       </div> 
     `);
 
     const $replacementDiv = $("#replacementDiv");
     $replacementDiv.replaceWith(`
       <div id="replacementDiv" class="center">
-
-      <br>
         <button class="nextButton" onclick="strangeGoo()">Next</button>
     </div>
     `);
@@ -282,16 +314,18 @@ function goToWoodsAlone() {
     const $backgroundImgDiv = $("#backgroundImgDiv");
     $backgroundImgDiv.replaceWith(`
       <div id="backgroundImgDiv">
-        <img src="Pictures/Background/Dining_Hall.png" alt="goo on hand" width="35%" class="center">
+        <img src="Pictures/Background/woods.png" alt="woods" width="35%" class="center">
+        <button class="rabbit_btn" width="50%" onclick="clickRabbit()">Click me</button> 
+        <button class="sign_btn" width="50%" onclick="clickSign()">Click me</button> 
+        <button class="mushrooms_btn" width="50%" onclick="clickMushrooms()">Click me</button> 
+        <button class="clawMarks_btn" width="50%" onclick="clickClawMarks()">Click me</button> 
       </div> 
     `);
 
     const $replacementDiv = $("#replacementDiv");
     $replacementDiv.replaceWith(`
       <div id="replacementDiv" class="center">
-
-     
-        <button class="nextButton" onclick="wellSomethingsInTheWoods()">Next</button>
+      <button class="nextButton" onclick="wellSomethingsInTheWoods()">Next</button>
     </div>
     `);
     return;
