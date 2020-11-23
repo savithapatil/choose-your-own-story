@@ -8,8 +8,6 @@ function clicked() {
 function getCookie(){
   return Cookies.get("Email");
 }
-console.log("Worked " + getCookie());
-
 // still need to increment the score in this function
 function talkToYourMom() {
   const $replacementDiv = $("#replacementDiv");
@@ -162,7 +160,20 @@ function next3() {
     <div id="replacementDiv" >
       <img src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Speaking.png" alt="kljhkh" width="10%">
       <p> ALEX: "This is my first time at camp. Have you been here before?"</p>
-      <p>     <span id='test1'>YOU:</span> "No, this is my first time at camp too."<p>
+
+      <script src = "retrievedata.js"></script>
+      <script>
+          //Function to get name and add it to script
+          function getName() {
+  playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+
+      $("#addname").prepend(data.val().name + ": ");
+   });
+  }
+getName();
+</script>
+
+      <p id = "addname"> "No, this is my first time at camp too."<p>
       <p> ALEX: "That's great! I was worried everyone would know each other already from last year."
       <p>"Hey, after dinner do you wanna go explore the woods"</p>
       <button class="choiceButton" onclick="yesWoods()">Sure!</button>
@@ -191,7 +202,6 @@ function noWoods() {
     <div id="replacementDiv" >
       <img src="" alt="exists to die dissappointed" width="10%">
       <p> ALEX: "Oh...okay then..."</p>
-     
       <button class="nextButton" onclick="">Next</button>
     </div>
   `);

@@ -13,7 +13,6 @@ loginform.addEventListener('submit', (e) => {
 
     authentication.signInWithEmailAndPassword(email, password).then(cred => {
         Cookies.set("Email", email);
-        console.log(cred.user);
         loginform.reset();
         window.location.href = "day1.html";
     });

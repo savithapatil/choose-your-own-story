@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="/day.css" type="text/css" rel="stylesheet"/>
+        <link href="day.css" type="text/css" rel="stylesheet"/>
         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
         <script src = node_modules/jquery/dist/jquery.js></script>
         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
@@ -33,22 +33,16 @@
         const database = firebase.firestore();
     </script>
     <script src = "retrievedata.js"></script>
-    
         <script>
+            //Function to get name and add it to script
             function getName() {
     playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
-        console.log("Name 14 " + data.val().name);
-        // console.log("day 1 is " + data.val().day1); 
-        // console.log("day 2 is " + data.val().day2);
-        //var name = data.val().name 
-        //return name;
-        //Update HTML
         $("p:first").prepend(data.val().name + ", ");
-    });
-}
+     });
+    }
 getName();
 </script>
-
+    <div class = "container">
         <h1>Day 1</h1>
         <button id = "logout">logout</button>
         <div id="backgroundImgDiv">
@@ -60,9 +54,33 @@ getName();
             <button class="choiceButton" onclick="talkToYourMom()">Talk to your mom</button>
             <button class="choiceButton" onclick="listenToRadio()">Listen to the radio</button>        
         </div>
-        <script src = "day1_setup.js"></script>
+        <div class = "right">
+
+   
+       
+            <div id = "achievementDiv">
+            <button class = "refreshachievements" > Refresh Achievements</button>
+            <P> What Days Have You Completed? </P>
+            <!--
+                Show the pictures, make them grey if not obtained, colored if otherwise
+            -->
+            <img src = "" alt = "Day 1 Completed">
+            <img src = "" alt = "Day 2 Completed">
+            <img src = "" alt = "Day 4 Completed ">
+            <img src = "" alt = "Day 4 Completed ">
+            <P> Who have you Befriended?</P>
+            <img src = "" alt = "befriended alex">
+            <img src = "" alt = "befriended alex">
+            <img src = "" alt = "befriended alex">
+            <img src = "" alt = "befriended alex">
+            <img src = "" alt = "befriended alex">
+            <img src = "" alt = "befriended alex">
+            <img src = "" alt = "befriended alex">
+            </div>
+         </div>
+    </div>
+ 
+         <script src = "day1_setup.js"></script>
         <script src = "logout.js"></script>
-        
-        
     </body>
 </html>
