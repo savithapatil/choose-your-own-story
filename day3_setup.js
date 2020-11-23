@@ -2,7 +2,7 @@ function goToDiningHall() {
     const $backgroundImgDiv = $("#backgroundImgDiv");
     $backgroundImgDiv.replaceWith(`
       <div id="backgroundImgDiv">
-        <img src="" alt="dining hall background image" width="35%" class="center">
+        <img src="Pictures/Background/Dining_Hall.png" alt="dining hall background image" width="35%">
       </div> 
     `);
     const $replacementDiv = $("#replacementDiv");
