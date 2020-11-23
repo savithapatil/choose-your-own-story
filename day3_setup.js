@@ -150,20 +150,34 @@ function next3() {
             </div>
         </div>
         
-        <button class="choiceButton" onclick="goWithTheo()">Go with Theo to the woods</button>
-        <button class="choiceButton" onclick="friendAlertGabby()">Go with Gabby to her cabin</button>
+        <button id="goWith_Theo" class="choiceButton" onclick="friendAlertTheo()">Go with Theo to the woods</button>
+        <button id="goWith_Gabby" class="choiceButton" onclick="friendAlertGabby()">Go with Gabby to her cabin</button>
 
         <div id="friendAlertGabby">
             <p>Congratulations! You've befriended Gabby!</p>
             <button class="nextButton" onclick="goWithGabby()">Continue</button>
+        </div>
+
+        <div id="friendAlertTheo">
+            <p>Congratulations! You've befriended Theo!</p>
+            <button class="nextButton" onclick="goWithTheo()">Continue</button>
         </div>
     </div>
     `);
 }
 
 function friendAlertGabby() {
+    hideButton('goWith_Theo');
+    hideButton('goWith_Gabby');
     $('#friendAlertGabby').slideToggle("slow"); 
 }
+
+function friendAlertTheo() {
+    hideButton('goWith_Theo');
+    hideButton('goWith_Gabby');
+    $('#friendAlertTheo').slideToggle("slow"); 
+}
+
   
 
 // not done
@@ -291,4 +305,10 @@ function leaveGirlsCabin() {
 
 function arriveAtDiningHall() {
 
+}
+
+
+function hideButton(elt_id) {
+    let id = '#' + elt_id
+    $(id).hide();
 }
