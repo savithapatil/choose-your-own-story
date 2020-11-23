@@ -9,13 +9,13 @@ function goToDiningHall() {
     $replacementDiv.replaceWith(`
     <div id="replacementDiv" class="center">
         <div class="wrapper">
-          <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="Cady">
-          <div class="textbox_border" style="background: rgb(184, 69, 31);">
-            <span  class="nametag" style="background: rgb(184, 69, 31);">Cady</span> 
-              <div  class="textbox_text">
-                <p style=" margin: 15px; text-align: left;">"We have news. Benjy and I tried to go visit Alex in the infirmary."</p>
-              </div>
-          </div>
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="Cady">
+            <div class="textbox_border" style="background: rgb(184, 69, 31);">
+                <span class="nametag" style="background: rgb(184, 69, 31);">Cady</span> 
+                <div class="textbox_text">
+                    <p style=" margin: 15px; text-align: left;">"We have news. Benjy and I tried to go visit Alex in the infirmary."</p>
+                </div>
+            </div>
         </div>
   
         <div class="wrapper">
@@ -178,8 +178,6 @@ function friendAlertTheo() {
     $('#friendAlertTheo').slideToggle("slow"); 
 }
 
-  
-
 // not done
 function goWithTheo() {
     const $backgroundImgDiv = $("#backgroundImgDiv");
@@ -192,19 +190,32 @@ function goWithTheo() {
     const $replacementDiv = $("#replacementDiv");
     $replacementDiv.replaceWith(`
     <div id="replacementDiv" class="center">
-        <p>Asdf</p>
+        <p>You and Theo head to the woods, and you hear someone behind you. It's Cady!</p>
+
         <div class="wrapper">
-            <img style="width: 18%; float:left;" src="" alt="person name">
-            <div class="textbox_border" style="background: gray;">
-                <span class="nametag" style="background: gray;">Person name</span> 
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="Cady">
+            <div class="textbox_border" style="background: rgb(184, 69, 31);">
+                <span class="nametag" style="background: rgb(184, 69, 31);">Cady</span> 
                 <div class="textbox_text">
-                    <p style=" margin: 15px; text-align: left;">"sppech."</p>
+                    <p style=" margin: 15px; text-align: left;">"Hey guys! Can I tag along?"</p>
                 </div>
             </div>
         </div>
-        <button class="nextButton" onclick="">Next</button>
+
+        <p>Choose what to say:</p>
+        <button class="choiceButton" onclick="yesAthleticKid()">"Of course!"</button>
+        <br><br>
+        <button class="choiceButton" onclick="noAthleticKid()">"It will be quieter with fewer people."</button>
     </div>
     `);
+}
+
+function yesAthleticKid() {
+    // befriend
+    // need to figure out what they actually do in the woods
+}
+
+function noAthleticKid() {
 
 }
 
@@ -234,11 +245,8 @@ function goWithGabby() {
 }
 
 function bunnyIsClicked() {
-    // const $backgroundImgDiv = $("#backgroundImgDiv");
-    // $backgroundImgDiv.remove('#bunnyRemoveID');
     $('#bunnyRemoveID').remove();
     $('#bookHideID').hide();
-
     $('#bunnyIsClickedDiv').slideToggle("slow"); 
 }
 
@@ -246,12 +254,10 @@ function bookIsClicked() {
     $('#bookIsClickedDiv').slideToggle("slow"); 
 }
 
-
 function bunnyResponse() {
     $('#bunnyIsClickedDiv').hide();
     $('#respondToElla').slideToggle("slow");
 }
-
 
 function friendAlertElla() {
     $('#respondToElla').hide();
