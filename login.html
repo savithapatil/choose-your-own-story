@@ -8,6 +8,8 @@
 <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>  
 <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>   
 <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
     </head>
     <body>
         <h1>Login Page</h1>
@@ -18,6 +20,8 @@
             <label for="pw">Password:</label><br>
             <input type="password" id="login-password" name="pw"><br><br>
             <input type="submit" value="Submit">
+
+                <button id = "logout">logout here!</button>
         </form>
 
         <script>
@@ -41,6 +45,7 @@
         const database = firebase.firestore();
       </script>
           <script src = "login.js"></script>
+          <script src = "logout.js"></script>
 
     </body>
 </html>

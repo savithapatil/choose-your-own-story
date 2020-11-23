@@ -4,7 +4,11 @@ function clicked() {
   //  or .show
 }
 
-///global variablel for points
+/// function to get the cookie that holds a user's email
+function getCookie(){
+  return Cookies.get("Email");
+}
+console.log("Worked " + getCookie());
 
 // still need to increment the score in this function
 function talkToYourMom() {
@@ -153,11 +157,12 @@ function next3() {
 
 function next3() {
   const $replacementDiv = $("#replacementDiv");
+
   $replacementDiv.replaceWith(`
     <div id="replacementDiv" >
       <img src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Speaking.png" alt="kljhkh" width="10%">
       <p> ALEX: "This is my first time at camp. Have you been here before?"</p>
-      <p>     YOU:"No, this is my first time at camp too."<p>
+      <p>     <span id='test1'>YOU:</span> "No, this is my first time at camp too."<p>
       <p> ALEX: "That's great! I was worried everyone would know each other already from last year."
       <p>"Hey, after dinner do you wanna go explore the woods"</p>
       <button class="choiceButton" onclick="yesWoods()">Sure!</button>

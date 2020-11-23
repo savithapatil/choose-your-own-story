@@ -8,20 +8,10 @@
         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>  
         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>   
         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     </head>
     <body>
-        <h1>Day 1</h1>
-        <button >logout</button>
-        <div id="backgroundImgDiv">
-            <img src="Pictures\Background\Driving_Car.png" alt="car on road background image" width="35%" class="center">
-        </div>
-        <div id="replacementDiv">
-            <p>You are on the way to Camp Northway! Your mom is driving the car.</p>
-            <h3>Choose what to do in the car</h3>
-            <button class="choiceButton" onclick="talkToYourMom()">Talk to your mom</button>
-            <button class="choiceButton" onclick="listenToRadio()">Listen to the radio</button>        
-        </div>
-
         <script>
             var firebaseConfig = {
           apiKey: "AIzaSyC2A7eipZGRsxIo22mw5xMzmq25YM48H4w",
@@ -38,8 +28,41 @@
         firebase.initializeApp(firebaseConfig);
         }
         firebase.analytics();
-    </script>
 
+        const authentication = firebase.auth();
+        const database = firebase.firestore();
+    </script>
+    <script src = "retrievedata.js"></script>
+    
+        <script>
+            function getName() {
+    playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+        console.log("Name 14 " + data.val().name);
+        // console.log("day 1 is " + data.val().day1); 
+        // console.log("day 2 is " + data.val().day2);
+        //var name = data.val().name 
+        //return name;
+        //Update HTML
+        $("p:first").prepend(data.val().name + ", ");
+    });
+}
+getName();
+</script>
+
+        <h1>Day 1</h1>
+        <button id = "logout">logout</button>
+        <div id="backgroundImgDiv">
+            <img src="Pictures\Background\Driving_Car.png" alt="car on road background image" width="35%" class="center">
+        </div>
+        <div id="replacementDiv">
+            <p> you are on the way to Camp Northway! Your mom is driving the car.</p>
+            <h3>Choose what to do in the car</h3>
+            <button class="choiceButton" onclick="talkToYourMom()">Talk to your mom</button>
+            <button class="choiceButton" onclick="listenToRadio()">Listen to the radio</button>        
+        </div>
         <script src = "day1_setup.js"></script>
+        <script src = "logout.js"></script>
+        
+        
     </body>
 </html>

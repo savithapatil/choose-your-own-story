@@ -5,6 +5,7 @@
   "main": "Character.js",
   "dependencies": {
     "browser-sync": "^2.26.13",
+    "cookie": "^0.4.1",
     "firebase": "^8.0.2",
     "jquery": "^3.5.1"
   },
