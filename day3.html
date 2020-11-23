@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="day.css" type="text/css" rel="stylesheet"/>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src = node_modules/jquery/dist/jquery.js></script>
+    </head>
+    <body>
+        <h1>Day 3</h1>
+        <div id="backgroundImgDiv">
+            <img src="Pictures\Background\Boys_Cabin_with_objects.png" alt="in the cabin, background img" width="35%" >
+        </div>
+        <div id="replacementDiv">
+            <p>You wake up thinking about the claw marks you saw last night... yikes</p>
+            <button class="choiceButton" onclick="goToDiningHall()">Go to the dining hall</button>
+        </div>
+
+
+        <!-- The below code is hidden originally. It's part of the point and click section -->
+        <div id="bunnyIsClickedDiv">
+            <img src="Pictures/CharactersIMG/snobby_character/Snobby_Speaking.png" width="100%">
+            <p>"Hey, that's mine!<br>Don't touch it!"</p>
+            <button class="choiceButton" onclick="bunnyResponse()">Respond</button>
+            <button class="choiceButton" onclick="putBunnyDown()">Put it down</button>    
+        </div>
+
+        <div id="respondToElla">
+            <p>Choose what to say</p>
+            <button class="choiceButton" onclick="friendAlertElla()">"It's so cute, I have one just like it!"</button>
+            <button class="choiceButton" onclick="chill()">"Chillllll"</button>
+
+            <button class="nextButton" onclick="dismissEllaAlert()">Dismiss</button>
+        </div>
+
+        <div id="friendAlertElla">
+            <p>Congratulations! You've befriended Ella!</p>
+            <button class="nextButton" onclick="dismissEllaAlert()">Dismiss</button>
+        </div>
+
+
+        <div id="bookIsClickedDiv">
+            <img src="Pictures/CharactersIMG/smart_character/Smart_Camper_Speaking.png" width="100%">
+            <p>"Wait a second... It says here that bears aren't native to this area!<br>The claw marks must have been from something else!"</p>
+        </div>
+
+      
+        <script src = day3_setup.js></script>
+    </body>
+</html>
