@@ -99,8 +99,21 @@ p, h1, span {
     background-color: rgb(255, 255, 214);
 }
 
+.fitContentChoiceButton {
+    /* same as .choiceButton but width is fit content */
+    background-color: rgb(177, 104, 35);;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+    height: 50px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
 #bookIsClickedDiv {
-    bottom: 20%;     
+    bottom: 7%;     
     left: 74%;
     z-index: 3px;
     position: absolute;

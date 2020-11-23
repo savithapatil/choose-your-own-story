@@ -200,12 +200,12 @@ function goWithGabby() {
       <div id="backgroundImgDiv">
         <img src="Pictures/Background/Girls_Cabin_with_objects.png" alt="girl's cabin background image" width="35%" class="center">
         
-        <div class="object_container">
-            <button class="bunny_button" width="50%" onclick="bunnyIsClicked()">bunny</button> 
+        <div id="bunnyRemoveID" class="object_container">
+            <button class="bunny_button" width="50%" onclick="bunnyIsClicked()">Click me</button> 
         </div>
 
-        <div class="object_container">
-           <button class="book_button" width="50%" onclick="bookIsClicked()">book</button> 
+        <div id="bookHideID" class="object_container">
+           <button class="book_button" width="50%" onclick="bookIsClicked()">Click me</button> 
         </div>
 
 
@@ -220,6 +220,11 @@ function goWithGabby() {
 }
 
 function bunnyIsClicked() {
+    // const $backgroundImgDiv = $("#backgroundImgDiv");
+    // $backgroundImgDiv.remove('#bunnyRemoveID');
+    $('#bunnyRemoveID').remove();
+    $('#bookHideID').hide();
+
     $('#bunnyIsClickedDiv').slideToggle("slow"); 
 }
 
@@ -241,12 +246,49 @@ function friendAlertElla() {
 
 function chill() {
     $('#respondToElla').hide();
+    $('#bookHideID').show();
 }
 
 function putBunnyDown() {
     $('#bunnyIsClickedDiv').hide();
+    $('#bookHideID').show();
 }
 
 function dismissEllaAlert() {
     $('#friendAlertElla').hide();
+    $('#bookHideID').show();
+}
+
+function keepInspecting() {
+    $('#bookIsClickedDiv').hide();
+}
+
+function leaveGirlsCabin() {
+    $('#bookIsClickedDiv').hide();
+    const $backgroundImgDiv = $("#backgroundImgDiv");
+    $backgroundImgDiv.replaceWith(`
+      <div id="backgroundImgDiv">
+        <img src="" alt="walking back to the dining hall - background image" width="35%" class="center">
+      </div> 
+    `);
+    const $replacementDiv = $("#replacementDiv");
+    $replacementDiv.replaceWith(`
+    <div id="replacementDiv" class="center">
+        <p>You, Gabby, and Ella walk back to the dining hall... but something seems off...</p>
+        <div class="wrapper">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/snobby_character/Snobby_Speaking.png" alt="Ella">
+            <div class="textbox_border" style="background: rgb(217, 173, 54);">
+                <span class="nametag" style="background: rgb(217, 173, 54);">Ella</span> 
+                <div class="textbox_text">
+                    <p style=" margin: 15px; text-align: left;">"I feel like I'm being watched..."</p>
+                </div>
+            </div>
+        </div>
+        <button class="nextButton" onclick="arriveAtDiningHall()">Next</button>
+    </div>
+    `);
+}
+
+function arriveAtDiningHall() {
+
 }
