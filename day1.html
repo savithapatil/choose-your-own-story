@@ -4,9 +4,14 @@
         <link href="/day.css" type="text/css" rel="stylesheet"/>
         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
         <script src = node_modules/jquery/dist/jquery.js></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>  
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>   
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
     </head>
     <body>
         <h1>Day 1</h1>
+        <button >logout</button>
         <div id="backgroundImgDiv">
             <img src="Pictures\Background\Driving_Car.png" alt="car on road background image" width="35%" class="center">
         </div>
@@ -16,12 +21,25 @@
             <button class="choiceButton" onclick="talkToYourMom()">Talk to your mom</button>
             <button class="choiceButton" onclick="listenToRadio()">Listen to the radio</button>        
         </div>
-        <!-- we'll have the background image for the scene and then we'll have a list of popups, which are hidden initially.
-        We go through the list of popups and when you get to the end of the list, you get a button go to the next scene.
-        When you go to a new scene, you get a different background image. -->
 
-    
+        <script>
+            var firebaseConfig = {
+          apiKey: "AIzaSyC2A7eipZGRsxIo22mw5xMzmq25YM48H4w",
+          authDomain: "camp-northway.firebaseapp.com",
+          databaseURL: "https://camp-northway.firebaseio.com",
+          projectId: "camp-northway",
+          storageBucket: "camp-northway.appspot.com",
+          messagingSenderId: "708573748105",
+          appId: "1:708573748105:web:58c9472ff180ad88525f58",
+          measurementId: "G-R66WBWPQKM"
+        };
+        // Initialize Firebase
+        if(!firebase.apps.length){
+        firebase.initializeApp(firebaseConfig);
+        }
+        firebase.analytics();
+    </script>
 
-        <script src = day1_setup.js></script>
+        <script src = "day1_setup.js"></script>
     </body>
 </html>
