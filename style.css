@@ -87,4 +87,16 @@ body {
     text-align: center; */
   }
 
+ #Signup{
+    text-align: center;
+    margin: 0 auto;
+    width: 250px; 
+  }
+  #signup-form{
+    font-size: large;
+    
+  }
+#email_value{
+  
+}
  

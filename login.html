@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>  
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>   
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
+    </head>
+    <body>
+        <h1>Login Page</h1>
+        <form id = "login-form">
+            <label for="username">Email: </label><br>
+            <input type="text" id="login-email" name="username"><br>
+            
+            <label for="pw">Password:</label><br>
+            <input type="password" id="login-password" name="pw"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <script>
+            var firebaseConfig = {
+          apiKey: "AIzaSyC2A7eipZGRsxIo22mw5xMzmq25YM48H4w",
+          authDomain: "camp-northway.firebaseapp.com",
+          databaseURL: "https://camp-northway.firebaseio.com",
+          projectId: "camp-northway",
+          storageBucket: "camp-northway.appspot.com",
+          messagingSenderId: "708573748105",
+          appId: "1:708573748105:web:58c9472ff180ad88525f58",
+          measurementId: "G-R66WBWPQKM"
+        };
+        // Initialize Firebase
+        if(!firebase.apps.length){
+        firebase.initializeApp(firebaseConfig);
+        }
+        firebase.analytics();
+      
+        const authentication = firebase.auth();
+        const database = firebase.firestore();
+      </script>
+          <script src = "login.js"></script>
+
+    </body>
+</html>
