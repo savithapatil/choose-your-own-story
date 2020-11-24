@@ -27,13 +27,13 @@
             <img id = "day3"  class = "grey" src = "Pictures/Achievements/Complete_Day_3.png"  width = "5%" alt = "Day 3 Completed ">
             <img id  = "day4" class = "grey" src = "Pictures/Achievements/Complete_Day_4.png" width = "5%" alt = "Day 4 Completed ">
             <P> Who have you Befriended?</P>
-            <img  id = "alex" class = "grey" src = "Pictures/Achievements/befriend_alex.png" width = "5%" alt = "befriended alex">
-            <img id = "benjy" class = "grey" src = "Pictures/Achievements/befriend_benjy.png"  width = "5%" alt = "befriended benjy">
-            <img class = "grey" src = "Pictures/Achievements/befriend_zach (2).png" width = "5%" alt = "befriended zach">
-            <img class = "grey" src = "Pictures/Achievements/befriend_theo.png" width = "5%" alt = "befriended theo">
-            <img class = "grey" src = "Pictures/Achievements/befriend_ella.png"  width = "5%" alt = "befriended ella">
-            <img class = "grey" src = "Pictures/Achievements/befriend_gabby.png" width = "5%" alt = "befriended gabby">
-            <img class = "grey" src = "Pictures/Achievements/befriend_Katie.png" width = "5%" alt = "befriended Katie">
+            <img  id = "befriend_alex" class = "grey" src = "Pictures/Achievements/befriend_alex.png" width = "5%" alt = "befriended alex">
+            <img id = "befriend_benjy" class = "grey" src = "Pictures/Achievements/befriend_benjy.png"  width = "5%" alt = "befriended benjy">
+            <img  id = "befriend_zach" class = "grey" src = "Pictures/Achievements/befriend_zach (2).png" width = "5%" alt = "befriended zach">
+            <img id = "befriend_theo" class = "grey" src = "Pictures/Achievements/befriend_theo.png" width = "5%" alt = "befriended theo">
+            <img id = "befriend_ella" class = "grey" src = "Pictures/Achievements/befriend_ella.png"  width = "5%" alt = "befriended ella">
+            <img id = "befriend_gabby" class = "grey" src = "Pictures/Achievements/befriend_gabby.png" width = "5%" alt = "befriended gabby">
+            <img id = "befriend_katie" class = "grey" src = "Pictures/Achievements/befriend_Katie.png" width = "5%" alt = "befriended Katie">
             </div>
 
             <H1> Total Score =  0 (For Now)</H1>
@@ -72,22 +72,22 @@
 
                 playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
                     var day1
-                    day1 = data.val().day1
+                    day1 = data.val().day1;
                     if (day1) {
                         document.getElementById("day1").className = "";
                     }
                     var day2
-                    day2 = data.val().day2
+                    day2 = data.val().day2;
                     if (day2) {
                         document.getElementById("day2").className = "";
                     }   
                     var day3
-                    day3 = data.val().day3
+                    day3 = data.val().day3;
                     if (day3) {
                         document.getElementById("day3").className = "";
                     }
                     var day4
-                    day4 = data.val().day4
+                    day4 = data.val().day4;
                     if (day4) {
                         document.getElementById("day4").className = "";
                     }   
@@ -97,19 +97,34 @@
                         document.getElementById("befriend_alex").className = "";
                     }
                     var befriend_benjy;
-                    befriend_benjy = data.val().befriend_benjy
+                    befriend_benjy = data.val().befriend_benjy;
                     if (befriend_benjy) {
                         document.getElementById("befriend_benjy").className = "";
                     }   
-                    var day3
-                    day3 = data.val().day3
-                    if (day3) {
-                        document.getElementById("day3").className = "";
+                    var befriend_ella;
+                    befriend_ella = data.val().befriend_ella
+                    if (befriend_ella) {
+                        document.getElementById("befriend_ella").className = "";
                     }
-                    var day4
-                    day4 = data.val().day4
-                    if (day4) {
-                        document.getElementById("day4").className = "";
+                    var befriend_gabby
+                    befriend_gabby = data.val().befriend_gabby;
+                    if (befriend_gabby) {
+                        document.getElementById("befriend_gabby").className = "";
+                    }    
+                    var befriend_katie;
+                    befriend_katie = data.val().befriend_katie;
+                    if (befriend_katie) {
+                        document.getElementById("befriend_katie").className = "";
+                    }   
+                    var befriend_theo;
+                    befriend_theo = data.val().befriend_theo
+                    if (befriend_theo) {
+                        document.getElementById("befriend_theo").className = "";
+                    }
+                    var befriend_zach
+                    befriend_zach = data.val().befriend_zach
+                    if (befriend_zach) {
+                        document.getElementById("befriend_zach").className = "";
                     }                                 
                 });                
                 
