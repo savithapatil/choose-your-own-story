@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="day.css" type="text/css" rel="stylesheet"/>
+        <link href="day1.css" type="text/css" rel="stylesheet"/>
         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
         <script src = node_modules/jquery/dist/jquery.js></script>
     </head>
@@ -16,10 +16,35 @@
             <button class="choiceButton" onclick="talkToYourMom()">Talk to your mom</button>
             <button class="choiceButton" onclick="listenToRadio()">Listen to the radio</button>        
         </div>
-        <!-- we'll have the background image for the scene and then we'll have a list of popups, which are hidden initially.
-        We go through the list of popups and when you get to the end of the list, you get a button go to the next scene.
-        When you go to a new scene, you get a different background image. -->
 
+        <!-- Below code is hidden. It is to load the images in the beginning so that they don't have to load slowly throughout the day -->
+        <div id="loadImagesWithoutDisplaying">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/MC_Mom.png" alt="MC mom">
+            <img style="width: 18%; float:left;" src="Pictures/Objects/car radio.png" alt="radio">
+            <img src="Pictures/Background/Camp_Entrance.png" alt="camp entrance background image" width="35%" class="center">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Female_counselor/Jodie_Speaking.png" alt="Jodie Speaking">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Male_counselor/Cody_Speaking.png" alt="cody Speaking">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Female_counselor/Jodie_Speaking.png">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/snobby_character/Snobby_mad.png" alt="Snobby girl yelling">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Irritated.png" alt="bad annoyed">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="katie speaking">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="bad speaking">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Speaking.png" alt="alex">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="Benjy">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Outdoor_camper/Outdoorsy_camper_Speaking.png" alt="theo">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/smart_character/Smart_Camper_Speaking.png" alt="gabby">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/snobby_character/Snobby_Speaking.png" alt="Ella">
+            <img src="Pictures/Background/Dining_Hall.png" alt="woods" width="35%" class="center">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="zach">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Excited.png" alt="alex">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Disappointed_.png" alt="alex">
+            <img src="Pictures/Background/woods_dark.png" alt="woods" width="35%" class="center">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Screaming.png" alt="alex">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Scared.png" alt="zach">
+            <img src="Pictures/Background/Boys_Cabin_with_objects.png" alt="cabin" width="35%" class="center">
+        </div>
     
 
         <script src = day1_setup.js></script>
