@@ -219,3 +219,15 @@ p, h1, span {
 #loadImagesWithoutDisplaying {
     display: none;
 }
+
+#friendAlertAlex {
+    top: 85%;     
+    left: 7%;
+    z-index: 3px;
+    position: absolute;
+    border-style: solid;
+    width: 100%;
+    max-width: 200px;
+    display:none;
+    background-color: rgb(255, 255, 214);
+  }

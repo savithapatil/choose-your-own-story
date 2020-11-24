@@ -8,6 +8,13 @@ function friendAlertFN() {
  //  or .show
 }
 
+function friendAlertAlex() {
+  $('#AlexChoiceLabel').hide();
+  $('#AlexChoice1').hide();
+  $('#AlexChoice2').hide();
+  $('#friendAlertAlex').slideToggle("slow"); 
+}
+
 ///global variablel for points
 
 // still need to increment the score in this function
@@ -137,7 +144,7 @@ function next2() {
         <div class="textbox_border" style="background: rgb(146, 146, 146);">
           <span  class="nametag" style="background: rgb(146, 146, 146);">JODY:</span> 
             <div  class="textbox_text">
-              <p style=" margin: 15px; text-align: left;">"This camp is a screen free zone!"</p>
+              <p style=" margin: 15px; text-align: left;">"This camp is a screen-free zone!"</p>
             </div>
         </div>
       </div>
@@ -318,7 +325,7 @@ function atdinner() {
   const $backgroundImgDiv = $("#backgroundImgDiv");
     $backgroundImgDiv.replaceWith(`
       <div id="backgroundImgDiv">
-        <img src="Pictures/Background/Dining_Hall.png" alt="woods" width="35%" class="center">
+        <img src="Pictures/Background/Dining_Hall.png" alt="woods" width="35%">
       </div> 
     `);
   const $replacementDiv = $("#replacementDiv");
@@ -384,11 +391,11 @@ function next5() {
         </div>
       </div>
     
-
-      <button class="choiceButton" onclick="friendAlertFN()">"This is my first time too."</button>
-      <button class="choiceButton" onclick="friendAlertFN()">"No, we can be new together!"</button>   
+      <p id="AlexChoiceLabel">Choose what to say:</p>
+      <button id="AlexChoice1" class="choiceButton" onclick="friendAlertAlex()">"This is my first time too."</button>
+      <button id="AlexChoice2" class="choiceButton" onclick="friendAlertAlex()">"No, we can be new together!"</button>   
       
-      <div class ="friendAlert" >
+      <div id="friendAlertAlex">
         <p>Congratulations! You've befriended Alex!</p>
         <button class="nextButton" onclick="invite()">"Next"</button>
       </div>
