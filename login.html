@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Login Page</title>
-        <link href="style.css" type="text/css" rel="stylesheet"/>
+        <link href="login.css" type="text/css" rel="stylesheet"/>
         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>  
         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>   
@@ -19,9 +19,8 @@
             
             <label for="pw">Password:</label><br>
             <input type="password" id="login-password" name="pw"><br><br>
-            <input type="submit" value="Submit">
-
-                <button id = "logout">Logout here</button>
+            <input id="submitLoginButton" type="submit" value="Submit">
+            <button id = "logout">Log out</button>
         </form>
 
         <script>
