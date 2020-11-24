@@ -200,6 +200,7 @@ function next3() {
   `);
 }
 
+//everyone introduces themselves
 function next4() {
   const $backgroundImgDiv = $("#backgroundImgDiv");
   $backgroundImgDiv.replaceWith(`
@@ -314,14 +315,52 @@ function go2dinner() {
     //next button should go to cabin, asleep and then the bad kid bursts in saying Alex got eaten
   }
 
+//talk to Zach and he shows you a comic about monsters
 function atdinner() {
-//placeholder
+  const $backgroundImgDiv = $("#backgroundImgDiv");
+    $backgroundImgDiv.replaceWith(`
+      <div id="backgroundImgDiv">
+        <img src="Pictures/Background/Dining_Hall.png" alt="woods" width="35%" class="center">
+      </div> 
+    `);
   const $replacementDiv = $("#replacementDiv");
   $replacementDiv.replaceWith(`
   <div id="replacementDiv" class="center">      
 
-        You're at dinner 
-        You're talking to Alex
+        At dinner you see Zach is reading a comic book. It looks familiar...
+
+        <div class="wrapper">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
+        <div class="textbox_border" style="background: rgb(49, 151, 121);">
+          <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+            <div  class="textbox_text">
+              <p style=" margin: 15px; text-align: left;">"Is that Monsters Monthly?"</p>
+            </div>
+        </div>
+      </div>
+
+      <br>
+        <div class="wrapper">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="zach">
+        <div class="textbox_border" style="background: rgb(25, 58, 148);">
+          <span  class="nametag" style="background: rgb(25, 58, 148);">ZACH:</span> 
+            <div  class="textbox_text">
+              <p style=" margin: 15px; text-align: left;">"...Yeah. This issue talks about the monster in the mountains here."</p>
+            </div>
+        </div>
+      </div>
+
+      <br>
+      Zach seems very serious that there could be a monster in the woods.
+      <div class="wrapper">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
+        <div class="textbox_border" style="background: rgb(49, 151, 121);">
+          <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+            <div  class="textbox_text">
+              <p style=" margin: 15px; text-align: left;">"Cool."</p>
+            </div>
+        </div>
+      </div>
         <button class="nextButton" onclick="next5()">Next</button>
     </div>
   `);
@@ -401,12 +440,23 @@ function yesWoods() {
         <div class="textbox_border" style="background: rgb(65, 84, 125);">
           <span  class="nametag" style="background: rgb(65, 84, 125);">Alex</span> 
             <div  class="textbox_text">
-              <p style=" margin: 15px; text-align: left;">"Great! Lemme invite Zach too!"</p>
+              <p style=" margin: 15px; text-align: left;">"Great! Zach do you wanna come?"</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="MC mom">
+
+        <div class="textbox_border" style="background: rgb(25, 58, 148);">
+          <span  class="nametag" style="background: rgb(25, 58, 148);">ZACH:</span> 
+            <div  class="textbox_text">
+              <p style=" margin: 15px; text-align: left;">"Sure."</p>
             </div>
         </div>
       </div>
       
-      <button class="nextButton" onclick="">Next</button>
+      <button class="nextButton" onclick="inTheWoods()">Next</button>
     </div>
   `);
   //next button should go to woods cut scene
@@ -423,16 +473,160 @@ function noWoods() {
         <div class="textbox_border" style="background: rgb(65, 84, 125);">
           <span class="nametag" style="background: rgb(65, 84, 125);">Alex</span> 
             <div  class="textbox_text">
-              <p style=" margin: 15px; text-align: left;">"Oh...okay then. I'll see if Zach wants to go then."</p>
+              <p style=" margin: 15px; text-align: left;">"Oh...okay then. Zach do you wanna go?"</p>
             </div>
         </div>
       </div>
 
-      <button class="nextButton" onclick="">Next</button>
+      <div class="wrapper">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="MC mom">
+
+        <div class="textbox_border" style="background: rgb(25, 58, 148);">
+          <span  class="nametag" style="background: rgb(25, 58, 148);">ZACH:</span> 
+            <div  class="textbox_text">
+              <p style=" margin: 15px; text-align: left;">"Sure."</p>
+            </div>
+        </div>
+      </div>
+
+      <button class="nextButton" onclick="alexIsDead()">Next</button>
     </div>
   `);
   //next button should go to cabin, asleep and then the bad kid bursts in saying Alex got eaten
 }
 
+function inTheWoods() {
+  const $backgroundImgDiv = $("#backgroundImgDiv");
+    $backgroundImgDiv.replaceWith(`
+      <div id="backgroundImgDiv">
+        <img src="Pictures/Background/woods_dark.png" alt="woods" width="35%" class="center">
+      </div> 
+    `);
+  const $replacementDiv = $("#replacementDiv");
+  $replacementDiv.replaceWith(`
+  <div id="replacementDiv" class="center">      
+
+        <div class="wrapper">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
+        <div class="textbox_border" style="background: rgb(49, 151, 121);">
+          <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+            <div  class="textbox_text">
+              <p style=" margin: 15px; text-align: left;">"Wow, it's getting dark."</p>
+            </div>
+        </div>
+      </div>
+
+      <br>
+        <div class="wrapper">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="zach">
+        <div class="textbox_border" style="background: rgb(25, 58, 148);">
+          <span  class="nametag" style="background: rgb(25, 58, 148);">ZACH:</span> 
+            <div  class="textbox_text">
+              <p style=" margin: 15px; text-align: left;">"Where'd Alex go?"</p>
+            </div>
+        </div>
+      </div>
+
+      Suddenly you both hear a scream:
+
+      <br>
+      <div class="wrapper">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Screaming.png" alt="alex">
+        <div class="textbox_border" style="background: rgb(65, 84, 125);">
+          <span  class="nametag" style="background: rgb(65, 84, 125);">ALEX:</span> 
+            <div  class="textbox_text">
+              <p style=" margin: 15px; text-align: left;">"AAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHH!!!!!!!!!!!"</p>
+            </div>
+        </div>
+      </div>
+
+      You and Zach run towards the scream. Zach is faster than you.
+        <button class="nextButton" onclick="inTheWoods2()">Next</button>
+    </div>
+  `);
+}
+
+function inTheWoods2() {
+  const $backgroundImgDiv = $("#backgroundImgDiv");
+    $backgroundImgDiv.replaceWith(`
+      <div id="backgroundImgDiv">
+        <img src="Pictures/Background/woods_dark.png" alt="woods" width="35%" class="center">
+      </div> 
+    `);
+  const $replacementDiv = $("#replacementDiv");
+  $replacementDiv.replaceWith(`
+  <div id="replacementDiv" class="center"> 
+  
+        You burst into a clearing. You see Zach standing at the edge and he looks terrified.
+
+        <div class="wrapper">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
+        <div class="textbox_border" style="background: rgb(49, 151, 121);">
+          <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+            <div  class="textbox_text">
+              <p style=" margin: 15px; text-align: left;">"Where's Alex!?"</p>
+            </div>
+        </div>
+      </div>
+
+      <br>
+        <div class="wrapper">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Scared.png" alt="zach">
+        <div class="textbox_border" style="background: rgb(25, 58, 148);">
+          <span  class="nametag" style="background: rgb(25, 58, 148);">ZACH:</span> 
+            <div  class="textbox_text">
+              <p style=" margin: 15px; text-align: left;">"She got eaten."</p>
+            </div>
+        </div>
+      </div>
+
+        <button class="nextButton" onclick="">Next</button>
+    </div>
+  `);
+}
+
+function alexIsDead() {
+
+  const $backgroundImgDiv = $("#backgroundImgDiv");
+    $backgroundImgDiv.replaceWith(`
+      <div id="backgroundImgDiv">
+        <img src="Pictures/Background/Boys_Cabin_with_objects.png" alt="cabin" width="35%" class="center">
+      </div> 
+    `);
+  const $replacementDiv = $("#replacementDiv");
+  $replacementDiv.replaceWith(`
+  <div id="replacementDiv" class="center"> 
+
+        <br>
+  
+        You're back in your cabin getting settled in for bed.
+
+        <div class="wrapper">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
+        <div class="textbox_border" style="background: rgb(49, 151, 121);">
+          <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+            <div  class="textbox_text">
+              <p style=" margin: 15px; text-align: left;">"I wonder how Zach and Alex are doing in the woods?"</p>
+            </div>
+        </div>
+      </div>
+
+      Suddenly the Zach slams the cabin door open. He looks scared.
+      <br>
+        <div class="wrapper">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Scared.png" alt="zach">
+        <div class="textbox_border" style="background: rgb(25, 58, 148);">
+          <span  class="nametag" style="background: rgb(25, 58, 148);">ZACH:</span> 
+            <div  class="textbox_text">
+              <p style=" margin: 15px; text-align: left;">"Alex got eaten."</p>
+            </div>
+        </div>
+      </div>
+
+        <button class="nextButton" onclick="">Next</button>
+    </div>
+  `);
+  
+}
 
 

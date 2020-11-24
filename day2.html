@@ -8,15 +8,102 @@
     <body>
         <h1>Day 2</h1>
         <div id="backgroundImgDiv">
+            <div class="map">
+                <img src="Pictures\Background\Boys_Cabin_with_objects.png" alt="boys Cabin" width="50%" class="center">
+            </div>
 
+               <button class="skateboard_btn" width="50%" onclick="clickSkateboard()">Click me</button> 
+               <button class="soda_btn" width="50%" onclick="clickSoda()">Click me</button> 
+               <button class="chips_btn" width="50%" onclick="clickChips()">Click me</button> 
+               <button class="fishingRod_btn" width="50%" onclick="clickFishingRod()">Click me</button> 
+
+
+
+               <div id="poster_btnDIV">
+                    <button class="poster_btn" width="50%" onclick="clickPoster()">Click me</button>              
+               </div>
         </div>
+
+        <div id="replacementDiv">
+            <button class="nextButton" onclick="goToDiningHall()">Next</button>
+        </div>
+
+
+
+          <div id ="skateboard" >
+            <p>This must be Zach's...</p>
+            <p>There's no pavement to skate on here though...</p>
+            <button class="closeButton" onclick="clickSkateboard()">Close</button>
+          </div>
         
-        <div id="replacementDiv">     
+          <div id ="soda" >
+            <p>Strawberry-Lime Cola?</p>
+            <p>That sounds really gross...</p>
+            <button class="closeButton" onclick="clickSoda()">Close</button>
+          </div>
 
-        </div>
+          <div id ="chips" >
+            <p>Oh I like this brand of chips too</p>
+            <button class="closeButton" onclick="clickChips()">Close</button>
+          </div>
 
-    
+          <div id ="fishingRod" >
+                <img src="Pictures\CharactersIMG\Outdoor_camper\Outdoorsy_camper_Speaking.png" width="100% id="theo speaking">
+                <p>This rod used to be my brothers, I can't wait to go fishing!</p>
+                <button class="closeButton" onclick="clickFishingRod()">Close</button>
+         </div>
+
+          <div id ="poster" >
+                <img src="Pictures\CharactersIMG\Outdoor_camper\Outdoorsy_camper_Speaking.png" width="100% id="theo speaking">
+                <p>This fish is SUPER rare!</p>
+                <p>You can only catch it here at Northside Lake.</p>
+                <button class="fitContentChoiceButton" onclick="clickPoster1()">That's cool.</button>
+                <button class="fitContentChoiceButton" onclick="clickPoster2()">I heard you can catch it at dawn.</button>
+         </div>
+
+         <div id ="poster1" >
+                <img src="Pictures\CharactersIMG\Outdoor_camper\Outdoorsy_camper_Speaking.png" width="100% id="theo speaking">
+                <p>Yeah! I'm really excited.</p>
+                <button class="closeButton" onclick="clickPoster1()">Close</button>
+         </div>
+
+         <div id ="poster2" >
+                <img src="Pictures\CharactersIMG\Outdoor_camper\Outdoorsy_camper_Excited_.png" width="100% id="theo speaking">
+                <p>Really!? I'll be sure to wake up early tomorrow then!</p>
+                <button class="closeButton" onclick="clickPoster2()">Close</button>
+         </div>
+
+         <div id ="theoFriendAlert" >
+                <p>Congratulations!</p>
+                <p>You've befriended Theo!.</p>
+                <button class="closeButton" onclick="theoFriendAlertClose()">Close</button>
+         </div>
+
+         <div id ="rabbit" >
+                <p>Hey, a rabbit!</p>
+                <button class="closeButton" onclick="clickRabbit()">Close</button>
+         </div> 
+
+         <div id ="sign" >
+                <p>So thats how you get to the lake</p>
+                <p>I wonder if Theo's there...</p>
+                <button class="closeButton" onclick="clickSign()">Close</button>
+         </div>
+
+         <div id ="mushrooms" >
+                <p>Are these poisonous?</p>
+                <button class="closeButton" onclick="clickMushrooms()">Close</button>
+         </div>
+
+         <div id ="clawMarks" >
+                <p>Wow.</p>
+                <p>I do not want to meet whatever left those.</p>
+                <button class="closeButton" onclick="clickClawMarks()">Close</button>
+         </div>
+           
+
 
         <script src = day2_setup.js></script>
+        
     </body>
 </html>
