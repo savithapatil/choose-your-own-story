@@ -329,13 +329,10 @@ function dismissZach() {
         </div>
       </div>
       <br>
-
-      <p> Zach storms away and you start to feel a little guilty </p>
-      <p> You decide to go to the woods to see if theres anything there for yourself</p>
-
+      <p>Zach storms away and you start to feel a little guilty.</p>
+      <p>You decide to go to the woods to see for yourself if there's anything there.</p>
       <br>
-        <button class="nextButton" onclick="goToWoodsAlone()">Next</button>      
-  
+      <button class="nextButton" onclick="goToWoodsAlone()">Next</button>      
     `);
     return;
   
