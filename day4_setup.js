@@ -870,6 +870,7 @@ function gabbyFind(){
               
                <p> Theo was unable to find the landline, and nobody showed up to help. Cody was able to escape without a trace. </p>
 
+               <button class = "choiceButton" onclick = "next()"> Congrats on Finishing! View Your Achievements Here </button>
                </div>
   
                 `);
@@ -880,5 +881,5 @@ function gabbyFind(){
 
               function next() {
                 updateachievements('day4')
-                window.href.location = "achievements4.html"
+                window.location.href = "achievements4.html"
               }
