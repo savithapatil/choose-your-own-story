@@ -338,6 +338,7 @@ function friendAlertCady() {
     $('#yesSoccer').hide();
     $('#noSoccer').hide();
     $('#friendAlertCady').slideToggle("slow");
+    updateachievements('befriend_katie');
 }
 
 function dismissCadyAlert() {
@@ -481,6 +482,7 @@ function bunnyResponse() {
 function friendAlertElla() {
     $('#respondToElla').hide();
     $('#friendAlertElla').slideToggle("slow");
+    updateachievements('befriend_ella')
 }
 
 function chill() {
