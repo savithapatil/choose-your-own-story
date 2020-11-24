@@ -164,7 +164,7 @@ function badCounselorMakesStatement() {
     $replacementDiv.replaceWith(`
       <div id="replacementDiv" class="center">
 
-      <p>The argueing is interrupted when Counselor Cody enters the dining hall.</p>
+      <p>The arguing is interrupted when Counselor Cody enters the dining hall.</p>
 
       <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Male_counselor/Cody_Speaking.png" alt="Codie Speaking">
@@ -192,10 +192,9 @@ function doYouSupport() {
       <div id="replacementDiv" class="center">
 
         <div class="wrapper">
-          <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png">
-
-          <div class="textbox_border" style="background: rbg(186, 123, 114);">
-            <span  class="nametag" style="background: rbg(186, 123, 114);">BENJY:</span> 
+          <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="Benjy">
+          <div class="textbox_border" style="background: rgb(186, 123, 114);">
+            <span  class="nametag" style="background: rgb(186, 123, 114);">BENJY:</span> 
               <div  class="textbox_text">
                 <p style=" margin: 15px; text-align: left;">"So Alex is fine-or, well, not fine since she's sick, but she's not dead! We should visit her."</p>
               </div>
@@ -297,7 +296,7 @@ function dismissZach() {
       <br>
 
       <p> Zach storms away and you start to feel a little guilty </p>
-      <p> You decide to go to the woods to see if theres anything there for yourself>
+      <p> You decide to go to the woods to see if theres anything there for yourself</p>
 
       <br>
         <button class="nextButton" onclick="goToWoodsAlone()">Next</button>      
@@ -398,8 +397,7 @@ function strangeGoo() {
           </div>
         </div>
         <br>
-        <button class="nextButton" onclick="badClaimingMonster()">Next</button>
-      
+
         <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="MC mom">
 
@@ -413,7 +411,7 @@ function strangeGoo() {
       <br>
 
       <br>
-        <button class="nextButton" onclick="badClaimingMonster()">Next</button>
+        <button class="nextButton" onclick="">Next</button>
     </div>
     `);
     return;
@@ -447,6 +445,8 @@ getName();
         </div>
       </div>
       <br>   
+      <button class="nextButton" onclick="">Next</button>
+
       
   `);
   return;
