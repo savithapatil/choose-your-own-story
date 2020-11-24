@@ -628,7 +628,7 @@ function inTheWoods2() {
         </div>
       </div>
 
-        <button class="nextButton" onclick="">Next</button>
+        <button class="nextButton" onclick="next()">Next</button>
     </div>
   `);
 }
@@ -680,7 +680,7 @@ function alexIsDead() {
         </div>
       </div>
 
-        <button class="nextButton" onclick="">Next</button>
+        <button class="nextButton" onclick="next()">Next</button>
     </div>
   `);
   
@@ -688,7 +688,8 @@ function alexIsDead() {
 
 function next() {
   updateachievements('day1');
-  window.href.location = "achievements1.html";
+  window.location.href = "achievements1.html";
+
 }
 
 
