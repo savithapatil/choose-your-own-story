@@ -61,7 +61,7 @@ function listenToRadio() {
     </div>
 
       <br>
-      <button class="nextButton" onclick="getOutOfCar()">Get out of the car</button>
+      <button class="choiceButton" onclick="getOutOfCar()">Get out of the car</button>
         
   </div>
   `);
