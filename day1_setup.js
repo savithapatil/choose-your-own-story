@@ -9,7 +9,7 @@ function loadDay1() {
   const $replacementDiv = $("#replacementDiv");
   $replacementDiv.replaceWith(`
     <div id="replacementDiv">
-      <p>You are on the way to Camp Northway! Your mom is driving the car.</p>
+      <p>You are on the way to Camp Northside! Your mom is driving the car.</p>
       <p>Choose what to do in the car:</p>
       <button class="choiceButton" onclick="talkToYourMom()">Talk to your mom</button>
       <button class="choiceButton" onclick="listenToRadio()">Listen to the radio</button>  
@@ -114,7 +114,7 @@ function getOutOfCar() {
         <div class="textbox_border" style="background: rgb(146, 146, 146);">
           <span  class="nametag" style="background: rgb(146, 146, 146);">JODY:</span> 
             <div  class="textbox_text">
-              <p style=" margin: 15px; text-align: left;">Hi! Welcome to Camp Northway! We're so happy to have you!<br>Let me introduce you to the boys' counselor, Counselor Cody."</p>
+              <p style=" margin: 15px; text-align: left;">Hi! Welcome to Camp Northside! We're so happy to have you!<br>Let me introduce you to the boys' counselor, Counselor Cody."</p>
             </div>
         </div>
       </div>
