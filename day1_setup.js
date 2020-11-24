@@ -27,7 +27,7 @@ function talkToYourMom() {
         </div>
       </div>
       <br>
-      <button class="nextButton" onclick="getOutOfCar()">Get out of the car</button>
+      <button class="choiceButton" onclick="getOutOfCar()">Get out of the car</button>
         
   </div>
   `);
@@ -81,9 +81,9 @@ function getOutOfCar() {
     <div id="replacementDiv" class="center">
       
       <div class="wrapper">
-        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Female_counselor/Jodie_Speaking.png" alt="Jodie Speaking">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Female_counselor/Jodie_Speaking.png" alt="Jody Speaking">
         <div class="textbox_border" style="background: rgb(146, 146, 146);">
-          <span  class="nametag" style="background: rgb(146, 146, 146);">JODIE:</span> 
+          <span  class="nametag" style="background: rgb(146, 146, 146);">JODY:</span> 
             <div  class="textbox_text">
               <p style=" margin: 15px; text-align: left;">Hi! Welcome to Camp Northside! We're so happy to have you!<br>Let me introduce you to the boys' counselor, Counselor Cody."</p>
             </div>
@@ -159,7 +159,7 @@ function next3() {
       <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/snobby_character/Snobby_mad.png" alt="Snobby girl yelling">
         <div class="textbox_border" style="background: rgb(217, 173, 54);">
-          <span  class="nametag" style="background: rgb(217, 173, 54);">???</span> 
+          <span  class="nametag" style="background: rgb(217, 173, 54);">BLONDE-HAIRED GIRL:</span> 
             <div  class="textbox_text">
               <p style=" margin: 15px; text-align: left;">You can't do that!"</p>
             </div>
@@ -182,7 +182,7 @@ function next3() {
       <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Irritated.png" alt="bad annoyed">
         <div class="textbox_border" style="background: rgb(25, 58, 148);">
-          <span  class="nametag" style="background: rgb(25, 58, 148);">???</span> 
+          <span  class="nametag" style="background: rgb(25, 58, 148);">BLUE-HAIRED BOY:</span> 
             <div  class="textbox_text">
               <p style=" margin: 15px; text-align: left;">"Whatever... I'll just steal it back later."</p>
             </div>
@@ -210,9 +210,9 @@ function next4() {
     <div id="replacementDiv" class="center">
         
     <div class="wrapper">
-    <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="katie speaking">
+    <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="Katie speaking">
     <div class="textbox_border" style="background: rgb(184, 69, 31);">
-      <span  class="nametag" style="background: rgb(184, 69, 31);">Katie</span> 
+      <span  class="nametag" style="background: rgb(184, 69, 31);">KATIE:</span> 
         <div  class="textbox_text">
           <p style=" margin: 15px; text-align: left;">"Hi! My name is Katheryn but everyone calls me Katie!"</p>
         </div>
@@ -222,7 +222,7 @@ function next4() {
   <div class="wrapper">
     <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="bad speaking">
     <div class="textbox_border" style="background: rgb(25, 58, 148);">
-      <span  class="nametag" style="background: rgb(25, 58, 148);">Zach</span> 
+      <span  class="nametag" style="background: rgb(25, 58, 148);">ZACH:</span> 
         <div  class="textbox_text">
           <p style=" margin: 15px; text-align: left;">"Zach."</p>
         </div>
@@ -232,7 +232,7 @@ function next4() {
   <div class="wrapper">
     <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Speaking.png" alt="alex">
     <div class="textbox_border" style="background: rgb(65, 84, 125);">
-      <span  class="nametag" style="background: rgb(65, 84, 125);">Alex</span> 
+      <span  class="nametag" style="background: rgb(65, 84, 125);">ALEX:</span> 
         <div  class="textbox_text">
           <p style=" margin: 15px; text-align: left;">"My name is Alex."</p>
         </div>
@@ -243,7 +243,7 @@ function next4() {
   <div class="wrapper">
     <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="Benjy">
     <div class="textbox_border" style="background: rgb(186, 123, 114);">
-      <span  class="nametag" style="background: rgb(186, 123, 114);">Benjy</span> 
+      <span  class="nametag" style="background: rgb(186, 123, 114);">BENJY:</span> 
         <div  class="textbox_text">
           <p style=" margin: 15px; text-align: left;">"Hi, I'm Benjy."</p>
         </div>
@@ -253,7 +253,7 @@ function next4() {
   <div class="wrapper">
     <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Outdoor_camper/Outdoorsy_camper_Speaking.png" alt="theo">
     <div class="textbox_border" style="background: rgb(130, 103, 72);">
-      <span  class="nametag" style="background: rgb(130, 103, 72);">Theo</span> 
+      <span  class="nametag" style="background: rgb(130, 103, 72);">THEO:</span> 
         <div  class="textbox_text">
           <p style=" margin: 15px; text-align: left;">"I'm Theo!"</p>
         </div>
@@ -263,7 +263,7 @@ function next4() {
   <div class="wrapper">
     <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/smart_character/Smart_Camper_Speaking.png" alt="gabby">
     <div class="textbox_border" style="background: rgb(93, 55, 125);">
-      <span  class="nametag" style="background: rgb(93, 55, 125);">Gabby</span> 
+      <span  class="nametag" style="background: rgb(93, 55, 125);">GABBY:</span> 
         <div  class="textbox_text">
           <p style=" margin: 15px; text-align: left;">"My name is Gabby."</p>
         </div>
@@ -274,7 +274,7 @@ function next4() {
   <div class="wrapper">
     <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/snobby_character/Snobby_Speaking.png" alt="Ella">
     <div class="textbox_border" style="background: rgb(217, 173, 54);">
-      <span  class="nametag" style="background: rgb(217, 173, 54);">Ella</span> 
+      <span  class="nametag" style="background: rgb(217, 173, 54);">ELLA:</span> 
         <div  class="textbox_text">
           <p style=" margin: 15px; text-align: left;">"...You can call me Ella."</p>
         </div>
@@ -377,7 +377,7 @@ function next5() {
       <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Speaking.png" alt="alex">
         <div class="textbox_border" style="background: rgb(65, 84, 125);">
-          <span  class="nametag" style="background: rgb(65, 84, 125);">Alex</span> 
+          <span  class="nametag" style="background: rgb(65, 84, 125);">ALEX:</span> 
             <div  class="textbox_text">
               <p style=" margin: 15px; text-align: left;">"This is my first time at camp. Have you been here before?"</p>
             </div>
@@ -407,7 +407,7 @@ function invite() {
       <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Speaking.png" alt="alex">
         <div class="textbox_border" style="background: rgb(65, 84, 125);">
-          <span  class="nametag" style="background: rgb(65, 84, 125);">Alex</span> 
+          <span  class="nametag" style="background: rgb(65, 84, 125);">ALEX:</span> 
             <div  class="textbox_text">
               <p style=" margin: 15px; text-align: left;">"That's great! I was worried everyone would know each other already from last year."</p>
               <p style=" margin: 15px; text-align: left;">"Hey, after dinner do you wanna go explore the woods"</p>
@@ -436,7 +436,7 @@ function yesWoods() {
       <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Excited.png" alt="alex">
         <div class="textbox_border" style="background: rgb(65, 84, 125);">
-          <span  class="nametag" style="background: rgb(65, 84, 125);">Alex</span> 
+          <span  class="nametag" style="background: rgb(65, 84, 125);">ALEX:</span> 
             <div  class="textbox_text">
               <p style=" margin: 15px; text-align: left;">"Great! Zach do you wanna come?"</p>
             </div>
@@ -469,7 +469,7 @@ function noWoods() {
       <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/dies_female/Exists_to_Die_Disappointed_.png" alt="alex">
         <div class="textbox_border" style="background: rgb(65, 84, 125);">
-          <span class="nametag" style="background: rgb(65, 84, 125);">Alex</span> 
+          <span class="nametag" style="background: rgb(65, 84, 125);">ALEX:</span> 
             <div  class="textbox_text">
               <p style=" margin: 15px; text-align: left;">"Oh...okay then. Zach do you wanna go?"</p>
             </div>
@@ -477,7 +477,7 @@ function noWoods() {
       </div>
 
       <div class="wrapper">
-        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="MC mom">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="Zach speaking">
 
         <div class="textbox_border" style="background: rgb(25, 58, 148);">
           <span  class="nametag" style="background: rgb(25, 58, 148);">ZACH:</span> 
