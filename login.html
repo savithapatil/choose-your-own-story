@@ -3,6 +3,8 @@
     <head>
         <title>Login Page</title>
         <link href="login.css" type="text/css" rel="stylesheet"/>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+
         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>  
         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>   
@@ -12,16 +14,27 @@
 
     </head>
     <body>
-        <h1>Login Page</h1>
-        <form id = "login-form">
-            <label class="fontclass" for="username">Email: </label><br>
-            <input type="text" id="login-email" name="username"><br>
+
+        <div style="background: rgb(67, 133, 129); margin-left: 35%; margin-right: 35%; margin-top:4%; padding:1%; border-radius: 10px;">
+            <div style="background:white; padding:4%;  border-radius: 10px;">
+            <h1 class="center">Login Page</h1>
             <br>
-            <label class="fontclass" for="pw">Password:</label><br>
-            <input type="password" id="login-password" name="pw"><br><br>
-            <input id="submitLoginButton" type="submit" value="Submit">
-            <button id = "logout">Log out</button>
+            <div class="center">
+                <form id = "login-form">
+                    <label class="fontclass" for="username">Email: </label><br>
+                    <input type="text" id="login-email" name="username"><br>
+                    <br>
+                    <label class="fontclass" for="pw">Password:</label><br>
+                    <input type="password" id="login-password" name="pw"><br><br>
+                    <input id="submitLoginButton" type="submit" value="Submit">
+                    <button id = "logout">Log out</button>
+            </div>
+            <br>
+            <br>
         </form>
+            </div>
+        </div>
+        
 
         <script>
             var firebaseConfig = {
