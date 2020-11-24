@@ -216,3 +216,22 @@ p, h1, h3, span {
     background-color: rgb(255, 255, 214);
 }
 
+#loadImagesWithoutDisplaying {
+    display: none;
+  }
+  
+  #beginDayButton {
+    background-color: rgb(177, 104, 35);;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+    height: 500px;
+    width: 50%;
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    /* left: 50%; */
+    font-size: larger;
+  }
+  
