@@ -46,7 +46,7 @@
         <script>
 
             //Function to get name and add it to script
-            function getName() {
+    function getName() {
     playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
         
         $("p:first").prepend(data.val().name + ", ");
@@ -56,10 +56,9 @@
 getName();
 </script>
 <script>
- 
-{
+
     updateachievements('befriend_alex');
- }
+ 
 </script>
     <div class = "container">
         <h1>Day 1</h1>
