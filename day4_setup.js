@@ -507,7 +507,7 @@ function gabbyFind(){
 <div class="textbox_border" style="background: rgb(25, 58, 148);">
   <span  class="nametag" style="background: rgb(25, 58, 148);">ZACH:</span> 
     <div  class="textbox_text">
-      <p style=" margin: 15px; text-align: left;">"I'll go. We need one more person....ey you! You're coming with us."</p>
+      <p style=" margin: 15px; text-align: left;">"I'll go. We need one more person....Hey you! You're coming with us."</p>
     </div>
 </div>
 </div>
@@ -819,7 +819,7 @@ function gabbyFind(){
               $replacementDiv.replaceWith(`
             
               <div id="replacementDiv" class="center">
-             <p> The monster releases Zach and fades away!</p>
+             <p> The monster releases Zach and fades away permanently along with its broken statue.</p>
     
              <button class="nextButton" onclick="endScene()">Next</button>
              </div>
@@ -871,7 +871,7 @@ function gabbyFind(){
                 <div id="replacementDiv" class="center">
   
               
-               <p> Theo was unable to find the landline, and nobody showed up to help. Cody was able to escape without a trace. </p>
+               <p>Theo was unable to find the landline, and nobody showed up to help. Cody was able to escape without a trace. </p>
 
                </div>
   
