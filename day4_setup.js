@@ -13,7 +13,7 @@ function loadDay4() {
   const $replacementDiv = $("#replacementDiv");
   $replacementDiv.replaceWith(`
     <div id="replacementDiv" class="center">
-        <p>Gabby and the other girls show up at the boys' cabin. </p>
+        <p>Gabby and the other girls show up at the boy's cabin. </p>
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/smart_character/Smart_Camper_worried.png" alt="MC mom">
             <div class="textbox_border" style="background: rgb(93, 55, 125);">
@@ -60,10 +60,9 @@ function next0() {
   </div>
 </div>
 
-<p>As a group you decide the phones are probably in the counselor's cabin.</p>
+<p>As a group you all decide the phones are probably in the counselor's cabin.</p>
 
 
-              <!-- is there a group image for when they decided as a group? -->
 
   <h3>Which room should Zach investigate?</h3>
 <button class="choiceButton" onclick="codyRoom()">Cody's room</button>
@@ -256,7 +255,7 @@ function jodNext2(){
           <div class="textbox_border" style="background: rgb(49, 151, 121);">
             <span  class="nametag" style="background: rgb(49, 151, 121);"></span> 
               <div  class="textbox_text">
-                <p style=" margin: 15px; text-align: left;">"Let's split up. One of you should go look for a landline. The other should look for Jody. "</p>
+                <p style=" margin: 15px; text-align: left;">"Let's split up. One of you should go look for a landline. The other should look for Jody."</p>
               </div>
           </div>
         </div>
@@ -345,7 +344,7 @@ function jodNext2(){
           <div class="textbox_border" style="background: rgb(217, 173, 54);">
             <span  class="nametag" style="background: rgb(217, 173, 54);">ELLA:</span> 
               <div  class="textbox_text">
-                <p style=" margin: 15px; text-align: left;">"My calls won't go through. What's going on? " </p>
+                <p style=" margin: 15px; text-align: left;">"My calls won't go through. What's going on?" </p>
               </div>
           </div>
         </div>
@@ -486,7 +485,7 @@ function gabbyFind(){
   <div class="textbox_border" style="background: rgb(184, 69, 31);">
     <span  class="nametag" style="background: rgb(184, 69, 31);">KATIE:</span> 
       <div  class="textbox_text">
-        <p style=" margin: 15px; text-align: left;">"I think someone should come confront Cody with me. "</p>
+        <p style=" margin: 15px; text-align: left;">"I think someone should come confront Cody with me."</p>
       </div>
   </div>
 </div>
@@ -508,7 +507,7 @@ function gabbyFind(){
 <div class="textbox_border" style="background: rgb(25, 58, 148);">
   <span  class="nametag" style="background: rgb(25, 58, 148);">ZACH:</span> 
     <div  class="textbox_text">
-      <p style=" margin: 15px; text-align: left;">"I'll go. We need one more person... Hey you! You're coming with us."</p>
+      <p style=" margin: 15px; text-align: left;">"I'll go. We need one more person....ey you! You're coming with us."</p>
     </div>
 </div>
 </div>
@@ -562,7 +561,7 @@ function gabbyFind(){
   <div class="textbox_border" style="background: rgb(25, 58, 148);">
     <span  class="nametag" style="background: rgb(25, 58, 148);">ZACH:</span> 
       <div  class="textbox_text">
-        <p style=" margin: 15px; text-align: left;">"I'll go. We need one more person... Hey you! You're coming with us."</p>
+        <p style=" margin: 15px; text-align: left;">"I'll go. We need one more person. Hey you! You're coming with us."</p>
       </div>
   </div>
   </div>
@@ -666,7 +665,7 @@ function gabbyFind(){
   
 
     <div class="wrapper">
-<img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="bad annoyed">
+<img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Scared.png" alt="bad annoyed">
 <div class="textbox_border" style="background: rgb(25, 58, 148);">
   <span  class="nametag" style="background: rgb(25, 58, 148);">ZACH:</span> 
     <div  class="textbox_text">
@@ -705,15 +704,18 @@ function gabbyFind(){
       </script>
         <div id="replacementDiv" class="center">
   
-        <p>Cody appears</p>
+        <p>An evil creature towers over the group and snatches Zach. </p>
         <br>
+
+        <p>Cody appears behind the monster, instructing it to kill Zach.</p>
     
+
         <div class="wrapper">
           <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Male_counselor/Cody_Yelling.png" alt="cody Speaking">
           <div class="textbox_border" style="background: gray;">
             <span  class="nametag" style="background: gray;">CODY:</span> 
               <div  class="textbox_text">
-                <p style=" margin: 15px; text-align: left;">"You all will regret coming here! Zach is next!"</p>
+                <p style=" margin: 15px; text-align: left;">"You kids have now seen the truth. Alex didn't go mising. The beast needed to eat. Ella the brat was going to be his next meal, but I think Zach needs to go first! He's been a real pain!"</p>
               </div>
           </div>
         </div>
@@ -765,7 +767,7 @@ function gabbyFind(){
           <div id="replacementDiv" class="center">
   
         
-         <p> Pick a statue for Katie to break! You only have time for one. </p>
+         <p> Pick a statue to break! You only have time for one. </p>
 
 
            
@@ -795,7 +797,7 @@ function gabbyFind(){
           
             <div id="replacementDiv" class="center">
   
-           <p> The monster was unaffected by the broken statue and Zach is devoured.</p>
+           <p> The monster was unaffected by the broken statue and Zach is devoured. The monster disappears back into the woods looking for Ella.</p>
   
            <button class="nextButton" onclick="endScene()">Next</button>
   </div>
@@ -843,7 +845,8 @@ function gabbyFind(){
                 <div id="replacementDiv" class="center">
   
               
-               <p> Gabby found the landline and called the police. Cody was arrested. </p>
+               <p>You had sent Gabby to look for the landline. She was able to find the landline and she called the police. The police showed up before Cody was able to escape. <br>
+               Cody is arrested. You and the remaining campers are rescued.</p>
 
                </div>
   
