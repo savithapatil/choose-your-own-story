@@ -597,7 +597,7 @@ function alexIsDead() {
 
         <br>
   
-        You're back in your cabin getting settled in for bed.
+        <p>You're back in your cabin getting settled in for bed.</p>
 
         <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
@@ -609,7 +609,7 @@ function alexIsDead() {
         </div>
       </div>
 
-      Suddenly the Zach slams the cabin door open. He looks scared.
+      <p>Suddenly the Zach slams the cabin door open. He looks scared.</p>
       <br>
         <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Scared.png" alt="zach">
