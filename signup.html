@@ -3,56 +3,64 @@
     <head>
         <title>Sign Up Page</title>
         <link href="style.css" type="text/css" rel="stylesheet"/>
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>  
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>   
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script> 
         
-
     </head>
     <body>
-        <h1>Sign Up Page</h1>
-        <form>
-            <label for="username">Choose your username:</label><br>
-            <input type="text" id="username" name="username"><br>
+        <div id = "Signup">
+            <h1>Sign Up Page</h1>
+            <form id = "signup-form">
+                <label for="Email">Enter your email:</label><br>
+                <input type="email" id="email_value" name="username">
+                <br><br>
+    
+                <label for="pw">Create a password (Mininmum 6 chars):</label><br>
+                <input type="password" id="password_value" name="password">
+                <br><br>
+    
+                <label for = "Name"> First Name: </label><br>
+                <input type = "text" id = "name_value" name = "first_name">
+                <br><br>
+    
+                <!-- We used w3schools to find the logic for the show password checkbox -->
+                <!-- https://www.w3schools.com/howto/howto_js_toggle_password.asp -->
+                <button class = ""> Sign Up</button>
+                
+            </div>
+            </form>
+        
+            <script>
+                var firebaseConfig = {
+              apiKey: "AIzaSyC2A7eipZGRsxIo22mw5xMzmq25YM48H4w",
+              authDomain: "camp-northway.firebaseapp.com",
+              databaseURL: "https://camp-northway.firebaseio.com",
+              projectId: "camp-northway",
+              storageBucket: "camp-northway.appspot.com",
+              messagingSenderId: "708573748105",
+              appId: "1:708573748105:web:58c9472ff180ad88525f58",
+              
+            };
+            // Initialize Firebase
+            if(!firebase.apps.length){
+            firebase.initializeApp(firebaseConfig);
+            }
+            firebase.analytics();
+          
+            const authentication = firebase.auth();
+            this.database = firebase.database();
+            const user_info = firebase.database().ref('user_info');
             
-            <label for="pw">Choose your password:</label><br>
-            <input type="password" id="pw" name="pw"><br><br>
-
-            <label for="pw2">Re-enter your password:</label><br>
-            <input type="password" id="pw2" name="pw2"><br><br>
-
-
-
-            <!-- We used w3schools to find the logic for the show password checkbox -->
-            <!-- https://www.w3schools.com/howto/howto_js_toggle_password.asp -->
-            <input type="checkbox" onclick="showPassword()">Show Password<br>
-            <script>
-                function showPassword() {
-                    let x = document.getElementById("pw");
-                    let y = document.getElementById("pw2");
-                    if (x.type === "password") {
-                        x.type = "text";
-                    } else {
-                        x.type = "password";
-                    }
-
-                    if (y.type === "password") {
-                        y.type = "text";
-                    } else {
-                        y.type = "password";
-                    }
-                }
-            </script>
-
-            <input type="submit" value="Submit" onclick="submitFn()">
-            <script>
-                function submitFn() {
-                    let pw = document.getElementById("pw");
-                    let pw2 = document.getElementById("pw2");
-                    if (pw !== pw2) {
-                        alert("Your passwords do not match");
-                    } else {
-                        // send it to the SOAP API
-                    }
-                }
-            </script>
-        </form>
+          </script>
+            <script src = "signup.js"></script>
+            <script src = "retrievedata.js"></script> 
+    
+            
+        </body>
+    </html>
     </body>
 </html>
