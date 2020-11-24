@@ -6,6 +6,12 @@
     width: 50%;
 }  
 
+h1, .fontclass {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+
 a:link {
     
     background-color: rgb(177, 104, 35);

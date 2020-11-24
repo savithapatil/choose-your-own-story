@@ -34,6 +34,12 @@ a:link {
     margin-right: auto; 
 }
 
+h1, .fontclass {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+
 #logout {
     background-color: rgb(177, 104, 35);
     color: white;
