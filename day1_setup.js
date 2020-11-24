@@ -177,7 +177,7 @@ function next3() {
         </div>
       </div>
 
-      <p><em>A boy with blue hair walks past you. You hear him mutter under his breath.</em></p>
+      <p>A boy with blue hair walks past you. You hear him mutter under his breath.</p>
 
       <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Irritated.png" alt="bad annoyed">
@@ -325,7 +325,7 @@ function atdinner() {
   $replacementDiv.replaceWith(`
   <div id="replacementDiv" class="center">      
 
-        At dinner you see Zach is reading a comic book. It looks familiar...
+        <p>At dinner you see Zach is reading a comic book. It looks familiar...</p>
 
         <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
@@ -349,7 +349,7 @@ function atdinner() {
       </div>
 
       <br>
-      Zach seems very serious that there could be a monster in the woods.
+      <p>Zach seems very serious that there could be a monster in the woods.</p>
       <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
         <div class="textbox_border" style="background: rgb(49, 151, 121);">
@@ -525,7 +525,7 @@ function inTheWoods() {
         </div>
       </div>
 
-      Suddenly you both hear a scream:
+      <p>Suddenly you both hear a scream</p>
 
       <br>
       <div class="wrapper">
@@ -538,8 +538,8 @@ function inTheWoods() {
         </div>
       </div>
 
-      You and Zach run towards the scream. Zach is faster than you.
-        <button class="nextButton" onclick="inTheWoods2()">Next</button>
+      <p>You and Zach run towards the scream. Zach is faster than you.</p>
+      <button class="nextButton" onclick="inTheWoods2()">Next</button>
     </div>
   `);
 }
@@ -555,7 +555,7 @@ function inTheWoods2() {
   $replacementDiv.replaceWith(`
   <div id="replacementDiv" class="center"> 
   
-        You burst into a clearing. You see Zach standing at the edge and he looks terrified.
+        <p>You burst into a clearing. You see Zach standing at the edge and he looks terrified.</p>
 
         <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
