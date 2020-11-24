@@ -1,10 +1,54 @@
+function next0() {
+
+
+  const $replacementDiv = $("#replacementDiv");
+  $replacementDiv.replaceWith(`
+
+  <div id="replacementDiv" class="center">
+      
+  
+  <div class="wrapper">
+  <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/snobby_character/Snobby_Speaking.png" alt="Ella">
+  <div class="textbox_border" style="background: rgb(217, 173, 54);">
+    <span  class="nametag" style="background: rgb(217, 173, 54);">Ella</span> 
+      <div  class="textbox_text">
+        <p style=" margin: 15px; text-align: left;">"This whole place is terrible, I want to go home." (turns to bad kid) "Let’s steal our phones back. My Butler will come get us if I can call home."</p>
+      </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="bad annoyed">
+  <div class="textbox_border" style="background: rgb(25, 58, 148);">
+    <span  class="nametag" style="background: rgb(25, 58, 148);">Zach</span> 
+      <div  class="textbox_text">
+        <p style=" margin: 15px; text-align: left;">"My time has come."</p>
+      </div>
+  </div>
+</div>
+
+<p>As a group they decide  the phones are probably in the counselors cabin.</p>
+
+
+              <!-- is there a group image for when they decided as a group? -->
+
+  <h3>Which room should Zach investigate?</h3>
+<button class="choiceButton" onclick="codyRoom()">Cody's room</button>
+<button class="choiceButton" onclick="jodyRoom()">Jody's room</button> 
+  
+
+</div>
+
+`); }
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+//The following functions are all grouped under jody's room
+///
 function jodyRoom() {
 
 
   const $backgroundImgDiv = $("#backgroundImgDiv");
   $backgroundImgDiv.replaceWith(`
     <div id="backgroundImgDiv">
-    <p>Zach comes back with the phones and Jody's journal </p>
       <img src="Pictures/Background/Jody_Journal.png" alt="Jody's journal" width="35%">
     </div> 
   `);
@@ -41,12 +85,33 @@ const $replacementDiv = $("#replacementDiv");
 
     <p> All campers grab their phones and dial for help.</p> 
 
+    <button class="choiceButton" onclick="jodNext0()">Next</button>
+
+    </div>
+
+    `); }
+
+
+    function jodNext0(){
+
+      
+      const $backgroundImgDiv = $("#backgroundImgDiv");
+  $backgroundImgDiv.replaceWith(`
+    <div id="backgroundImgDiv">
+      <img src="Pictures/Background/Jody_Journal.png" alt="Jody's journal" width="35%">
+    </div> 
+  `);
+
+const $replacementDiv = $("#replacementDiv");
+$replacementDiv.replaceWith(`
+  <div id="replacementDiv" class="center">
+
     <div class="wrapper">
     <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/snobby_character/Snobby_Speaking.png" alt="Ella">
     <div class="textbox_border" style="background: rgb(217, 173, 54);">
       <span  class="nametag" style="background: rgb(217, 173, 54);">Ella</span> 
         <div  class="textbox_text">
-          <p style=" margin: 15px; text-align: left;">"Hand me the yellow phone. That one's mine." *Starts dialing* .....  "No way! My calls aren't going through."</p>
+          <p style=" margin: 15px; text-align: left;">No way! My calls aren't going through."</p>
         </div>
     </div>
   </div>
@@ -65,7 +130,29 @@ const $replacementDiv = $("#replacementDiv");
 
 <p>None of the campers are able to make any calls.</p>
 
+<button class="choiceButton" onclick="jodNext1()">Next</button>
+</div>
 
+
+
+`); }
+
+function jodNext1(){
+
+
+  
+   
+  const $backgroundImgDiv = $("#backgroundImgDiv");
+  $backgroundImgDiv.replaceWith(`
+    <div id="backgroundImgDiv">
+      <img src="Pictures/Background/Jody_Journal.png" alt="Jody's journal" width="35%">
+    </div> 
+  `);
+      
+  const $replacementDiv = $("#replacementDiv");
+  $replacementDiv.replaceWith(`
+    <div id="replacementDiv" class="center">
+  
 
 <div class="wrapper">
   <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="Benjy">
@@ -99,6 +186,26 @@ const $replacementDiv = $("#replacementDiv");
 </div>
 </div>
 
+<button class="choiceButton" onclick="jodNext2()">Next</button>
+
+</div>
+
+
+`); }
+
+function jodNext2(){
+
+         
+  const $backgroundImgDiv = $("#backgroundImgDiv");
+  $backgroundImgDiv.replaceWith(`
+    <div id="backgroundImgDiv">
+      <img src="Pictures/Background/Jody_Journal.png" alt="Jody's journal" width="35%">
+    </div> 
+  `);
+
+  const $replacementDiv = $("#replacementDiv");
+  $replacementDiv.replaceWith(`
+    <div id="replacementDiv" class="center">
 
 
 <div class="wrapper">
@@ -133,9 +240,8 @@ const $replacementDiv = $("#replacementDiv");
       `); }
 
 
-
-      /////////////////////////////////////////
-
+/////////////////////////////////////////
+////The following functions are all grouped under Cody's room
 
 
       function codyRoom() {
@@ -144,7 +250,6 @@ const $replacementDiv = $("#replacementDiv");
         const $backgroundImgDiv = $("#backgroundImgDiv");
         $backgroundImgDiv.replaceWith(`
           <div id="backgroundImgDiv">
-          <p>Zach comes back with the phones and Cody's journal </p>
             <img src="Pictures/Background/Cody_Journal.png" alt="Jody's journal" width="35%">
           </div> 
         `);
@@ -179,10 +284,20 @@ const $replacementDiv = $("#replacementDiv");
             </div>
           </div>
       
-          <p>All campers grab their phones and dial for help.</p> 
+          <p> All campers grab their phones and dial for help.</p> 
 
-       
+          <button class="choiceButton" onclick="codyNext0()">Next</button>
+      
+          </div>
+      
+          `); }
 
+      function codyNext0(){
+          
+      const $replacementDiv = $("#replacementDiv");
+      $replacementDiv.replaceWith(`
+
+      <div id="replacementDiv" class="center">
           <div class="wrapper">
           <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/snobby_character/Snobby_Speaking.png" alt="Ella">
           <div class="textbox_border" style="background: rgb(217, 173, 54);">
@@ -199,14 +314,27 @@ const $replacementDiv = $("#replacementDiv");
         <div class="textbox_border" style="background: rgb(184, 69, 31);">
           <span  class="nametag" style="background: rgb(184, 69, 31);">Katie</span> 
             <div  class="textbox_text">
-              <p style=" margin: 15px; text-align: left;">"I can't get mine to work either!"</p>
+              <p style=" margin: 15px; text-align: left;">"I can't get mine to work either."</p>
             </div>
         </div>
       </div>
       
       <p>None of the campers are able to make any calls.</p>
-      
-      
+
+<button class="choiceButton" onclick="codyNext1()">Next</button>
+</div>
+
+
+
+`); }
+
+function codyNext1(){
+
+    
+  const $replacementDiv = $("#replacementDiv");
+  $replacementDiv.replaceWith(`
+    <div id="replacementDiv" class="center">
+  
       
       <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="Benjy">
@@ -240,7 +368,19 @@ const $replacementDiv = $("#replacementDiv");
       </div>
       </div>
       
+      <button class="choiceButton" onclick="codyNext2()">Next</button>
+
+</div>
+
+
+`); }
+
+function codyNext2(){
       
+  const $replacementDiv = $("#replacementDiv");
+  $replacementDiv.replaceWith(`
+    <div id="replacementDiv" class="center">
+  
       
       <div class="wrapper">
                 <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
@@ -277,16 +417,49 @@ const $replacementDiv = $("#replacementDiv");
 
 function gabbyFind(){
 
+
   const $replacementDiv = $("#replacementDiv");
 
   $replacementDiv.replaceWith(`
 
   <div id="replacementDiv" class="center">
 
-  <p> Gabby finds the landline and calls 911 </p>
-
+  <p> Gabby searches for a landline and Theo searches for Jody</p>
   <br>
-  <p> Meanwhile, Theo looks for Jody </p>
+
+  <div class="wrapper">
+  <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="katie speaking">
+  <div class="textbox_border" style="background: rgb(184, 69, 31);">
+    <span  class="nametag" style="background: rgb(184, 69, 31);">Katie</span> 
+      <div  class="textbox_text">
+        <p style=" margin: 15px; text-align: left;">"I think someone should come confront Cody with me. "</p>
+      </div>
+  </div>
+</div>
+
+
+<div class="wrapper">
+<img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="Benjy">
+<div class="textbox_border" style="background: rgb(186, 123, 114);">
+  <span  class="nametag" style="background: rgb(186, 123, 114);">Benjy</span> 
+    <div  class="textbox_text">
+      <p style=" margin: 15px; text-align: left;">"I'm not going. Cody is bad news."</p>
+    </div>
+</div>
+</div>
+
+
+<div class="wrapper">
+<img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="bad annoyed">
+<div class="textbox_border" style="background: rgb(25, 58, 148);">
+  <span  class="nametag" style="background: rgb(25, 58, 148);">Zach</span> 
+    <div  class="textbox_text">
+      <p style=" margin: 15px; text-align: left;">"I'll go. We need one more person... Hey you! You're coming with us."</p>
+    </div>
+</div>
+</div>
+
+<button class="choiceButton" onclick="lookCodyNext0()">Go look for Cody</button>
 
   </div>
   `); }
@@ -300,10 +473,147 @@ function theoFind(){
 
   <div id="replacementDiv" class="center">
 
-  <p>Theo is unable to find a landline... </p>
-
-  <br>
-  <p> Meanwhile, Gabby looks for Jody </p>
+  <p>I don't have anything written for if you choose theo yet </p>
 
   </div>
   `); }
+//////////////////////////////////////////////////////////////////
+  function lookCodyNext0(){
+
+
+    const $backgroundImgDiv = $("#backgroundImgDiv");
+    $backgroundImgDiv.replaceWith(`
+      <div id="backgroundImgDiv">
+        <img src="Pictures/Background/woods_dark.png" alt="dark woods" width="35%">
+      </div> 
+    `);
+  
+
+    const $replacementDiv = $("#replacementDiv");
+  
+    $replacementDiv.replaceWith(`
+  
+    <div id="replacementDiv" class="center">
+  
+    <p>You, Katie, and Zach go searching into the woods.</p>
+  
+    <br>
+  
+    <button class="choiceButton" onclick="lookCodyNext1()">Next</button>
+
+    </div>
+    `); }
+
+    function lookCodyNext1(){
+
+
+      const $backgroundImgDiv = $("#backgroundImgDiv");
+      $backgroundImgDiv.replaceWith(`
+        <div id="backgroundImgDiv">
+          <img src="Pictures/Background/Weird_Shrine.png" alt="weird Shrine" width="35%">
+        </div> 
+      `);
+    
+  
+      const $replacementDiv = $("#replacementDiv");
+    
+      $replacementDiv.replaceWith(`
+    
+      <div id="replacementDiv" class="center">
+
+      <p>You all run into a group of statues...</p>
+      <br>
+    
+      <div class="wrapper">
+      <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="katie speaking">
+      <div class="textbox_border" style="background: rgb(184, 69, 31);">
+        <span  class="nametag" style="background: rgb(184, 69, 31);">Katie</span> 
+          <div  class="textbox_text">
+            <p style=" margin: 15px; text-align: left;">"Statues... what should we do?"</p>
+          </div>
+      </div>
+    </div>
+  
+
+    <div class="wrapper">
+<img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="bad annoyed">
+<div class="textbox_border" style="background: rgb(25, 58, 148);">
+  <span  class="nametag" style="background: rgb(25, 58, 148);">Zach</span> 
+    <div  class="textbox_text">
+      <p style=" margin: 15px; text-align: left;">"Pipe down. Someone is coming."</p>
+    </div>
+</div>
+</div>
+
+<button class="choiceButton" onclick="monsterAppears()">Next</button>
+      </div>
+      `); }
+////////////////////
+      function monsterAppears(){
+
+
+        const $backgroundImgDiv = $("#backgroundImgDiv");
+        $backgroundImgDiv.replaceWith(`
+          <div id="backgroundImgDiv">
+            <img src="Pictures/Background/Zach_Is_Caught.png" alt="weird Shrine" width="35%">
+          </div> 
+        `);
+      
+    
+        const $replacementDiv = $("#replacementDiv");
+      
+        $replacementDiv.replaceWith(`
+      
+        <div id="replacementDiv" class="center">
+  
+        <p>You all run into a group of statues...</p>
+        <br>
+    
+  
+   
+        <div class="wrapper">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="katie speaking">
+        <div class="textbox_border" style="background: rgb(184, 69, 31);">
+          <span  class="nametag" style="background: rgb(184, 69, 31);">Katie</span> 
+            <div  class="textbox_text">
+              <p style=" margin: 15px; text-align: left;">"We have to do something!!"</p>
+            </div>
+        </div>
+      </div>
+  
+
+      <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
+
+      <div class="textbox_border" style="background: rgb(49, 151, 121);">
+        <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+          <div  class="textbox_text">
+            <p style=" margin: 15px; text-align: left;">"Maybe if we break a statue!"</p>
+          </div>
+      </div>
+    </div>
+  <br>
+
+  <button class="choiceButton" onclick="pickStatue()">Next</button>
+        </div>
+        `); }
+
+
+        function pickStatue(){
+
+
+          const $backgroundImgDiv = $("#backgroundImgDiv");
+          $backgroundImgDiv.replaceWith(`
+          <div id="backgroundImgDiv">
+          <img src="Pictures/Background/Weird_Shrine.png" alt="weird Shrine" width="35%">
+        </div> 
+          `);
+        
+      
+          const $replacementDiv = $("#replacementDiv");
+        
+          $replacementDiv.replaceWith(`
+        
+         <p> Pick a statue for Katie to break! You only have time for one. </p>
+          `); }
+  
+  
