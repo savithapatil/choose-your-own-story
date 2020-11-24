@@ -1,3 +1,20 @@
+function loadDay3() {
+    const $backgroundImgDiv = $("#backgroundImgDiv");
+    $backgroundImgDiv.replaceWith(`
+        <div id="backgroundImgDiv">
+            <img src="Pictures/Background/Boys_Cabin_with_objects.png" alt="Boys' cabin with objects" width="35%" >
+        </div>
+    `);  
+    const $replacementDiv = $("#replacementDiv");
+    $replacementDiv.replaceWith(`
+        <div id="replacementDiv">
+            <p>You wake up thinking about the claw marks you saw last night... yikes!</p>
+            <button class="choiceButton" onclick="goToDiningHall()">Go to the dining hall</button>
+            <br><br>
+        </div>
+    `);  
+}
+
 function goToDiningHall() {
     const $backgroundImgDiv = $("#backgroundImgDiv");
     $backgroundImgDiv.replaceWith(`
