@@ -330,6 +330,16 @@ function atdinner() {
     `);
   const $replacementDiv = $("#replacementDiv");
   $replacementDiv.replaceWith(`
+  <script>
+function getName() {
+    playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+        $("span:first").prepend(data.val().name + ":");
+        $("span:last").append(data.val().name + ":")
+
+     });
+    }
+getName();
+</script>
   <div id="replacementDiv" class="center">      
 
         <p>At dinner you see Zach is reading a comic book. It looks familiar...</p>
@@ -337,7 +347,7 @@ function atdinner() {
         <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
         <div class="textbox_border" style="background: rgb(49, 151, 121);">
-          <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+          <span  class="nametag" style="background: rgb(49, 151, 121);"></span> 
             <div  class="textbox_text">
               <p style=" margin: 15px; text-align: left;">"Is that Monsters Monthly?"</p>
             </div>
@@ -360,7 +370,7 @@ function atdinner() {
       <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
         <div class="textbox_border" style="background: rgb(49, 151, 121);">
-          <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+          <span  class="nametag" style="background: rgb(49, 151, 121);"></span> 
             <div  class="textbox_text">
               <p style=" margin: 15px; text-align: left;">"Cool."</p>
             </div>
@@ -509,12 +519,21 @@ function inTheWoods() {
     `);
   const $replacementDiv = $("#replacementDiv");
   $replacementDiv.replaceWith(`
-  <div id="replacementDiv" class="center">      
+  <div id="replacementDiv" class="center"> 
+  <script>
+  function getName() {
+      playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+          $("span:first").prepend(data.val().name + ":");
+  
+       });
+      }
+  getName();
+  </script>     
 
         <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
         <div class="textbox_border" style="background: rgb(49, 151, 121);">
-          <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+          <span  class="nametag" style="background: rgb(49, 151, 121);"></span> 
             <div  class="textbox_text">
               <p style=" margin: 15px; text-align: left;">"Wow, it's getting dark."</p>
             </div>
@@ -561,13 +580,23 @@ function inTheWoods2() {
   const $replacementDiv = $("#replacementDiv");
   $replacementDiv.replaceWith(`
   <div id="replacementDiv" class="center"> 
+
+  <script>
+  function getName() {
+      playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+          $("span:first").prepend(data.val().name + ":");
+  
+       });
+      }
+  getName();
+  </script>
   
         <p>You burst into a clearing. You see Zach standing at the edge and he looks terrified.</p>
 
         <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
         <div class="textbox_border" style="background: rgb(49, 151, 121);">
-          <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+          <span  class="nametag" style="background: rgb(49, 151, 121);"></span> 
             <div  class="textbox_text">
               <p style=" margin: 15px; text-align: left;">"Where's Alex!?"</p>
             </div>
@@ -603,13 +632,22 @@ function alexIsDead() {
   <div id="replacementDiv" class="center"> 
 
         <br>
+        <script>
+        function getName() {
+            playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+                $("span:first").prepend(data.val().name + ":");
+        
+             });
+            }
+        getName();
+        </script>
   
         <p>You're back in your cabin getting settled in for bed.</p>
 
         <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
         <div class="textbox_border" style="background: rgb(49, 151, 121);">
-          <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+          <span  class="nametag" style="background: rgb(49, 151, 121);"></span> 
             <div  class="textbox_text">
               <p style=" margin: 15px; text-align: left;">"I wonder how Zach and Alex are doing in the woods?"</p>
             </div>
