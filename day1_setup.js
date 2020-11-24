@@ -72,7 +72,7 @@ function getOutOfCar() {
   const $backgroundImgDiv = $("#backgroundImgDiv");
   $backgroundImgDiv.replaceWith(`
     <div id="backgroundImgDiv">
-      <img src="Pictures/Background/Camp_Entrance.png" alt="camp entrance background image" width="35%" class="center">
+      <img src="Pictures/Background/Camp_Entrance.png" alt="camp entrance background image" width="35%">
     </div> 
   `);
 
@@ -85,7 +85,7 @@ function getOutOfCar() {
         <div class="textbox_border" style="background: rgb(146, 146, 146);">
           <span  class="nametag" style="background: rgb(146, 146, 146);">JODIE:</span> 
             <div  class="textbox_text">
-              <p style=" margin: 15px; text-align: left;">Hi! Welcome to Camp Northway! We're so happy to have you!<br>Let me introduce you to the boys' counselor, Counselor Cody"</p>
+              <p style=" margin: 15px; text-align: left;">Hi! Welcome to Camp Northside! We're so happy to have you!<br>Let me introduce you to the boys' counselor, Counselor Cody."</p>
             </div>
         </div>
       </div>
@@ -301,7 +301,7 @@ function go2dinner() {
         <div class="textbox_border" style="background: rgb(146, 146, 146);">
           <span  class="nametag" style="background: rgb(146, 146, 146);">JODY:</span> 
             <div  class="textbox_text">
-              <p style=" margin: 15px; text-align: left;">"Now I'm sure you're all hungry, so lets head to the mess hall for dinner"</p>
+              <p style=" margin: 15px; text-align: left;">"Now I'm sure you're all hungry, so lets head to the mess hall for dinner."</p>
             </div>
         </div>
       </div>
