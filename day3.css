@@ -215,3 +215,7 @@ p, h1, span {
     display:none;
     background-color: rgb(255, 255, 214);
 }
+
+#loadImagesWithoutDisplaying {
+    display: none;
+}
