@@ -2,6 +2,35 @@ let stoppedCody = false;
 
 let killedMonster = false;
 
+function loadDay4() {
+  const $backgroundImgDiv = $("#backgroundImgDiv");
+  $backgroundImgDiv.replaceWith(`
+    <div id="backgroundImgDiv">
+      <img src="Pictures/Background/Boys_Cabin_with_objects.png" alt="car on road background image" width="35%" >
+    </div>
+  `);
+
+  const $replacementDiv = $("#replacementDiv");
+  $replacementDiv.replaceWith(`
+    <div id="replacementDiv" class="center">
+        <p>Gabby and the other girls show up at the boys' cabin. </p>
+        <div class="wrapper">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/smart_character/Smart_Camper_worried.png" alt="MC mom">
+            <div class="textbox_border" style="background: rgb(93, 55, 125);">
+                <span class="nametag" style="background: rgb(93, 55, 125);">Gabby</span> 
+                <div class="textbox_text">
+                    <p style=" margin: 15px; text-align: left;">"There shouldn’t have been a mudslide since there hasn’t been any rain."</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <button class="choiceButton" onclick="next0()">Next</button>
+    </div>
+  `);
+
+
+}
+
 function next0() {
 
 
