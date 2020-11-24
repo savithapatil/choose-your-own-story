@@ -6,7 +6,7 @@ function loadDay4() {
   const $backgroundImgDiv = $("#backgroundImgDiv");
   $backgroundImgDiv.replaceWith(`
     <div id="backgroundImgDiv">
-      <img src="Pictures/Background/Boys_Cabin_with_objects.png" alt="car on road background image" width="35%" >
+      <img src="Pictures/Background/Boys_Cabin_with_objects.png" alt="Boys' cabin with objects" width="35%" >
     </div>
   `);
 
@@ -292,7 +292,7 @@ function jodNext2(){
         const $backgroundImgDiv = $("#backgroundImgDiv");
         $backgroundImgDiv.replaceWith(`
           <div id="backgroundImgDiv">
-            <img src="Pictures/Background/Cody_Journal.png" alt="Jody's journal" width="35%">
+            <img src="Pictures/Background/Cody_Journal.png" alt="Cody's journal" width="35%">
           </div> 
         `);
       
@@ -685,7 +685,7 @@ function gabbyFind(){
         const $backgroundImgDiv = $("#backgroundImgDiv");
         $backgroundImgDiv.replaceWith(`
           <div id="backgroundImgDiv">
-            <img src="Pictures/Background/Zach_Is_Caught.png" alt="weird Shrine" width="35%">
+            <img src="Pictures/Background/Zach_Is_Caught.png" alt="Zach is caught" width="35%">
           </div> 
         `);
       
@@ -784,7 +784,7 @@ function gabbyFind(){
             const $backgroundImgDiv = $("#backgroundImgDiv");
             $backgroundImgDiv.replaceWith(`
             <div id="backgroundImgDiv">
-            <img src="Pictures/Background/Zach_Is_Eaten.png" alt="weird Shrine" width="35%">
+            <img src="Pictures/Background/Zach_Is_Eaten.png" alt="Zach is eaten" width="35%">
           </div> 
             `);
           
@@ -807,7 +807,7 @@ function gabbyFind(){
               const $backgroundImgDiv = $("#backgroundImgDiv");
               $backgroundImgDiv.replaceWith(`
               <div id="backgroundImgDiv">
-              <img src="Pictures/Background/monster.png" alt="weird Shrine" width="35%">
+              <img src="Pictures/Background/monster.png" alt="Monster" width="35%">
             </div> 
               `);
             
@@ -831,7 +831,7 @@ function gabbyFind(){
                 const $backgroundImgDiv = $("#backgroundImgDiv");
                 $backgroundImgDiv.replaceWith(`
                 <div id="backgroundImgDiv">
-                <img src="Pictures/Background/Police_Car.png" alt="weird Shrine" width="35%">
+                <img src="Pictures/Background/Police_Car.png" alt="Police car" width="35%">
               </div> 
                 `);
               
