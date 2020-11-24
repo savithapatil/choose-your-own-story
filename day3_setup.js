@@ -160,7 +160,7 @@ function next3() {
 
         <div id="friendAlertTheo">
             <p>Congratulations! You've befriended Theo!</p>
-            <button class="nextButton" onclick="goWithTheo()">Continue</button>
+            <button class="nextButton" onclick="athleticKidAsks()">Continue</button>
         </div>
     </div>
     `);
@@ -178,19 +178,12 @@ function friendAlertTheo() {
     $('#friendAlertTheo').slideToggle("slow"); 
 }
 
-// not done
-function goWithTheo() {
-    const $backgroundImgDiv = $("#backgroundImgDiv");
-    $backgroundImgDiv.replaceWith(`
-      <div id="backgroundImgDiv">
-        <img src="" alt="woods background image" width="35%" class="center">
-      </div> 
-    `);
 
+function athleticKidAsks() {
     const $replacementDiv = $("#replacementDiv");
     $replacementDiv.replaceWith(`
     <div id="replacementDiv" class="center">
-        <p>You and Theo head to the woods, and you hear someone behind you. It's Cady!</p>
+        <p>You and Theo are about to head to the woods.</p>
 
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="Cady">
@@ -205,18 +198,155 @@ function goWithTheo() {
         <p>Choose what to say:</p>
         <button class="choiceButton" onclick="yesAthleticKid()">"Of course!"</button>
         <br><br>
-        <button class="choiceButton" onclick="noAthleticKid()">"It will be quieter with fewer people."</button>
+        <button class="choiceButton" onclick="noAthleticKid()">"It will be quieter with less people."</button>
+    </div>
+    `);
+
+}
+
+
+// not done
+
+/*
+function goWithTheo() {
+    const $backgroundImgDiv = $("#backgroundImgDiv");
+    $backgroundImgDiv.replaceWith(`
+      <div id="backgroundImgDiv">
+        <img src="Pictures/Background/woods.png" alt="woods background image" width="35%">
+      </div> 
+    `);
+}
+*/
+
+function yesAthleticKid() {
+    // Cady is there, and you need a chance to befriend her
+    const $backgroundImgDiv = $("#backgroundImgDiv");
+    $backgroundImgDiv.replaceWith(`
+      <div id="backgroundImgDiv">
+      </div> 
+    `);
+
+    const $replacementDiv = $("#replacementDiv");
+    $replacementDiv.replaceWith(`
+    <div id="replacementDiv" class="center">
+        <p>The three of you start walking to the woods.</p>
+        <p>Choose what to do on the way:</p>
+        <button class="choiceButton" onclick="talkToCady()">Talk to Cady</button>
+        <br><br>
+        <button class="choiceButton" onclick="arriveAtWoods()">Walk in silence for fear of bears</button>
     </div>
     `);
 }
 
-function yesAthleticKid() {
-    // befriend
-    // need to figure out what they actually do in the woods
+function talkToCady() {
+    const $replacementDiv = $("#replacementDiv");
+    $replacementDiv.replaceWith(`
+    <div id="replacementDiv" class="center">
+        <div class="wrapper">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
+            <div class="textbox_border" style="background: rgb(49, 151, 121);">
+                <span class="nametag" style="background: rgb(49, 151, 121);">YOU</span> 
+                <div class="textbox_text">
+                    <p style=" margin: 15px; text-align: left;">"So I heard you like sports. What's your favorite one to play?"</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="wrapper">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="Cady">
+            <div class="textbox_border" style="background: rgb(184, 69, 31);">
+                <span class="nametag" style="background: rgb(184, 69, 31);">Cady</span> 
+                <div class="textbox_text">
+                    <p style=" margin: 15px; text-align: left;">"Soccer! It's my favorite to play and watch. Do you like watching soccer too?"</p>
+                </div>
+            </div>
+        </div>
+
+        <p>Choose what to say:</p>
+        <button id="yesSoccer" class="choiceButton" onclick="friendAlertCady()">"Yes!"</button>
+        <br><br>
+        <button id="noSoccer" class="choiceButton" onclick="arriveAtWoods()">"Nah, I'm more of a basketball person."</button>
+    </div>
+    `);
 }
 
-function noAthleticKid() {
+function friendAlertCady() {
+    $('#yesSoccer').hide();
+    $('#noSoccer').hide();
+    $('#friendAlertCady').slideToggle("slow");
+}
 
+function dismissCadyAlert() {
+    $('#friendAlertCady').hide();
+    arriveAtWoods();
+}
+
+
+function noAthleticKid() {
+    // Cady is not there.
+    const $backgroundImgDiv = $("#backgroundImgDiv");
+    $backgroundImgDiv.replaceWith(`
+      <div id="backgroundImgDiv">
+      </div> 
+    `);
+
+    const $replacementDiv = $("#replacementDiv");
+    $replacementDiv.replaceWith(`
+    <div id="replacementDiv" class="center">
+        <p>You and Theo start walking to the woods.</p>
+
+        <div class="wrapper">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
+            <div class="textbox_border" style="background: rgb(49, 151, 121);">
+                <span class="nametag" style="background: rgb(49, 151, 121);">YOU</span> 
+                <div class="textbox_text">
+                    <p style=" margin: 15px; text-align: left;">"We should probably be very quiet just in case there are bears around."</p>
+                </div>
+            </div>
+        </div>     
+
+        <button class="nextButton" onclick="arriveAtWoods()">Next</button>
+    </div>
+    `);
+
+}
+
+function arriveAtWoods() {
+    const $backgroundImgDiv = $("#backgroundImgDiv");
+    $backgroundImgDiv.replaceWith(`
+      <div id="backgroundImgDiv">
+        <img src="Pictures/Background/woods.png" alt="woods background image" width="35%">
+      </div> 
+    `);
+
+    const $replacementDiv = $("#replacementDiv");
+    $replacementDiv.replaceWith(`
+    <div id="replacementDiv" class="center">
+        <p>You have arrived at the woods.</p>
+
+        <div class="wrapper">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Outdoor_camper/Outdoorsy_camper_Speaking.png" alt="Theo">
+            <div class="textbox_border" style="background: rgb(130, 103, 72);">
+                <span class="nametag" style="background: rgb(130, 103, 72);">Theo</span> 
+                <div class="textbox_text">
+                    <p style=" margin: 15px; text-align: left;">"Oh my gosh do you see that?! Those huge claw marks!"</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
+            <div class="textbox_border" style="background: rgb(49, 151, 121);">
+                <span class="nametag" style="background: rgb(49, 151, 121);">YOU</span> 
+                <div class="textbox_text">
+                    <p style=" margin: 15px; text-align: left;">"OK there are definitely bears here. Let's go back!"</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="nextButton" onclick="returnToDiningHall()">Next</button>
+    </div>
+    `);
 }
 
 function goWithGabby() {
@@ -283,36 +413,203 @@ function keepInspecting() {
     $('#bookIsClickedDiv').hide();
 }
 
-function leaveGirlsCabin() {
+function returnToDiningHall() {
     $('#bookIsClickedDiv').hide();
     const $backgroundImgDiv = $("#backgroundImgDiv");
     $backgroundImgDiv.replaceWith(`
       <div id="backgroundImgDiv">
-        <img src="" alt="walking back to the dining hall - background image" width="35%" class="center">
+        <img src="Pictures/Background/trail to dining hall.png" alt="walking back to the dining hall - background image" width="35%">
       </div> 
     `);
+
     const $replacementDiv = $("#replacementDiv");
     $replacementDiv.replaceWith(`
     <div id="replacementDiv" class="center">
-        <p>You, Gabby, and Ella walk back to the dining hall... but something seems off...</p>
+        <p>You guys are walking back to the dining hall... but something seems off...</p>
+
         <div class="wrapper">
-            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/snobby_character/Snobby_Speaking.png" alt="Ella">
-            <div class="textbox_border" style="background: rgb(217, 173, 54);">
-                <span class="nametag" style="background: rgb(217, 173, 54);">Ella</span> 
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
+            <div class="textbox_border" style="background: rgb(49, 151, 121);">
+                <span class="nametag" style="background: rgb(49, 151, 121);">YOU</span> 
                 <div class="textbox_text">
-                    <p style=" margin: 15px; text-align: left;">"I feel like I'm being watched..."</p>
+                    <p style=" margin: 15px; text-align: left;">"I feel like... I feel like we're being watched..."</p>
                 </div>
             </div>
-        </div>
+        </div>     
+
         <button class="nextButton" onclick="arriveAtDiningHall()">Next</button>
     </div>
     `);
 }
 
 function arriveAtDiningHall() {
+    const $backgroundImgDiv = $("#backgroundImgDiv");
+    $backgroundImgDiv.replaceWith(`
+      <div id="backgroundImgDiv">
+        <img src="Pictures/Background/Dining_Hall_Claw_Marks.png" alt="dining hall background image" width="35%">
+      </div> 
+    `);
 
+    const $replacementDiv = $("#replacementDiv");
+    $replacementDiv.replaceWith(`
+    <div id="replacementDiv" class="center">
+        <p>When you arrive at the dining hall, everyone is crowded around the door, peering inside.</p>
+
+        <div class="wrapper">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="Benjy">
+            <div class="textbox_border" style="background: rgb(186, 123, 114);">
+                <span class="nametag" style="background: rgb(186, 123, 114);">Benjy</span> 
+                <div class="textbox_text">
+                    <p style=" margin: 15px; text-align: left;">"There are claw marks everywhere!"</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="Zach">
+            <div class="textbox_border" style="background: rgb(25, 58, 148);">
+                <span  class="nametag" style="background: rgb(25, 58, 148);">Zach</span> 
+                <div  class="textbox_text">
+                    <p style=" margin: 15px; text-align: left;">"Oh my gosh what the--"</p>
+                </div>
+            </div>
+        </div>      
+
+        <p>Choose what to do:</p>
+        <button class="choiceButton" onclick="panic()">Panic!</button>
+        <button class="choiceButton" onclick="panic()">REALLY PANIC!</button>
+    </div>
+    `);
 }
 
+function panic() {
+    const $backgroundImgDiv = $("#backgroundImgDiv");
+    $backgroundImgDiv.replaceWith(`
+      <div id="backgroundImgDiv">
+        <img src="Pictures/Background/Dining_Hall_Claw_Marks.png" alt="dining hall background image" width="35%">
+      </div> 
+    `);
+
+    const $replacementDiv = $("#replacementDiv");
+    $replacementDiv.replaceWith(`
+    <div id="replacementDiv" class="center">
+        <p>Everyone starts to panic! It is mayhem!!!</p>
+
+        <div class="wrapper">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/smart_character/Smart_Camper_worried.png" alt="Gabby">
+            <div class="textbox_border" style="background: rgb(93, 55, 125);">
+                <span class="nametag" style="background: rgb(93, 55, 125);">Gabby</span> 
+                <div class="textbox_text">
+                    <p style=" margin: 15px; text-align: left;">"We need a counselor!"</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="nextButton" onclick="needCounselor()">Next</button>
+    </div>
+    `);
+}
+
+function needCounselor() {
+    const $backgroundImgDiv = $("#backgroundImgDiv");
+    $backgroundImgDiv.replaceWith(`
+      <div id="backgroundImgDiv">
+        <img src="Pictures/Background/Dining_Hall_Claw_Marks.png" alt="dining hall background image" width="35%">
+      </div> 
+    `);
+
+    const $replacementDiv = $("#replacementDiv");
+    $replacementDiv.replaceWith(`
+    <div id="replacementDiv" class="center">
+
+        <div class="wrapper">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Male_counselor/Cody_Speaking.png" alt="Cody">
+            <div class="textbox_border" style="background: gray;">
+                <span class="nametag" style="background: gray;">Cody</span> 
+                <div class="textbox_text">
+                    <p style=" margin: 15px; text-align: left;">"Did someone say counselor? Hey guys!"</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="Benjy">
+            <div class="textbox_border" style="background: rgb(186, 123, 114);">
+                <span class="nametag" style="background: rgb(186, 123, 114);">Benjy</span> 
+                <div class="textbox_text">
+                    <p style=" margin: 15px; text-align: left;">"Look at the dining hall! There are claw marks all over it!"</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="nextButton" onclick="raccoon()">Next</button>
+    </div>
+    `);
+}
+
+function raccoon() {
+    const $backgroundImgDiv = $("#backgroundImgDiv");
+    $backgroundImgDiv.replaceWith(`
+      <div id="backgroundImgDiv">
+        <img src="Pictures/Background/Dining_Hall_Claw_Marks.png" alt="dining hall background image" width="35%">
+      </div> 
+    `);
+
+    const $replacementDiv = $("#replacementDiv");
+    $replacementDiv.replaceWith(`
+    <div id="replacementDiv" class="center">
+
+        <div class="wrapper">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Male_counselor/Cody_Speaking.png" alt="Cody">
+            <div class="textbox_border" style="background: gray;">
+                <span class="nametag" style="background: gray;">Cody</span> 
+                <div class="textbox_text">
+                    <p style=" margin: 15px; text-align: left;">"Oh! I didn't notice that. Hm, must've been a raccoon."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="Benjy">
+            <div class="textbox_border" style="background: rgb(186, 123, 114);">
+                <span class="nametag" style="background: rgb(186, 123, 114);">Benjy</span> 
+                <div class="textbox_text">
+                    <p style=" margin: 15px; text-align: left;">"What kind of raccoon could possibly d--"</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Male_counselor/Cody_Speaking.png" alt="Cody">
+            <div class="textbox_border" style="background: gray;">
+                <span class="nametag" style="background: gray;">Cody</span> 
+                <div class="textbox_text">
+                    <p style=" margin: 15px; text-align: left;">*cuts Benjy off*<br>"ANYWAYS! I've got some news. It looks like there's been a mudslide. No one can get in or out of the camp right now. But don't worry! We have people working on clearing it, and you'll be able to leave camp at the end of the week as scheduled!" Now off to the cabins, everyone!</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="choiceButton" onclick="endOfDay3()">END OF DAY 3</button>
+    </div>
+    `);
+}
+
+function endOfDay3() {
+    const $backgroundImgDiv = $("#backgroundImgDiv");
+    $backgroundImgDiv.replaceWith(`
+      <div id="backgroundImgDiv">
+      </div> 
+    `);
+
+    const $replacementDiv = $("#replacementDiv");
+    $replacementDiv.replaceWith(`
+    <div id="replacementDiv" class="center">
+        <p>End of day 3</p>
+        <p>Achievement page and transition go here</p>
+        <button class="nextButton" onclick="">Next</button>
+    </div>
+    `);
+}
 
 function hideButton(elt_id) {
     let id = '#' + elt_id

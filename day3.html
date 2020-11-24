@@ -13,6 +13,8 @@
         <div id="replacementDiv">
             <p>You wake up thinking about the claw marks you saw last night... yikes!</p>
             <button class="choiceButton" onclick="goToDiningHall()">Go to the dining hall</button>
+            <br><br>
+            <button onclick="raccoon()">THIS BUTTON IS FOR TESTING PURPOSES! DELETE LATER</button>
         </div>
 
 
@@ -36,11 +38,17 @@
             <button class="nextButton" onclick="dismissEllaAlert()">Dismiss</button>
         </div>
 
+        <div id="friendAlertCady">
+            <p>Congratulations! You've befriended Cady!</p>
+            <button class="nextButton" onclick="dismissCadyAlert()">Next</button>
+        </div>
+
+
 
         <div id="bookIsClickedDiv">
             <img src="Pictures/CharactersIMG/smart_character/Smart_Camper_Speaking.png" width="100%">
             <p>"Wait a second... It says here that bears aren't native to this area!<br>The claw marks must have been from something else!"</p>
-            <button class="fitContentChoiceButton" onclick="leaveGirlsCabin()">Go tell the others</button>
+            <button class="fitContentChoiceButton" onclick="returnToDiningHall()">Go tell the others</button>
             <br>
             <button class="fitContentChoiceButton" onclick="keepInspecting()">Keep inspecting the room</button>
         </div>
