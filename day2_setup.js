@@ -1,3 +1,31 @@
+function loadDay2() {
+  const $backgroundImgDiv = $("#backgroundImgDiv");
+  $backgroundImgDiv.replaceWith(`
+    <div id="backgroundImgDiv">
+      <div class="map">
+        <img src="Pictures/Background/Boys_Cabin_with_objects.png" alt="boys Cabin" width="50%" class="center">
+      </div>
+
+      <button class="skateboard_btn" width="50%" onclick="clickSkateboard()">Click me</button> 
+      <button class="soda_btn" width="50%" onclick="clickSoda()">Click me</button> 
+      <button class="chips_btn" width="50%" onclick="clickChips()">Click me</button> 
+      <button class="fishingRod_btn" width="50%" onclick="clickFishingRod()">Click me</button> 
+
+      <div id="poster_btnDIV">
+        <button class="poster_btn" width="50%" onclick="clickPoster()">Click me</button>              
+      </div>
+    </div>
+  `);
+
+  const $replacementDiv = $("#replacementDiv");
+  $replacementDiv.replaceWith(`
+    <div id="replacementDiv">
+      <button class="nextButton" onclick="goToDiningHall()">Next</button>
+    </div>
+  `);
+}
+
+
 function friendAlertFN() {
     $('.friendAlert').slideToggle("slow"); 
   }
@@ -63,7 +91,7 @@ function friendAlertFN() {
     const $backgroundImgDiv = $("#backgroundImgDiv");
     $backgroundImgDiv.replaceWith(`
       <div id="backgroundImgDiv">
-        <img src="Pictures/Background/Dining_Hall.png" alt="camp entrance background image" width="35%" class="center">
+        <img src="Pictures/Background/Dining_Hall.png" alt="camp entrance background image" width="35%">
       </div> 
     `);
 
@@ -109,7 +137,7 @@ function badClaimingMonster() {
           <div class="textbox_border" style="background: rgb(25, 58, 148);">
             <span  class="nametag" style="background: rgb(25, 58, 148);">ZACH:</span> 
               <div  class="textbox_text">
-                <p style=" margin: 15px; text-align: left;">"I'm telling you I know what I saw! <br> There's a monster in the woods and it ATE ALex!!"</p>
+                <p style=" margin: 15px; text-align: left;">"I'm telling you I know what I saw! <br> There's a monster in the woods and it ATE Alex!!"</p>
               </div>
           </div>
         </div>
@@ -205,8 +233,9 @@ function doYouSupport() {
         <p>Counselor Cody leaves, and everyone seems to sigh in relief. You notice that Zach is staying quiet and he looks incredibly frustrated.</p>
 
         <p>You turn to him and say:</p>
-        <button class="choiceButton" onclick="friendAlertFN()">"I believe Zach, Alex wasn't sick at all last night."</button>
-        <button class="choiceButton" onclick="dismissZach()">"Hey, isn't this better than there being a monster?"</button>   
+        <button class="fitContentChoiceButton" onclick="friendAlertFN()">"I believe Zach, Alex wasn't sick at all last night."</button>
+        <br><br>
+        <button class="fitContentChoiceButton" onclick="dismissZach()">"Hey, isn't this better than there being a monster?"</button>   
         <br>
         <br>
         <div class ="friendAlert" >
