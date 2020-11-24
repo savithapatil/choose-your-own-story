@@ -1,6 +1,7 @@
 <html>
     <head>
         <link href="day.css" type="text/css" rel="stylesheet"/>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
         <script src = node_modules/jquery/dist/jquery.js></script>
         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
@@ -12,11 +13,7 @@
     </head>
     <body onload = "setupAchievment()">
         <div class>
-
-   
-       
             <div id = "achievementDiv">
-            <button class = "refreshachievements" > Go back to Game</button>
             <P> What Days Have You Completed? </P>
             <!--
                 Show the pictures, make them grey if not obtained, colored if otherwise
@@ -39,6 +36,7 @@
                 var score = 0;
                 $("span").append(score); 
             </script>
+            <a href="day4.html" class="center">Go to Day 4</a>
          </div>
 
          <script>
@@ -107,7 +105,6 @@
                     var alex_points = 0;
                     if (befriend_alex) {
                         document.getElementById("befriend_alex").className = "";
-                        console.log("Made it here too");
                          //$("span").replaceWith(newscore);
                          alex_points = 100;
                     }
@@ -161,11 +158,10 @@
                         zach_points = 100;
                          //$("span").replaceWith(score);
                     }         
-                    console.log("alex:" + day3points);
                     newscore = (day1points + day2points + day3points + day4points + 
                     alex_points + zach_points + theo_points + katie_points +
                      gabby_points + ella_points + benjy_points);
-                    console.log("Newscore at end is: "+ newscore);        
+                  
                     $("span").replaceWith(newscore);                
                 });                
                 

@@ -127,7 +127,7 @@ function othersAreDoubtful() {
       <div id="replacementDiv" class="center">
       
         <div class="wrapper">
-          <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/snobby_character/Snobby_Speaking.png" alt="Ella" >
+          <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/snobby_character/Snobby_Speaking.png" alt="" >
 
           <div class="textbox_border" style="background: rgb(217, 173, 54);">
             <span  class="nametag" style="background: rgb(217, 173, 54);">ELLA:</span> 
@@ -211,6 +211,12 @@ function doYouSupport() {
         <br>
         <div class ="friendAlert" >
           <p>Congratulations! You've befriended Zach!</p>
+          <script>
+
+        updateachievements('befriend_zach');
+ 
+        </script>
+
           <button class="nextButton" onclick="believeZach()">"Next"</button>
         </div>
   
@@ -454,5 +460,5 @@ getName();
 
 function next() {
   updateachievements('day2')
-  window.href.location = "achievements.html"
+  window.href.location = "achievements2.html"
 }

@@ -688,7 +688,7 @@ function alexIsDead() {
 
 function next() {
   updateachievements('day1')
-  window.href.location = "achievements.html"
+  window.href.location = "achievements1.html"
 }
 
 

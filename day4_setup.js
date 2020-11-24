@@ -848,3 +848,8 @@ function gabbyFind(){
 
               }
               }
+
+              function next() {
+                updateachievements('day4')
+                window.href.location = "achievements4.html"
+              }
