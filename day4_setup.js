@@ -14,7 +14,7 @@ function next0() {
   <div class="wrapper">
   <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/snobby_character/Snobby_Speaking.png" alt="Ella">
   <div class="textbox_border" style="background: rgb(217, 173, 54);">
-    <span  class="nametag" style="background: rgb(217, 173, 54);">Ella</span> 
+    <span  class="nametag" style="background: rgb(217, 173, 54);">ELLA:</span> 
       <div  class="textbox_text">
         <p style=" margin: 15px; text-align: left;">"This whole place is terrible, I want to go home." (turns to Zach) "Let’s steal our phones back. My Butler will come get us if I can call home."</p>
       </div>
@@ -24,14 +24,14 @@ function next0() {
 <div class="wrapper">
   <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="bad annoyed">
   <div class="textbox_border" style="background: rgb(25, 58, 148);">
-    <span  class="nametag" style="background: rgb(25, 58, 148);">Zach</span> 
+    <span  class="nametag" style="background: rgb(25, 58, 148);">ZACH:</span> 
       <div  class="textbox_text">
         <p style=" margin: 15px; text-align: left;">"My time has come."</p>
       </div>
   </div>
 </div>
 
-<p>As a group they decide  the phones are probably in the counselor's cabin.</p>
+<p>As a group you decide the phones are probably in the counselor's cabin.</p>
 
 
               <!-- is there a group image for when they decided as a group? -->
@@ -67,7 +67,7 @@ const $replacementDiv = $("#replacementDiv");
         <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="bad annoyed">
         <div class="textbox_border" style="background: rgb(25, 58, 148);">
-          <span  class="nametag" style="background: rgb(25, 58, 148);">Zach</span> 
+          <span  class="nametag" style="background: rgb(25, 58, 148);">ZACH:</span> 
             <div  class="textbox_text">
               <p style=" margin: 15px; text-align: left;">"Check it out. I found Jody's journal while looking for our phones."</p>
             </div>
@@ -78,9 +78,9 @@ const $replacementDiv = $("#replacementDiv");
 
 
       <div class="wrapper">
-      <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Outdoor_camper/Outdoorsy_camper_Speaking.png" alt="theo">
+      <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Outdoor_camper/Outdoorsy_camper_worried.png" alt="theo">
       <div class="textbox_border" style="background: rgb(130, 103, 72);">
-        <span  class="nametag" style="background: rgb(130, 103, 72);">Theo</span> 
+        <span  class="nametag" style="background: rgb(130, 103, 72);">THEO:</span> 
           <div  class="textbox_text">
             <p style=" margin: 15px; text-align: left;">"I don't like how this sounds. I'm calling home."</p>
           </div>
@@ -111,9 +111,9 @@ $replacementDiv.replaceWith(`
   <div id="replacementDiv" class="center">
 
     <div class="wrapper">
-    <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/snobby_character/Snobby_Speaking.png" alt="Ella">
+    <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/snobby_character/Snobby_speaking.png" alt="Ella">
     <div class="textbox_border" style="background: rgb(217, 173, 54);">
-      <span  class="nametag" style="background: rgb(217, 173, 54);">Ella</span> 
+      <span  class="nametag" style="background: rgb(217, 173, 54);">ELLA:</span> 
         <div  class="textbox_text">
           <p style=" margin: 15px; text-align: left;">No way! My calls aren't going through."</p>
         </div>
@@ -123,9 +123,9 @@ $replacementDiv.replaceWith(`
   
 
   <div class="wrapper">
-  <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="katie speaking">
+  <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_serious.png" alt="katie speaking">
   <div class="textbox_border" style="background: rgb(184, 69, 31);">
-    <span  class="nametag" style="background: rgb(184, 69, 31);">Katie</span> 
+    <span  class="nametag" style="background: rgb(184, 69, 31);">KATIE:</span> 
       <div  class="textbox_text">
         <p style=" margin: 15px; text-align: left;">"Same here."</p>
       </div>
@@ -159,9 +159,9 @@ function jodNext1(){
   
 
 <div class="wrapper">
-  <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="Benjy">
+  <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Worried.png" alt="Benjy">
   <div class="textbox_border" style="background: rgb(186, 123, 114);">
-    <span  class="nametag" style="background: rgb(186, 123, 114);">Benjy</span> 
+    <span  class="nametag" style="background: rgb(186, 123, 114);">BENJY:</span> 
       <div  class="textbox_text">
         <p style=" margin: 15px; text-align: left;">"Oh no!"</p>
       </div>
@@ -170,7 +170,7 @@ function jodNext1(){
 
 
   <div class="wrapper">
-  <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/smart_character/Smart_Camper_Speaking.png" alt="smart kid">
+  <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/smart_character/Smart_Camper_worried.png" alt="smart kid">
   <div class="textbox_border" style="background: rgb(93, 55, 125);">
   <span  class="nametag" style="background: rgb(93, 55, 125);">Gabby</span> 
       <div  class="textbox_text">
@@ -181,7 +181,7 @@ function jodNext1(){
 <br>
 
 <div class="wrapper">
-<img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Outdoor_camper/Outdoorsy_camper_Speaking.png" alt="theo">
+<img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Outdoor_camper/Outdoorsy_camper_worried.png" alt="theo">
 <div class="textbox_border" style="background: rgb(130, 103, 72);">
 <span  class="nametag" style="background: rgb(130, 103, 72);">Theo</span> 
   <div  class="textbox_text">
@@ -222,7 +222,7 @@ function jodNext2(){
   </script>
   
 <div class="wrapper">
-          <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
+          <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
 
           <div class="textbox_border" style="background: rgb(49, 151, 121);">
             <span  class="nametag" style="background: rgb(49, 151, 121);"></span> 
@@ -235,9 +235,9 @@ function jodNext2(){
 
 
       <div class="wrapper">
-      <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/smart_character/Smart_Camper_Speaking.png" alt="smart kid">
+      <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/smart_character/Smart_Camper_worried.png" alt="smart kid">
       <div class="textbox_border" style="background: rgb(93, 55, 125);">
-      <span  class="nametag" style="background: rgb(93, 55, 125);">Gabby</span> 
+      <span  class="nametag" style="background: rgb(93, 55, 125);">GABBY:</span> 
           <div  class="textbox_text">
           <p style=" margin: 15px; text-align: left;">"Either way, lets destroy any strange statues we run into."</p>
         </div>
@@ -277,7 +277,7 @@ function jodNext2(){
               <div class="wrapper">
               <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="bad annoyed">
               <div class="textbox_border" style="background: rgb(25, 58, 148);">
-                <span  class="nametag" style="background: rgb(25, 58, 148);">Zach</span> 
+                <span  class="nametag" style="background: rgb(25, 58, 148);">ZACH:</span> 
                   <div  class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"I found our phones... and Cody's journal. We have to get out of here. Now!"</p>
                   </div>
@@ -288,9 +288,9 @@ function jodNext2(){
       
       
             <div class="wrapper">
-            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Outdoor_camper/Outdoorsy_camper_Speaking.png" alt="theo">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Outdoor_camper/Outdoorsy_camper_worried.png" alt="theo">
             <div class="textbox_border" style="background: rgb(130, 103, 72);">
-              <span  class="nametag" style="background: rgb(130, 103, 72);">Theo</span> 
+              <span  class="nametag" style="background: rgb(130, 103, 72);">THEO:</span> 
                 <div  class="textbox_text">
                   <p style=" margin: 15px; text-align: left;">"This is freaking me out!"</p>
                 </div>
@@ -314,7 +314,7 @@ function jodNext2(){
           <div class="wrapper">
           <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/snobby_character/Snobby_Speaking.png" alt="Ella">
           <div class="textbox_border" style="background: rgb(217, 173, 54);">
-            <span  class="nametag" style="background: rgb(217, 173, 54);">Ella</span> 
+            <span  class="nametag" style="background: rgb(217, 173, 54);">ELLA:</span> 
               <div  class="textbox_text">
                 <p style=" margin: 15px; text-align: left;">"My calls won't go through. What's going on? " </p>
               </div>
@@ -323,9 +323,9 @@ function jodNext2(){
       
       
         <div class="wrapper">
-        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="katie speaking">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_serious.png" alt="katie speaking">
         <div class="textbox_border" style="background: rgb(184, 69, 31);">
-          <span  class="nametag" style="background: rgb(184, 69, 31);">Katie</span> 
+          <span  class="nametag" style="background: rgb(184, 69, 31);">KATIE:</span> 
             <div  class="textbox_text">
               <p style=" margin: 15px; text-align: left;">"I can't get mine to work either."</p>
             </div>
@@ -350,9 +350,9 @@ function codyNext1(){
   
       
       <div class="wrapper">
-        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="Benjy">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Worried.png" alt="Benjy">
         <div class="textbox_border" style="background: rgb(186, 123, 114);">
-          <span  class="nametag" style="background: rgb(186, 123, 114);">Benjy</span> 
+          <span  class="nametag" style="background: rgb(186, 123, 114);">BENJY:</span> 
             <div  class="textbox_text">
               <p style=" margin: 15px; text-align: left;">"We're stuck here!"</p>
             </div>
@@ -361,9 +361,9 @@ function codyNext1(){
       
       
         <div class="wrapper">
-        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/smart_character/Smart_Camper_Speaking.png" alt="smart kid">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/smart_character/Smart_Camper_worried.png" alt="smart kid">
         <div class="textbox_border" style="background: rgb(93, 55, 125);">
-        <span  class="nametag" style="background: rgb(93, 55, 125);">Gabby</span> 
+        <span  class="nametag" style="background: rgb(93, 55, 125);">GABBY:</span> 
             <div  class="textbox_text">
             <p style=" margin: 15px; text-align: left;">"There must be really bad reception up here. We have to go find a landline."</p>
           </div>
@@ -372,9 +372,9 @@ function codyNext1(){
       <br>
       
       <div class="wrapper">
-      <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Outdoor_camper/Outdoorsy_camper_Speaking.png" alt="theo">
+      <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Outdoor_camper/Outdoorsy_camper_worried.png" alt="theo">
       <div class="textbox_border" style="background: rgb(130, 103, 72);">
-      <span  class="nametag" style="background: rgb(130, 103, 72);">Theo</span> 
+      <span  class="nametag" style="background: rgb(130, 103, 72);">THEO:</span> 
         <div  class="textbox_text">
           <p style=" margin: 15px; text-align: left;">"We have to tell Jody about Cody's journal. She could help."</p>
         </div>
@@ -420,9 +420,9 @@ function codyNext2(){
       
       
             <div class="wrapper">
-            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/smart_character/Smart_Camper_Speaking.png" alt="smart kid">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/smart_character/Smart_Camper_worried.png" alt="smart kid">
             <div class="textbox_border" style="background: rgb(93, 55, 125);">
-            <span  class="nametag" style="background: rgb(93, 55, 125);">Gabby</span> 
+            <span  class="nametag" style="background: rgb(93, 55, 125);">GABBY:</span> 
                 <div  class="textbox_text">
                 <p style=" margin: 15px; text-align: left;">"Lets destroy any strange statues we run into."</p>
               </div>
@@ -453,9 +453,9 @@ function gabbyFind(){
   <br>
 
   <div class="wrapper">
-  <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="katie speaking">
+  <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_serious.png" alt="katie speaking">
   <div class="textbox_border" style="background: rgb(184, 69, 31);">
-    <span  class="nametag" style="background: rgb(184, 69, 31);">Katie</span> 
+    <span  class="nametag" style="background: rgb(184, 69, 31);">KATIE:</span> 
       <div  class="textbox_text">
         <p style=" margin: 15px; text-align: left;">"I think someone should come confront Cody with me. "</p>
       </div>
@@ -464,9 +464,9 @@ function gabbyFind(){
 
 
 <div class="wrapper">
-<img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="Benjy">
+<img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Worried.png" alt="Benjy">
 <div class="textbox_border" style="background: rgb(186, 123, 114);">
-  <span  class="nametag" style="background: rgb(186, 123, 114);">Benjy</span> 
+  <span  class="nametag" style="background: rgb(186, 123, 114);">BENJY:</span> 
     <div  class="textbox_text">
       <p style=" margin: 15px; text-align: left;">"I'm not going. Cody is bad news."</p>
     </div>
@@ -477,7 +477,7 @@ function gabbyFind(){
 <div class="wrapper">
 <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="bad annoyed">
 <div class="textbox_border" style="background: rgb(25, 58, 148);">
-  <span  class="nametag" style="background: rgb(25, 58, 148);">Zach</span> 
+  <span  class="nametag" style="background: rgb(25, 58, 148);">ZACH:</span> 
     <div  class="textbox_text">
       <p style=" margin: 15px; text-align: left;">"I'll go. We need one more person... Hey you! You're coming with us."</p>
     </div>
@@ -507,9 +507,9 @@ function gabbyFind(){
     <br>
   
     <div class="wrapper">
-    <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="katie speaking">
+    <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_serious.png" alt="katie speaking">
     <div class="textbox_border" style="background: rgb(184, 69, 31);">
-      <span  class="nametag" style="background: rgb(184, 69, 31);">Katie</span> 
+      <span  class="nametag" style="background: rgb(184, 69, 31);">KATIE:</span> 
         <div  class="textbox_text">
           <p style=" margin: 15px; text-align: left;">"I think someone should come confront Cody with me. "</p>
         </div>
@@ -518,9 +518,9 @@ function gabbyFind(){
   
   
   <div class="wrapper">
-  <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="Benjy">
+  <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_worried.png" alt="Benjy">
   <div class="textbox_border" style="background: rgb(186, 123, 114);">
-    <span  class="nametag" style="background: rgb(186, 123, 114);">Benjy</span> 
+    <span  class="nametag" style="background: rgb(186, 123, 114);">BENJY:</span> 
       <div  class="textbox_text">
         <p style=" margin: 15px; text-align: left;">"I'm not going. Cody is bad news."</p>
       </div>
@@ -531,7 +531,7 @@ function gabbyFind(){
   <div class="wrapper">
   <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="bad annoyed">
   <div class="textbox_border" style="background: rgb(25, 58, 148);">
-    <span  class="nametag" style="background: rgb(25, 58, 148);">Zach</span> 
+    <span  class="nametag" style="background: rgb(25, 58, 148);">ZACH:</span> 
       <div  class="textbox_text">
         <p style=" margin: 15px; text-align: left;">"I'll go. We need one more person... Hey you! You're coming with us."</p>
       </div>
@@ -579,7 +579,7 @@ function gabbyFind(){
     <div class="wrapper">
     <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/snobby_character/Snobby_mad.png" alt="Ella">
     <div class="textbox_border" style="background: rgb(217, 173, 54);">
-      <span  class="nametag" style="background: rgb(217, 173, 54);">Ella</span> 
+      <span  class="nametag" style="background: rgb(217, 173, 54);">ELLA:</span> 
         <div  class="textbox_text">
           <p style=" margin: 15px; text-align: left;">"Help me! I'm tied up!"</p>
         </div>
@@ -626,9 +626,9 @@ function gabbyFind(){
       <br>
     
       <div class="wrapper">
-      <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="katie speaking">
+      <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Worried.png" alt="katie speaking">
       <div class="textbox_border" style="background: rgb(184, 69, 31);">
-        <span  class="nametag" style="background: rgb(184, 69, 31);">Katie</span> 
+        <span  class="nametag" style="background: rgb(184, 69, 31);">KATIE:</span> 
           <div  class="textbox_text">
             <p style=" margin: 15px; text-align: left;">"Statues... what should we do?"</p>
           </div>
@@ -639,7 +639,7 @@ function gabbyFind(){
     <div class="wrapper">
 <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="bad annoyed">
 <div class="textbox_border" style="background: rgb(25, 58, 148);">
-  <span  class="nametag" style="background: rgb(25, 58, 148);">Zach</span> 
+  <span  class="nametag" style="background: rgb(25, 58, 148);">ZACH:</span> 
     <div  class="textbox_text">
       <p style=" margin: 15px; text-align: left;">"Pipe down. Someone is coming."</p>
     </div>
@@ -690,9 +690,9 @@ function gabbyFind(){
         </div>
    
         <div class="wrapper">
-        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="katie speaking">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_serious.png" alt="katie speaking">
         <div class="textbox_border" style="background: rgb(184, 69, 31);">
-          <span  class="nametag" style="background: rgb(184, 69, 31);">Katie</span> 
+          <span  class="nametag" style="background: rgb(184, 69, 31);">KATIE:</span> 
             <div  class="textbox_text">
               <p style=" margin: 15px; text-align: left;">"We have to do something!!"</p>
             </div>
@@ -700,7 +700,7 @@ function gabbyFind(){
       </div>
   
 
-      <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
+      <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
 
       <div class="textbox_border" style="background: rgb(49, 151, 121);">
         <span  class="nametag" style="background: rgb(49, 151, 121);"></span> 

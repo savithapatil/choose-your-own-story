@@ -199,6 +199,17 @@ function next3() {
         </div>
       </div>
 
+      <div class="wrapper">
+        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Female_counselor/Jodie_Speaking.png">
+        <div class="textbox_border" style="background: rgb(146, 146, 146);">
+          <span  class="nametag" style="background: rgb(146, 146, 146);">JODY:</span> 
+            <div  class="textbox_text">
+              <p style=" margin: 15px; text-align: left;">"Now let's go around and have everyone introduce themselves"</p>
+            </div>
+        </div>
+      </div>
+
+
 
 
       <br>
@@ -344,7 +355,7 @@ function getName() {
 getName();
 </script>
   <div id="replacementDiv" class="center">      
-
+        <br>
         <p>At dinner you see Zach is reading a comic book. It looks familiar...</p>
 
         <div class="wrapper">

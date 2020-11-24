@@ -175,6 +175,7 @@ function next3() {
         </div>
 
         <p>Gabby walks over.</p>
+        
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/smart_character/Smart_Camper_worried.png" alt="Gabby">
             <div class="textbox_border" style="background: rgb(93, 55, 125);">
