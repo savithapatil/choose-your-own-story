@@ -70,12 +70,22 @@ function friendAlertFN() {
     const $replacementDiv = $("#replacementDiv");
     $replacementDiv.replaceWith(`
       <div id="replacementDiv" class="center">
+
+      <script>
+      function getName() {
+          playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+              $("span:first").prepend(data.val().name + ":");
+      
+           });
+          }
+      getName();
+      </script>
       
         <div class="wrapper">
           <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
 
           <div class="textbox_border" style="background: rgb(49, 151, 121);">
-            <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+            <span  class="nametag" style="background: rgb(49, 151, 121);"> </span> 
               <div  class="textbox_text">
                 <p style=" margin: 15px; text-align: left;">"I can't believe that Alex is gone... What happened last night?"</p>
               </div>
@@ -216,6 +226,15 @@ function believeZach() {
     $replacementDiv.replaceWith(`
       <div id="replacementDiv" class="center">
 
+      <script>
+      function getName() {
+          playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+              $("span:odd").prepend(data.val().name + ":");
+      
+           });
+          }
+      getName();
+      </script>
       <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Surprised.png" alt="zach surprised">
 
@@ -232,7 +251,7 @@ function believeZach() {
           <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
 
           <div class="textbox_border" style="background: rgb(49, 151, 121);">
-            <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+            <span  class="nametag" style="background: rgb(49, 151, 121);"></span> 
               <div  class="textbox_text">
                 <p style=" margin: 15px; text-align: left;">"You don't look like you're lying."</p>
               </div>
@@ -344,6 +363,16 @@ function strangeGoo() {
     $replacementDiv.replaceWith(`
       <div id="replacementDiv" class="center">
 
+      <script>
+      function getName() {
+          playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+              $("span:odd").prepend(data.val().name + ":");
+      
+           });
+          }
+      getName();
+      </script>
+
       <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="MC mom">
 
@@ -362,7 +391,7 @@ function strangeGoo() {
           <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC mom">
 
           <div class="textbox_border" style="background: rgb(49, 151, 121);">
-            <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+            <span  class="nametag" style="background: rgb(49, 151, 121);"></span> 
               <div  class="textbox_text">
                 <p style=" margin: 15px; text-align: left;">"I don't know if that's monster goo but I really don't think you should be touching it."</p>
               </div>
@@ -397,11 +426,21 @@ function wellSomethingsInTheWoods() {
   $replacementDiv.replaceWith(`
     <div id="replacementDiv" class="center">
 
+    <script>
+function getName() {
+    playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+        $("span:first").prepend(data.val().name + ":");
+
+     });
+    }
+getName();
+</script> 
+
       <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
 
         <div class="textbox_border" style="background: rgb(49, 151, 121);">
-          <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+          <span  class="nametag" style="background: rgb(49, 151, 121);"></span> 
             <div  class="textbox_text">
               <p style=" margin: 15px; text-align: left;">"I don't know if it's a monster but there's definitely something in the woods."</p>
             </div>
