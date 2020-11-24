@@ -451,3 +451,8 @@ getName();
   `);
   return;
 }
+
+function next() {
+  updateachievements('day2')
+  window.href.location = "achievements.html"
+}

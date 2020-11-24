@@ -215,3 +215,11 @@ p, h1, span {
     display:none;
     background-color: rgb(255, 255, 214);
 }
+
+.grey {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+     -ms-filter: grayscale(100%);
+         filter: grayscale(100%); 
+}

@@ -12,7 +12,10 @@ function friendAlertAlex() {
   $('#AlexChoiceLabel').hide();
   $('#AlexChoice1').hide();
   $('#AlexChoice2').hide();
-  $('#friendAlertAlex').slideToggle("slow"); 
+  $('#friendAlertAlex').slideToggle("slow");
+    updateachievements('befriend_alex');
+ 
+ 
 }
 
 ///global variablel for points
@@ -670,6 +673,11 @@ function alexIsDead() {
     </div>
   `);
   
+}
+
+function next() {
+  updateachievements('day1')
+  window.href.location = "achievements.html"
 }
 
 

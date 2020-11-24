@@ -2,9 +2,6 @@ var uid;
 authentication.onAuthStateChanged(user => {
     if(user != null){
         uid = user.uid
-        console.log(user);
-        console.log("this is: " + uid);
-        updateachievements('day3');
     }
 })
 

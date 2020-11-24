@@ -7,6 +7,19 @@ function goToDiningHall() {
     `);
     const $replacementDiv = $("#replacementDiv");
     $replacementDiv.replaceWith(`
+
+    <script>
+  
+    function getName() {
+      playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+          
+          $("#user").prepend(data.val().name + ":");
+  
+       });
+      }
+  getName();
+  </script> 
+
     <div id="replacementDiv" class="center">
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_serious.png" alt="Cady">
@@ -21,7 +34,7 @@ function goToDiningHall() {
         <div class="wrapper">
           <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
           <div class="textbox_border" style="background: rgb(49, 151, 121);">
-            <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+            <span  id = "user" class="nametag" style="background: rgb(49, 151, 121);"></span> 
               <div  class="textbox_text">
                 <p style=" margin: 15px; text-align: left;">"How's she doing?!"</p>
               </div>
@@ -685,3 +698,8 @@ function hideButton(elt_id) {
     let id = '#' + elt_id
     $(id).hide();
 }
+
+function endOfDay3() {
+    updateachievements('day3')
+    window.href.location = "achievements.html"
+  }

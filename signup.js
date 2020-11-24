@@ -36,7 +36,7 @@ signupform.addEventListener('submit', (e) => {
      savedata(name, email, 1);
 
         //go to day 1 to start game
-       window.location.href = "day1.html";
+       window.location.href = "intro.html";
    });
 });
 
@@ -71,5 +71,6 @@ function savedata(name, email, UID) {
         befriend_gabby: false,
         befriend_theo: false,
         befriend_zach: false,
+        
     })
 }
