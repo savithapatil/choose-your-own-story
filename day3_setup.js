@@ -343,6 +343,7 @@ function friendAlertCady() {
 function dismissCadyAlert() {
     $('#friendAlertCady').hide();
     arriveAtWoods();
+    updateachievements('befriend_Cady');
 }
 
 
