@@ -40,27 +40,25 @@ function listenToRadio() {
 
   $replacementDiv.replaceWith(`    
   <div id="replacementDiv" class="center">
-
-      <div class="wrapper">
-        <img style="width: 18%; float:left;" src="Pictures/Objects/car radio.png" alt="radio">
-        <div class="textbox_border" style="background: rgb(131, 43, 37);">
-          <span  class="nametag" style="background: rgb(131, 43, 37);">RADIO:</span> 
-            <div  class="textbox_text">
-              <p style="margin: 15px; text-align: left;">"Static-y jazz music plays"</p>
-            </div>
+    <div class="wrapper">
+      <img style="width: 18%; float:left;" src="Pictures/Objects/car radio.png" alt="radio">
+      <div class="textbox_border" style="background: rgb(131, 43, 37);">
+        <span class="nametag" style="background: rgb(131, 43, 37);">RADIO:</span> 
+        <div class="textbox_text">
+          <p style="margin: 15px; text-align: left;">*Static-y jazz music plays*</p>
         </div>
       </div>
-
+    </div>
     
-      <div class="wrapper">
-        <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/MC_Mom.png" alt="MC mom">
-        <div class="textbox_border" style="background: rgb(49, 151, 121);">
-          <span  class="nametag" style="background: rgb(49, 151, 121);">MOM:</span> 
-            <div  class="textbox_text">
-              <p style=" margin: 15px; text-align: left;">"Hmm. I guess the reception is still bad up here. Oh, we've made it!"</p>
-            </div>
+    <div class="wrapper">
+      <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/MC_Mom.png" alt="MC mom">
+      <div class="textbox_border" style="background: rgb(49, 151, 121);">
+        <span class="nametag" style="background: rgb(49, 151, 121);">MOM:</span> 
+        <div class="textbox_text">
+          <p style=" margin: 15px; text-align: left;">"Hmm. I guess the reception is still bad up here. Oh, we've made it!"</p>
         </div>
       </div>
+    </div>
 
       <br>
       <button class="nextButton" onclick="getOutOfCar()">Get out of the car</button>
