@@ -3,23 +3,20 @@
 <head>
     <!-- <link rel="stylesheet" href="node_modules/bulma/css/bulma.css" /> -->
     <link href="style.css" type="text/css" rel="stylesheet"/>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>  
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>   
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 </head>
 <body>
     <img src="Pictures\Background\titlepage.png" alt="Camp Northway title page" width="800" height="600" class="center">
     <a href="login.html" class="center">Login</a>
     <p></p>
     <a href="signup.html" class="center">Sign Up</a>
-    <a href="girls_cabin.html" class="center">Go to girls_cabin</a>
-    <a href="decisionsDummy.html" class="center">Go to DecisionsDummy</a>
     <a href="intro.html" class="center">New game</a>
     <p></p>
-
-    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
-
     <script>
     // Your web app's Firebase configuration
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -36,6 +33,9 @@
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
+
+    const authentication = firebase.auth();
+    const database = firebase.firestore();
     </script>
 </body>
 
