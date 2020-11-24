@@ -1,6 +1,7 @@
 <html>
     <head>
         <link href="day.css" type="text/css" rel="stylesheet"/>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
         <script src = node_modules/jquery/dist/jquery.js></script>
         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
@@ -12,11 +13,7 @@
     </head>
     <body onload = "setupAchievment()">
         <div class>
-
-   
-       
             <div id = "achievementDiv">
-            <button class = "refreshachievements" > Go back to Game</button>
             <P> What Days Have You Completed? </P>
             <!--
                 Show the pictures, make them grey if not obtained, colored if otherwise
@@ -34,8 +31,12 @@
             <img id = "befriend_gabby" class = "grey" src = "Pictures/Achievements/befriend_gabby.png" width = "5%" alt = "befriended gabby">
             <img id = "befriend_katie" class = "grey" src = "Pictures/Achievements/befriend_Katie.png" width = "5%" alt = "befriended Katie">
             </div>
-
-            <H1> Total Score =  0 (For Now)</H1>
+            <h1> Total Score = <span> </span> </h1>
+            <script>
+                var score = 0;
+                $("span").append(score); 
+            </script>
+            <a href="day4.html" class="center">Go to Day 4</a>
          </div>
 
          <script>
@@ -70,61 +71,98 @@
             function setupAchievment(){
 
                 playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+                    var newscore = 0;
                     var day1
+                    var day1points = 0;
                     day1 = data.val().day1;
                     if (day1) {
                         document.getElementById("day1").className = "";
+                         day1points = 100;
                     }
                     var day2
                     day2 = data.val().day2;
+                    var day2points = 0;
                     if (day2) {
                         document.getElementById("day2").className = "";
+                        day2points = 100;
                     }   
                     var day3
                     day3 = data.val().day3;
+                    var day3points = 0;
                     if (day3) {
                         document.getElementById("day3").className = "";
+                         day3points = 100;
                     }
                     var day4
                     day4 = data.val().day4;
+                    var day4points = 0;
                     if (day4) {
                         document.getElementById("day4").className = "";
+                         day4points = 100;
                     }   
                     var befriend_alex
                     befriend_alex = data.val().befriend_alex;
+                    var alex_points = 0;
                     if (befriend_alex) {
                         document.getElementById("befriend_alex").className = "";
+                         //$("span").replaceWith(newscore);
+                         alex_points = 100;
                     }
                     var befriend_benjy;
                     befriend_benjy = data.val().befriend_benjy;
+                    var benjy_points = 0;
                     if (befriend_benjy) {
                         document.getElementById("befriend_benjy").className = "";
+                    
+                         //$("span").replaceWith(score);
+                         benjy_points = 100;
                     }   
                     var befriend_ella;
                     befriend_ella = data.val().befriend_ella
+                    var ella_points  = 0;
                     if (befriend_ella) {
                         document.getElementById("befriend_ella").className = "";
+                        
+                        // $("span").replaceWith(score);
+                        ella_points = 100;
                     }
                     var befriend_gabby
                     befriend_gabby = data.val().befriend_gabby;
+                    var gabby_points = 0;
                     if (befriend_gabby) {
                         document.getElementById("befriend_gabby").className = "";
+                       
+                        gabby_points = 100;
                     }    
                     var befriend_katie;
                     befriend_katie = data.val().befriend_katie;
+                    var katie_points = 0;
                     if (befriend_katie) {
                         document.getElementById("befriend_katie").className = "";
+                        
+                         katie_points = 100;
                     }   
                     var befriend_theo;
                     befriend_theo = data.val().befriend_theo
+                    var theo_points = 0;
                     if (befriend_theo) {
                         document.getElementById("befriend_theo").className = "";
+                         theo_points = 100;
+
                     }
                     var befriend_zach
                     befriend_zach = data.val().befriend_zach
+                    var zach_points = 0;
                     if (befriend_zach) {
                         document.getElementById("befriend_zach").className = "";
-                    }                                 
+                        zach_points = 100;
+                         //$("span").replaceWith(score);
+                    }         
+                    newscore = (day1points + day2points + day3points + day4points + 
+                    alex_points + zach_points + theo_points + katie_points +
+                     gabby_points + ella_points + benjy_points);
+                  
+                    $("span").replaceWith(newscore);                
                 });                
                 
             }

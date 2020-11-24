@@ -191,11 +191,21 @@ function next3() {
 
         <div id="friendAlertGabby">
             <p>Congratulations! You've befriended Gabby!</p>
+            <script>
+
+            updateachievements('befriend_gabby');
+     
+            </script>
             <button class="nextButton" onclick="goWithGabby()">Continue</button>
         </div>
 
         <div id="friendAlertTheo">
             <p>Congratulations! You've befriended Theo!</p>
+            <script>
+
+            updateachievements('befriend_theo');
+     
+            </script>
             <button class="nextButton" onclick="athleticKidAsks()">Continue</button>
         </div>
     </div>
@@ -258,6 +268,11 @@ function yesAthleticKid() {
     // Cady is there, and you need a chance to befriend her
     const $backgroundImgDiv = $("#backgroundImgDiv");
     $backgroundImgDiv.replaceWith(`
+    <script>
+
+    updateachievements('befriend_zach');
+
+    </script>
       <div id="backgroundImgDiv">
       </div> 
     `);
@@ -702,5 +717,5 @@ function hideButton(elt_id) {
 
 function endOfDay3() {
     updateachievements('day3')
-    window.href.location = "achievements.html"
+    window.href.location = "achievements3.html"
   }
