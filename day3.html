@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="day3.css" type="text/css" rel="stylesheet"/>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src = node_modules/jquery/dist/jquery.js></script>
+    </head>
+    <body>
+        <h1>Day 3</h1>
+        <div id="backgroundImgDiv">
+            <img src="Pictures\Background\Boys_Cabin_with_objects.png" alt="in the cabin, background img" width="35%" >
+        </div>
+        <div id="replacementDiv">
+            <p>You wake up thinking about the claw marks you saw last night... yikes!</p>
+            <button class="choiceButton" onclick="goToDiningHall()">Go to the dining hall</button>
+            <br><br>
+        </div>
+
+
+        <!-- The below code is hidden originally. It's part of the point and click section -->
+        <div id="bunnyIsClickedDiv">
+            <img src="Pictures/CharactersIMG/snobby_character/Snobby_mad.png" width="100%">
+            <p>"Hey, that's mine!<br>Don't touch it!"</p>
+            <button class="fitContentChoiceButton" onclick="bunnyResponse()">Respond</button>
+            <button class="fitContentChoiceButton" onclick="putBunnyDown()">Put it down</button>    
+        </div>
+
+        <div id="respondToElla">
+            <p>Choose what to say</p>
+            <button class="fitContentChoiceButton" onclick="friendAlertElla()">"It's so cute, I have one just like it!"</button>
+            <br><br>
+            <button class="fitContentChoiceButton" onclick="chill()">"Chillllll"</button>
+        </div>
+
+        <div id="friendAlertElla">
+            <p>Congratulations! You've befriended Ella!</p>
+            <button class="nextButton" onclick="dismissEllaAlert()">Dismiss</button>
+        </div>
+
+        <div id="friendAlertCady">
+            <p>Congratulations! You've befriended Cady!</p>
+            <button class="nextButton" onclick="dismissCadyAlert()">Next</button>
+        </div>
+
+
+
+        <div id="bookIsClickedDiv">
+            <img src="Pictures/CharactersIMG/smart_character/Smart_Camper_worried.png" width="100%">
+            <p>"Wait a second... It says here that bears aren't native to this area!<br>The claw marks must have been from something else!"</p>
+            <button class="fitContentChoiceButton" onclick="returnToDiningHall()">Go tell the others</button>
+            <br><br>
+            <button class="fitContentChoiceButton" onclick="keepInspecting()">Keep inspecting the room</button>
+            <br>
+        </div>
+
+      
+        <script src = day3_setup.js></script>
+    </body>
+</html>
