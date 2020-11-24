@@ -9,7 +9,7 @@ function goToDiningHall() {
     $replacementDiv.replaceWith(`
     <div id="replacementDiv" class="center">
         <div class="wrapper">
-            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="Cady">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_serious.png" alt="Cady">
             <div class="textbox_border" style="background: rgb(184, 69, 31);">
                 <span class="nametag" style="background: rgb(184, 69, 31);">Cady</span> 
                 <div class="textbox_text">
@@ -91,7 +91,7 @@ function next2() {
         </div>
         
         <div class="wrapper">
-            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="Cady">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_serious.png" alt="Cady">
             <div class="textbox_border" style="background: rgb(184, 69, 31);">
                 <span class="nametag" style="background: rgb(184, 69, 31);">Cady</span> 
                 <div class="textbox_text">
@@ -322,10 +322,10 @@ function arriveAtWoods() {
     const $replacementDiv = $("#replacementDiv");
     $replacementDiv.replaceWith(`
     <div id="replacementDiv" class="center">
-        <p>You have arrived at the woods.</p>
+        <p>You arrive at the woods.</p>
 
         <div class="wrapper">
-            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Outdoor_camper/Outdoorsy_camper_Speaking.png" alt="Theo">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Outdoor_camper/Outdoorsy_camper_worried.png" alt="Theo">
             <div class="textbox_border" style="background: rgb(130, 103, 72);">
                 <span class="nametag" style="background: rgb(130, 103, 72);">Theo</span> 
                 <div class="textbox_text">
@@ -335,7 +335,7 @@ function arriveAtWoods() {
         </div>
 
         <div class="wrapper">
-            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
             <div class="textbox_border" style="background: rgb(49, 151, 121);">
                 <span class="nametag" style="background: rgb(49, 151, 121);">YOU</span> 
                 <div class="textbox_text">
@@ -425,10 +425,10 @@ function returnToDiningHall() {
     const $replacementDiv = $("#replacementDiv");
     $replacementDiv.replaceWith(`
     <div id="replacementDiv" class="center">
-        <p>You guys are walking back to the dining hall... but something seems off...</p>
+        <p>You are walking back to the dining hall, but something seems off...</p>
 
         <div class="wrapper">
-            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
             <div class="textbox_border" style="background: rgb(49, 151, 121);">
                 <span class="nametag" style="background: rgb(49, 151, 121);">YOU</span> 
                 <div class="textbox_text">
@@ -456,7 +456,7 @@ function arriveAtDiningHall() {
         <p>When you arrive at the dining hall, everyone is crowded around the door, peering inside.</p>
 
         <div class="wrapper">
-            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="Benjy">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Worried.png" alt="Benjy">
             <div class="textbox_border" style="background: rgb(186, 123, 114);">
                 <span class="nametag" style="background: rgb(186, 123, 114);">Benjy</span> 
                 <div class="textbox_text">
@@ -466,7 +466,7 @@ function arriveAtDiningHall() {
         </div>
 
         <div class="wrapper">
-            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="Zach">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Scared.png" alt="Zach">
             <div class="textbox_border" style="background: rgb(25, 58, 148);">
                 <span  class="nametag" style="background: rgb(25, 58, 148);">Zach</span> 
                 <div  class="textbox_text">
@@ -533,7 +533,7 @@ function needCounselor() {
         </div>
 
         <div class="wrapper">
-            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="Benjy">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Worried.png" alt="Benjy">
             <div class="textbox_border" style="background: rgb(186, 123, 114);">
                 <span class="nametag" style="background: rgb(186, 123, 114);">Benjy</span> 
                 <div class="textbox_text">
@@ -570,7 +570,7 @@ function raccoon() {
         </div>
 
         <div class="wrapper">
-            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="Benjy">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Worried.png" alt="Benjy">
             <div class="textbox_border" style="background: rgb(186, 123, 114);">
                 <span class="nametag" style="background: rgb(186, 123, 114);">Benjy</span> 
                 <div class="textbox_text">
