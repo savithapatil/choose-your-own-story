@@ -1,3 +1,5 @@
+let outcome = false;
+
 function next0() {
 
 
@@ -12,7 +14,7 @@ function next0() {
   <div class="textbox_border" style="background: rgb(217, 173, 54);">
     <span  class="nametag" style="background: rgb(217, 173, 54);">Ella</span> 
       <div  class="textbox_text">
-        <p style=" margin: 15px; text-align: left;">"This whole place is terrible, I want to go home." (turns to bad kid) "Let’s steal our phones back. My Butler will come get us if I can call home."</p>
+        <p style=" margin: 15px; text-align: left;">"This whole place is terrible, I want to go home." (turns to Zach) "Let’s steal our phones back. My Butler will come get us if I can call home."</p>
       </div>
   </div>
 </div>
@@ -414,9 +416,15 @@ function codyNext2(){
             `); }
 
 
+function renderGabbyOutcome(){
+  return true;
+  
+}
+
 
 function gabbyFind(){
 
+  setOutcome = true;
 
   const $replacementDiv = $("#replacementDiv");
 
@@ -459,24 +467,68 @@ function gabbyFind(){
 </div>
 </div>
 
-<button class="choiceButton" onclick="lookCodyNext0()">Go look for Cody</button>
+<button class="nextButton" onclick="lookCodyNext0()">Go look for Cody</button>
 
   </div>
-  `); }
+  `
 
   
-function theoFind(){
+  ); }
 
-  const $replacementDiv = $("#replacementDiv");
+  
+  function rendertheoOutcome(){
 
-  $replacementDiv.replaceWith(`
+  return false;
+  }
+  function theoFind(){
 
-  <div id="replacementDiv" class="center">
+   setOutcome = false;
 
-  <p>I don't have anything written for if you choose theo yet </p>
-
+    const $replacementDiv = $("#replacementDiv");
+  
+    $replacementDiv.replaceWith(`
+  
+    <div id="replacementDiv" class="center">
+  
+    <p> Theo searches for a landline and Gabby searches for Jody</p>
+    <br>
+  
+    <div class="wrapper">
+    <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="katie speaking">
+    <div class="textbox_border" style="background: rgb(184, 69, 31);">
+      <span  class="nametag" style="background: rgb(184, 69, 31);">Katie</span> 
+        <div  class="textbox_text">
+          <p style=" margin: 15px; text-align: left;">"I think someone should come confront Cody with me. "</p>
+        </div>
+    </div>
   </div>
-  `); }
+  
+  
+  <div class="wrapper">
+  <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="Benjy">
+  <div class="textbox_border" style="background: rgb(186, 123, 114);">
+    <span  class="nametag" style="background: rgb(186, 123, 114);">Benjy</span> 
+      <div  class="textbox_text">
+        <p style=" margin: 15px; text-align: left;">"I'm not going. Cody is bad news."</p>
+      </div>
+  </div>
+  </div>
+  
+  
+  <div class="wrapper">
+  <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="bad annoyed">
+  <div class="textbox_border" style="background: rgb(25, 58, 148);">
+    <span  class="nametag" style="background: rgb(25, 58, 148);">Zach</span> 
+      <div  class="textbox_text">
+        <p style=" margin: 15px; text-align: left;">"I'll go. We need one more person... Hey you! You're coming with us."</p>
+      </div>
+  </div>
+  </div>
+  
+  <button class="nextButton" onclick="lookCodyNext0()">Go look for Cody</button>
+  
+    </div>
+    `); }
 //////////////////////////////////////////////////////////////////
   function lookCodyNext0(){
 
@@ -495,11 +547,36 @@ function theoFind(){
   
     <div id="replacementDiv" class="center">
   
-    <p>You, Katie, and Zach go searching into the woods.</p>
+    <p>Zach, Katie, and you hear screaming coming from the woods.</p>
   
     <br>
   
-    <button class="choiceButton" onclick="lookCodyNext1()">Next</button>
+
+    <div class="wrapper">
+    <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/snobby_character/Snobby_mad.png" alt="Ella">
+    <div class="textbox_border" style="background: rgb(217, 173, 54);">
+      <span  class="nametag" style="background: rgb(217, 173, 54);">Ella</span> 
+        <div  class="textbox_text">
+          <p style=" margin: 15px; text-align: left;">"Help me! I'm tied up!"</p>
+        </div>
+    </div>
+  </div>
+
+
+  
+<div class="wrapper">
+<img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
+
+<div class="textbox_border" style="background: rgb(49, 151, 121);">
+  <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+    <div  class="textbox_text">
+      <p style=" margin: 15px; text-align: left;">"Let's go!"</p>
+    </div>
+</div>
+</div>
+<br>
+
+    <button class="nextButton" onclick="lookCodyNext1()">Go to the woods</button>
 
     </div>
     `); }
@@ -521,7 +598,7 @@ function theoFind(){
     
       <div id="replacementDiv" class="center">
 
-      <p>You all run into a group of statues...</p>
+      <p>You all run into a group of statues in the middle of the woods...</p>
       <br>
     
       <div class="wrapper">
@@ -545,11 +622,11 @@ function theoFind(){
 </div>
 </div>
 
-<button class="choiceButton" onclick="monsterAppears()">Next</button>
+<button class="nextButton" onclick="codyAppears()">Next</button>
       </div>
       `); }
-////////////////////
-      function monsterAppears(){
+
+      function codyAppears(){
 
 
         const $backgroundImgDiv = $("#backgroundImgDiv");
@@ -566,10 +643,18 @@ function theoFind(){
       
         <div id="replacementDiv" class="center">
   
-        <p>You all run into a group of statues...</p>
+        <p>Cody appears</p>
         <br>
     
-  
+        <div class="wrapper">
+          <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Male_counselor/Cody_Speaking.png" alt="cody Speaking">
+          <div class="textbox_border" style="background: gray;">
+            <span  class="nametag" style="background: gray;">CODY:</span> 
+              <div  class="textbox_text">
+                <p style=" margin: 15px; text-align: left;">"You all will regret coming here! Zach is next!"</p>
+              </div>
+          </div>
+        </div>
    
         <div class="wrapper">
         <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="katie speaking">
@@ -590,14 +675,17 @@ function theoFind(){
             <p style=" margin: 15px; text-align: left;">"Maybe if we break a statue!"</p>
           </div>
       </div>
+
+      <button class="nextButton" onclick="pickStatue()">Next</button>
+      </div>
     </div>
   <br>
 
-  <button class="choiceButton" onclick="pickStatue()">Next</button>
-        </div>
+
         `); }
-
-
+////////////////////
+    
+///////////////////////
         function pickStatue(){
 
 
@@ -611,9 +699,120 @@ function theoFind(){
       
           const $replacementDiv = $("#replacementDiv");
         
-          $replacementDiv.replaceWith(`
+          $replacementDiv.replaceWith(` 
+          <div id="replacementDiv" class="center">
+  
         
          <p> Pick a statue for Katie to break! You only have time for one. </p>
+
+
+           
+         <button class="choiceButton" onclick="wrong()">Bear</button>
+         <button class="choiceButton" onclick="wrong()">Eagle</button> 
+           
+         <button class="choiceButton" onclick="pickLion()">Lion</button>
+         <button class="choiceButton" onclick="wrong()">Tiger</button> 
+
+         </div>
+
           `); }
   
+
+          function wrong(){
+            const $backgroundImgDiv = $("#backgroundImgDiv");
+            $backgroundImgDiv.replaceWith(`
+            <div id="backgroundImgDiv">
+            <img src="Pictures/Background/Zach_Is_Eaten.png" alt="weird Shrine" width="35%">
+          </div> 
+            `);
+          
+        
+            const $replacementDiv = $("#replacementDiv");
+          
+            $replacementDiv.replaceWith(`
+          
+            <div id="replacementDiv" class="center">
   
+           <p> The monster was unaffected by the broken statue and Zach is devoured.</p>
+  
+           <button class="nextButton" onclick="endScene()">Next</button>
+  </div>
+            `); }
+          
+  
+
+            function pickLion(){
+              const $backgroundImgDiv = $("#backgroundImgDiv");
+              $backgroundImgDiv.replaceWith(`
+              <div id="backgroundImgDiv">
+              <img src="Pictures/Background/monster.png" alt="weird Shrine" width="35%">
+            </div> 
+              `);
+            
+          
+              const $replacementDiv = $("#replacementDiv");
+            
+              $replacementDiv.replaceWith(`
+            
+              <div id="replacementDiv" class="center">
+             <p> The monster releases Zach and fades away!</p>
+    
+             <button class="nextButton" onclick="endScene()">Next</button>
+             </div>
+              `); 
+            }
+
+
+   function endScene(){
+     console.log("endscene")
+                console.log(setOutcome);
+                if(setOutcome){
+                const $backgroundImgDiv = $("#backgroundImgDiv");
+                $backgroundImgDiv.replaceWith(`
+                <div id="backgroundImgDiv">
+                <img src="Pictures/Background/monster.png" alt="weird Shrine" width="35%">
+              </div> 
+                `);
+              
+            
+                const $replacementDiv = $("#replacementDiv");
+              
+                $replacementDiv.replaceWith(`
+
+                <div id="replacementDiv" class="center">
+  
+              
+               <p> Gabby found the landline and called the police. Cody was arrested. </p>
+
+               </div>
+  
+                `);
+
+                }
+
+              else{
+
+                const $backgroundImgDiv = $("#backgroundImgDiv");
+                $backgroundImgDiv.replaceWith(`
+                <div id="backgroundImgDiv">
+                <img src="Pictures/Background/monster.png" alt="weird Shrine" width="35%">
+              </div> 
+                `);
+              
+            
+                const $replacementDiv = $("#replacementDiv");
+              
+                $replacementDiv.replaceWith(`
+
+                <div id="replacementDiv" class="center">
+  
+              
+               <p> Theo was unable to find the landline, nobody showed up to help. Cody escaped. </p>
+
+               </div>
+  
+                `);
+
+
+              }
+              }
