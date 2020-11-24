@@ -36,7 +36,7 @@ signupform.addEventListener('submit', (e) => {
      savedata(name, email, 1);
 
         //go to day 1 to start game
-       window.location.href = "login.html";
+       window.location.href = "day1.html";
    });
 });
 
