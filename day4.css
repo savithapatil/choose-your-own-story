@@ -14,7 +14,7 @@ body {
     
 }
 
-p, h1, span {
+p, h1, h3, span {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
