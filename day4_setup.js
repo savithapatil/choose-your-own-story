@@ -647,7 +647,7 @@ function gabbyFind(){
         <br>
     
         <div class="wrapper">
-          <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Male_counselor/Cody_Speaking.png" alt="cody Speaking">
+          <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Male_counselor/Cody_Yelling.png" alt="cody Speaking">
           <div class="textbox_border" style="background: gray;">
             <span  class="nametag" style="background: gray;">CODY:</span> 
               <div  class="textbox_text">
