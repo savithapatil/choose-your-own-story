@@ -78,6 +78,17 @@ function next1() {
 function next2() {
     const $replacementDiv = $("#replacementDiv");
     $replacementDiv.replaceWith(`
+    <script>
+  
+    function getName() {
+      playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+          
+          $("span:last").prepend(data.val().name + ":");
+  
+       });
+      }
+  getName();
+  </script> 
     <div id="replacementDiv" class="center">
         <p>As soon as Cody leaves, everyone starts whispering.</p>
         <div class="wrapper">
@@ -103,7 +114,7 @@ function next2() {
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
             <div class="textbox_border" style="background: rgb(49, 151, 121);">
-                <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+                <span  class="nametag" style="background: rgb(49, 151, 121);"> </span> 
                 <div  class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"I saw claw marks last night. Maybe a bear got her and the counselors don't want to freak us out!"</p>
                 </div>
@@ -118,11 +129,22 @@ function next2() {
 function next3() {
     const $replacementDiv = $("#replacementDiv");
     $replacementDiv.replaceWith(`
+    <script>
+  
+    function getName() {
+      playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+          
+          $("span:first").prepend(data.val().name + ":");
+  
+       });
+      }
+  getName();
+  </script> 
     <div id="replacementDiv" class="center">
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
             <div class="textbox_border" style="background: rgb(49, 151, 121);">
-                <span class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+                <span class="nametag" style="background: rgb(49, 151, 121);"> </span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"I think we should investigate the bears."</p>
                 </div>
@@ -241,11 +263,24 @@ function yesAthleticKid() {
 function talkToCady() {
     const $replacementDiv = $("#replacementDiv");
     $replacementDiv.replaceWith(`
+
+    <script>
+  
+    function getName() {
+      playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+          
+          $("span:first").prepend(data.val().name + ":");
+  
+       });
+      }
+  getName();
+  </script>
+
     <div id="replacementDiv" class="center">
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
             <div class="textbox_border" style="background: rgb(49, 151, 121);">
-                <span class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+                <span class="nametag" style="background: rgb(49, 151, 121);"></span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"So I heard you like sports. What's your favorite one to play?"</p>
                 </div>
@@ -292,13 +327,24 @@ function noAthleticKid() {
 
     const $replacementDiv = $("#replacementDiv");
     $replacementDiv.replaceWith(`
+    <script>
+  
+    function getName() {
+      playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+          
+          $("span:first").prepend(data.val().name + ":");
+  
+       });
+      }
+  getName();
+  </script>
     <div id="replacementDiv" class="center">
         <p>You and Theo start walking to the woods.</p>
 
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
             <div class="textbox_border" style="background: rgb(49, 151, 121);">
-                <span class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+                <span class="nametag" style="background: rgb(49, 151, 121);"></span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"We should probably be very quiet just in case there are bears around."</p>
                 </div>
@@ -321,6 +367,19 @@ function arriveAtWoods() {
 
     const $replacementDiv = $("#replacementDiv");
     $replacementDiv.replaceWith(`
+
+    <script>
+  
+    function getName() {
+      playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+          
+          $("span:last").prepend(data.val().name + ":");
+  
+       });
+      }
+  getName();
+  </script>
+
     <div id="replacementDiv" class="center">
         <p>You arrive at the woods.</p>
 
@@ -337,7 +396,7 @@ function arriveAtWoods() {
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
             <div class="textbox_border" style="background: rgb(49, 151, 121);">
-                <span class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+                <span class="nametag" style="background: rgb(49, 151, 121);"></span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"OK there are definitely bears here. Let's go back!"</p>
                 </div>
@@ -424,13 +483,24 @@ function returnToDiningHall() {
 
     const $replacementDiv = $("#replacementDiv");
     $replacementDiv.replaceWith(`
+    <script>
+  
+    function getName() {
+      playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+          
+          $("span:first").prepend(data.val().name + ":");
+  
+       });
+      }
+  getName();
+  </script>
     <div id="replacementDiv" class="center">
         <p>You are walking back to the dining hall, but something seems off...</p>
 
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
             <div class="textbox_border" style="background: rgb(49, 151, 121);">
-                <span class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+                <span class="nametag" style="background: rgb(49, 151, 121);"></span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"I feel like... I feel like we're being watched..."</p>
                 </div>

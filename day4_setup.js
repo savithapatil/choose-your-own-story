@@ -210,13 +210,22 @@ function jodNext2(){
   const $replacementDiv = $("#replacementDiv");
   $replacementDiv.replaceWith(`
     <div id="replacementDiv" class="center">
-
-
+<script>
+    function getName() {
+      playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+          
+          $("span:first").prepend(data.val().name + ":");
+  
+       });
+      }
+  getName();
+  </script>
+  
 <div class="wrapper">
           <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
 
           <div class="textbox_border" style="background: rgb(49, 151, 121);">
-            <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+            <span  class="nametag" style="background: rgb(49, 151, 121);"></span> 
               <div  class="textbox_text">
                 <p style=" margin: 15px; text-align: left;">"Let's split up. One of you should go look for a landline. The other should look for Jody. "</p>
               </div>
@@ -384,13 +393,24 @@ function codyNext2(){
   const $replacementDiv = $("#replacementDiv");
   $replacementDiv.replaceWith(`
     <div id="replacementDiv" class="center">
+
+   <script>  
+    function getName() {
+      playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+          
+          $("span:first").prepend(data.val().name + ":");
   
-      
+       });
+      }
+  getName();
+  </script>
+ 
+
       <div class="wrapper">
                 <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
       
                 <div class="textbox_border" style="background: rgb(49, 151, 121);">
-                  <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+                  <span  class="nametag" style="background: rgb(49, 151, 121);"></span> 
                     <div  class="textbox_text">
                       <p style=" margin: 15px; text-align: left;">"We need to get to the bottom of this. Fast. One of you should go look for a landline. The other should go find Jody."</p>
                     </div>
@@ -537,6 +557,17 @@ function gabbyFind(){
     const $replacementDiv = $("#replacementDiv");
   
     $replacementDiv.replaceWith(`
+    <script>
+  
+    function getName() {
+      playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+          
+          $("span:last").prepend(data.val().name + ":");
+  
+       });
+      }
+  getName();
+  </script>
   
     <div id="replacementDiv" class="center">
   
@@ -561,7 +592,7 @@ function gabbyFind(){
 <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
 
 <div class="textbox_border" style="background: rgb(49, 151, 121);">
-  <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+  <span  class="nametag" style="background: rgb(49, 151, 121);"></span> 
     <div  class="textbox_text">
       <p style=" margin: 15px; text-align: left;">"Let's go!"</p>
     </div>
@@ -633,7 +664,16 @@ function gabbyFind(){
         const $replacementDiv = $("#replacementDiv");
       
         $replacementDiv.replaceWith(`
+        <script>
+        function getName() {
+          playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+              
+              $("span:last").prepend(data.val().name + ":");
       
+           });
+          }
+      getName();
+      </script>
         <div id="replacementDiv" class="center">
   
         <p>Cody appears</p>
@@ -663,7 +703,7 @@ function gabbyFind(){
       <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
 
       <div class="textbox_border" style="background: rgb(49, 151, 121);">
-        <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
+        <span  class="nametag" style="background: rgb(49, 151, 121);"></span> 
           <div  class="textbox_text">
             <p style=" margin: 15px; text-align: left;">"Maybe if we break a statue!"</p>
           </div>
