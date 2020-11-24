@@ -10,6 +10,7 @@
         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+        
     </head>
     <body>
         <script>
@@ -30,17 +31,35 @@
         firebase.analytics();
 
         const authentication = firebase.auth();
-        const database = firebase.firestore();
+        const database = firebase.database();
+
+        authentication.onAuthStateChanged(user => {
+    if(user != null){
+        uid = user.uid
+        console.log("Your uid is:  " +user.uid);
+    }
+})
+
     </script>
     <script src = "retrievedata.js"></script>
+    <script src = "update.js"></script>
         <script>
+
             //Function to get name and add it to script
             function getName() {
     playersRef.orderByChild("email").equalTo(Cookies.get("Email")).on("child_added", function(data) {
+        
         $("p:first").prepend(data.val().name + ", ");
+
      });
     }
 getName();
+</script>
+<script>
+ 
+{
+    updateachievements('befriend_alex');
+ }
 </script>
     <div class = "container">
         <h1>Day 1</h1>

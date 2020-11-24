@@ -4,6 +4,12 @@ authentication.onAuthStateChanged(user => {
     console.log(user);
 })
 
+
+
+
+//const email = document.getElementById(email_value);
+//const password = ge
+
 //Signup code
 const signupform = document.querySelector('#signup-form');
 signupform.addEventListener('submit', (e) => {
@@ -15,9 +21,9 @@ signupform.addEventListener('submit', (e) => {
     const password = signupform['password_value'].value;
 
     // Get Name
-    name = signupform['name_value'].value;
+    var name = signupform['name_value'].value;
+
     Cookies.set('Email', email);
-    console.log("test " + Cookies.get('Email'));
    // Code to create account
    // authentication was initialized in signup.html.
    // We can use the authentication variable from
@@ -27,7 +33,7 @@ signupform.addEventListener('submit', (e) => {
        // First save data to database, only save name, and email in function
        // but add achievements directly in the function
         
-        savedata(name, email, 1);
+     savedata(name, email, 1);
 
         //go to day 1 to start game
        window.location.href = "login.html";
@@ -47,9 +53,12 @@ function getformvalue(id) {
 // If I can modify these values for achievements
 // then I've won
 function savedata(name, email, UID) {
-    var datatosave = user_info.push();
-    datatosave.set({
-        name: name,
+    // var datatosave = user_info.push();
+    // datatosave.set({
+  
+       // })
+    database.ref('/users' ).push({
+      name: name,
         email: email,
         day1: false,
         day2: false,
@@ -62,8 +71,6 @@ function savedata(name, email, UID) {
         befriend_gabby: false,
         befriend_theo: false,
         befriend_zach: false,
-        UID: UID,
-       
     })
 }
 
