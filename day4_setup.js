@@ -1,4 +1,6 @@
-let outcome = false;
+let stoppedCody = false;
+
+let killedMonster = false;
 
 function next0() {
 
@@ -29,7 +31,7 @@ function next0() {
   </div>
 </div>
 
-<p>As a group they decide  the phones are probably in the counselors cabin.</p>
+<p>As a group they decide  the phones are probably in the counselor's cabin.</p>
 
 
               <!-- is there a group image for when they decided as a group? -->
@@ -416,15 +418,10 @@ function codyNext2(){
             `); }
 
 
-function renderGabbyOutcome(){
-  return true;
-  
-}
-
 
 function gabbyFind(){
 
-  setOutcome = true;
+  stoppedCody = true;
 
   const $replacementDiv = $("#replacementDiv");
 
@@ -476,13 +473,9 @@ function gabbyFind(){
   ); }
 
   
-  function rendertheoOutcome(){
-
-  return false;
-  }
   function theoFind(){
 
-   setOutcome = false;
+   stoppedCody = false;
 
     const $replacementDiv = $("#replacementDiv");
   
@@ -764,9 +757,8 @@ function gabbyFind(){
 
 
    function endScene(){
-     console.log("endscene")
-                console.log(setOutcome);
-                if(setOutcome){
+   
+                if(stoppedCody){
                 const $backgroundImgDiv = $("#backgroundImgDiv");
                 $backgroundImgDiv.replaceWith(`
                 <div id="backgroundImgDiv">
