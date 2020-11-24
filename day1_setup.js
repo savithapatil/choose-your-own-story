@@ -1,3 +1,22 @@
+function loadDay1() {
+  const $backgroundImgDiv = $("#backgroundImgDiv");
+  $backgroundImgDiv.replaceWith(`
+    <div id="backgroundImgDiv">
+      <img src="Pictures/Background/Driving_Car.png" alt="car on road background image" width="35%" >
+    </div>
+  `);
+
+  const $replacementDiv = $("#replacementDiv");
+  $replacementDiv.replaceWith(`
+    <div id="replacementDiv">
+      <p>You are on the way to Camp Northway! Your mom is driving the car.</p>
+      <p>Choose what to do in the car:</p>
+      <button class="choiceButton" onclick="talkToYourMom()">Talk to your mom</button>
+      <button class="choiceButton" onclick="listenToRadio()">Listen to the radio</button>  
+    </div>
+  `);
+}
+
 function clicked() {
    $('.myDiv').slideToggle("slow"); 
   //  or .show
