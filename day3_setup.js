@@ -11,7 +11,7 @@ function goToDiningHall() {
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_serious.png" alt="Cady">
             <div class="textbox_border" style="background: rgb(184, 69, 31);">
-                <span class="nametag" style="background: rgb(184, 69, 31);">Cady</span> 
+                <span class="nametag" style="background: rgb(184, 69, 31);">KATIE:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"We have news. Benjy and I tried to go visit Alex in the infirmary."</p>
                 </div>
@@ -19,9 +19,9 @@ function goToDiningHall() {
         </div>
   
         <div class="wrapper">
-          <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
+          <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
           <div class="textbox_border" style="background: rgb(49, 151, 121);">
-            <span  class="nametag" style="background: rgb(49, 151, 121);">YOU</span> 
+            <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
               <div  class="textbox_text">
                 <p style=" margin: 15px; text-align: left;">"How's she doing?!"</p>
               </div>
@@ -29,9 +29,9 @@ function goToDiningHall() {
         </div>      
   
         <div class="wrapper">
-            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="Benjy">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Worried.png" alt="Benjy">
             <div class="textbox_border" style="background: rgb(186, 123, 114);">
-                <span class="nametag" style="background: rgb(186, 123, 114);">Benjy</span> 
+                <span class="nametag" style="background: rgb(186, 123, 114);">BENJY:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"She was nowhere to be found. We looked all over. She just wasn't there!"</p>
                 </div>
@@ -39,9 +39,9 @@ function goToDiningHall() {
         </div>
 
         <div class="wrapper">
-            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="Zach">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Irritated.png" alt="Zach">
             <div class="textbox_border" style="background: rgb(25, 58, 148);">
-                <span  class="nametag" style="background: rgb(25, 58, 148);">Zach</span> 
+                <span  class="nametag" style="background: rgb(25, 58, 148);">ZACH:</span> 
                 <div  class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"That's because she's dead."</p>
                 </div>
@@ -64,7 +64,7 @@ function next1() {
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Male_counselor/Cody_Speaking.png" alt="Cody">
             <div class="textbox_border" style="background: gray;">
-                <span class="nametag" style="background: gray;">Cody</span> 
+                <span class="nametag" style="background: gray;">CODY:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"Her mom came and got her this morning."</p>
                 </div>
@@ -81,9 +81,9 @@ function next2() {
     <div id="replacementDiv" class="center">
         <p>As soon as Cody leaves, everyone starts whispering.</p>
         <div class="wrapper">
-            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="Benjy">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Worried.png" alt="Benjy">
             <div class="textbox_border" style="background: rgb(186, 123, 114);">
-                <span class="nametag" style="background: rgb(186, 123, 114);">Benjy</span> 
+                <span class="nametag" style="background: rgb(186, 123, 114);">BENJY:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"She left this morning? We went to look for Alex before that! It was the middle of the night when we checked the infirmary!"</p>
                 </div>
@@ -91,9 +91,9 @@ function next2() {
         </div>
         
         <div class="wrapper">
-            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_serious.png" alt="Cady">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Worried.png" alt="Cady">
             <div class="textbox_border" style="background: rgb(184, 69, 31);">
-                <span class="nametag" style="background: rgb(184, 69, 31);">Cady</span> 
+                <span class="nametag" style="background: rgb(184, 69, 31);">KATIE:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"You're right! This doesn't add up."</p>
                 </div>
@@ -101,9 +101,9 @@ function next2() {
         </div>
 
         <div class="wrapper">
-            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
             <div class="textbox_border" style="background: rgb(49, 151, 121);">
-                <span  class="nametag" style="background: rgb(49, 151, 121);">YOU</span> 
+                <span  class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
                 <div  class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"I saw claw marks last night. Maybe a bear got her and the counselors don't want to freak us out!"</p>
                 </div>
@@ -120,9 +120,9 @@ function next3() {
     $replacementDiv.replaceWith(`
     <div id="replacementDiv" class="center">
         <div class="wrapper">
-            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
             <div class="textbox_border" style="background: rgb(49, 151, 121);">
-                <span class="nametag" style="background: rgb(49, 151, 121);">YOU</span> 
+                <span class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"I think we should investigate the bears."</p>
                 </div>
@@ -130,9 +130,9 @@ function next3() {
         </div>      
 
         <div class="wrapper">
-            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Outdoor_camper/Outdoorsy_camper_Speaking.png" alt="Theo">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Outdoor_camper/Outdoorsy_camper_worried.png" alt="Theo">
             <div class="textbox_border" style="background: rgb(130, 103, 72);">
-                <span class="nametag" style="background: rgb(130, 103, 72);">Theo</span> 
+                <span class="nametag" style="background: rgb(130, 103, 72);">THEO:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"I agree. Let's go check the woods for signs of a bear."</p>
                 </div>
@@ -141,9 +141,9 @@ function next3() {
 
         <p>Gabby walks over.</p>
         <div class="wrapper">
-            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/smart_character/Smart_Camper_Speaking.png" alt="Gabby">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/smart_character/Smart_Camper_worried.png" alt="Gabby">
             <div class="textbox_border" style="background: rgb(93, 55, 125);">
-                <span class="nametag" style="background: rgb(93, 55, 125);">Gabby</span> 
+                <span class="nametag" style="background: rgb(93, 55, 125);">GABBY:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"Did you say bears? I have a book on bears in my cabin. Maybe there's something useful in there."</p>
                 </div>
@@ -188,7 +188,7 @@ function athleticKidAsks() {
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="Cady">
             <div class="textbox_border" style="background: rgb(184, 69, 31);">
-                <span class="nametag" style="background: rgb(184, 69, 31);">Cady</span> 
+                <span class="nametag" style="background: rgb(184, 69, 31);">KATIE:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"Hey guys! Can I tag along?"</p>
                 </div>
@@ -231,7 +231,7 @@ function yesAthleticKid() {
     <div id="replacementDiv" class="center">
         <p>The three of you start walking to the woods.</p>
         <p>Choose what to do on the way:</p>
-        <button class="choiceButton" onclick="talkToCady()">Talk to Cady</button>
+        <button class="choiceButton" onclick="talkToCady()">Talk to Katie</button>
         <br><br>
         <button class="choiceButton" onclick="arriveAtWoods()">Walk in silence for fear of bears</button>
     </div>
@@ -245,7 +245,7 @@ function talkToCady() {
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
             <div class="textbox_border" style="background: rgb(49, 151, 121);">
-                <span class="nametag" style="background: rgb(49, 151, 121);">YOU</span> 
+                <span class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"So I heard you like sports. What's your favorite one to play?"</p>
                 </div>
@@ -255,7 +255,7 @@ function talkToCady() {
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/athletic_camper/Sporty_Camper_Speaking.png" alt="Cady">
             <div class="textbox_border" style="background: rgb(184, 69, 31);">
-                <span class="nametag" style="background: rgb(184, 69, 31);">Cady</span> 
+                <span class="nametag" style="background: rgb(184, 69, 31);">KATIE:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"Soccer! It's my favorite to play and watch. Do you like watching soccer too?"</p>
                 </div>
@@ -298,7 +298,7 @@ function noAthleticKid() {
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
             <div class="textbox_border" style="background: rgb(49, 151, 121);">
-                <span class="nametag" style="background: rgb(49, 151, 121);">YOU</span> 
+                <span class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"We should probably be very quiet just in case there are bears around."</p>
                 </div>
@@ -327,7 +327,7 @@ function arriveAtWoods() {
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Outdoor_camper/Outdoorsy_camper_worried.png" alt="Theo">
             <div class="textbox_border" style="background: rgb(130, 103, 72);">
-                <span class="nametag" style="background: rgb(130, 103, 72);">Theo</span> 
+                <span class="nametag" style="background: rgb(130, 103, 72);">THEO:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"Oh my gosh do you see that?! Those huge claw marks!"</p>
                 </div>
@@ -337,7 +337,7 @@ function arriveAtWoods() {
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
             <div class="textbox_border" style="background: rgb(49, 151, 121);">
-                <span class="nametag" style="background: rgb(49, 151, 121);">YOU</span> 
+                <span class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"OK there are definitely bears here. Let's go back!"</p>
                 </div>
@@ -430,7 +430,7 @@ function returnToDiningHall() {
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
             <div class="textbox_border" style="background: rgb(49, 151, 121);">
-                <span class="nametag" style="background: rgb(49, 151, 121);">YOU</span> 
+                <span class="nametag" style="background: rgb(49, 151, 121);">YOU:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"I feel like... I feel like we're being watched..."</p>
                 </div>
@@ -498,7 +498,7 @@ function panic() {
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/smart_character/Smart_Camper_worried.png" alt="Gabby">
             <div class="textbox_border" style="background: rgb(93, 55, 125);">
-                <span class="nametag" style="background: rgb(93, 55, 125);">Gabby</span> 
+                <span class="nametag" style="background: rgb(93, 55, 125);">GABBY:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"We need a counselor!"</p>
                 </div>
@@ -525,7 +525,7 @@ function needCounselor() {
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Male_counselor/Cody_Speaking.png" alt="Cody">
             <div class="textbox_border" style="background: gray;">
-                <span class="nametag" style="background: gray;">Cody</span> 
+                <span class="nametag" style="background: gray;">CODY:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"Did someone say counselor? Hey guys!"</p>
                 </div>
@@ -535,7 +535,7 @@ function needCounselor() {
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Worried.png" alt="Benjy">
             <div class="textbox_border" style="background: rgb(186, 123, 114);">
-                <span class="nametag" style="background: rgb(186, 123, 114);">Benjy</span> 
+                <span class="nametag" style="background: rgb(186, 123, 114);">BENJY:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"Look at the dining hall! There are claw marks all over it!"</p>
                 </div>
@@ -562,7 +562,7 @@ function raccoon() {
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Male_counselor/Cody_Speaking.png" alt="Cody">
             <div class="textbox_border" style="background: gray;">
-                <span class="nametag" style="background: gray;">Cody</span> 
+                <span class="nametag" style="background: gray;">CODY:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"Oh! I didn't notice that. Hm, must've been a raccoon."</p>
                 </div>
@@ -572,7 +572,7 @@ function raccoon() {
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Worried.png" alt="Benjy">
             <div class="textbox_border" style="background: rgb(186, 123, 114);">
-                <span class="nametag" style="background: rgb(186, 123, 114);">Benjy</span> 
+                <span class="nametag" style="background: rgb(186, 123, 114);">BENJY:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">"What kind of raccoon could possibly d--"</p>
                 </div>
@@ -582,7 +582,7 @@ function raccoon() {
         <div class="wrapper">
             <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Male_counselor/Cody_Speaking.png" alt="Cody">
             <div class="textbox_border" style="background: gray;">
-                <span class="nametag" style="background: gray;">Cody</span> 
+                <span class="nametag" style="background: gray;">CODY:</span> 
                 <div class="textbox_text">
                     <p style=" margin: 15px; text-align: left;">*cuts Benjy off*<br>"ANYWAYS! I've got some news. It looks like there's been a mudslide. No one can get in or out of the camp right now. But don't worry! We have people working on clearing it, and you'll be able to leave camp at the end of the week as scheduled!" Now off to the cabins, everyone!</p>
                 </div>
