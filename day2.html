@@ -64,24 +64,40 @@
 
         <h1>Day 2</h1>
         <div id="backgroundImgDiv">
-            <div class="map">
+            <!-- <div class="map">
                 <img src="Pictures\Background\Boys_Cabin_with_objects.png" alt="boys Cabin" width="50%" class="center">
             </div>
 
-               <button class="skateboard_btn" width="50%" onclick="clickSkateboard()">Click me</button> 
-               <button class="soda_btn" width="50%" onclick="clickSoda()">Click me</button> 
-               <button class="chips_btn" width="50%" onclick="clickChips()">Click me</button> 
-               <button class="fishingRod_btn" width="50%" onclick="clickFishingRod()">Click me</button> 
+            <button class="skateboard_btn" width="50%" onclick="clickSkateboard()">Click me</button> 
+            <button class="soda_btn" width="50%" onclick="clickSoda()">Click me</button> 
+            <button class="chips_btn" width="50%" onclick="clickChips()">Click me</button> 
+            <button class="fishingRod_btn" width="50%" onclick="clickFishingRod()">Click me</button> 
 
-
-
-               <div id="poster_btnDIV">
-                    <button class="poster_btn" width="50%" onclick="clickPoster()">Click me</button>              
-               </div>
+            <div id="poster_btnDIV">
+                <button class="poster_btn" width="50%" onclick="clickPoster()">Click me</button>              
+            </div> -->
         </div>
 
-        <div id="replacementDiv">
-            <button class="nextButton" onclick="goToDiningHall()">Next</button>
+        <div id="replacementDiv" height="500px">
+            <!-- <button class="nextButton" onclick="goToDiningHall()">Next</button> -->
+            <button id="beginDayButton" onclick="loadDay2()">Click to begin day</button>
+        </div>
+
+        <!-- The div below is hidden, it is to load all the images in at the beginning so they don't load slowly throughout the day -->
+        <div id="loadImagesWithoutDisplaying">
+            <img src="Pictures/Background/Boys_Cabin_with_objects.png" alt="boys Cabin" width="50%" class="center">
+            <img src="Pictures/Background/Dining_Hall.png" alt="camp entrance background image" width="35%">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_worried.png" alt="MC">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Speaking.png" alt="Zach">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/snobby_character/Snobby_Speaking.png" alt="Ella" >
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/smart_character/Smart_Camper_worried.png" alt="gabby">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/Male_counselor/Cody_Speaking.png" alt="Codie Speaking">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/nice_camper/Nice_Camper_Speaking.png" alt="Benjy">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/bad_camper/Bad_Kid_Surprised.png" alt="zach surprised">
+            <img style="width: 18%; float:left;" src="Pictures/CharactersIMG/MC_Male/Player_Camper_Speaking.png" alt="MC">
+            <img src="Pictures/Background/woods.png" alt="woods" width="35%" class="center">
+            <img src="Pictures/Background/Weird_Sludge.png" alt="goo on hand" width="35%" class="center">
+
         </div>
 
 
