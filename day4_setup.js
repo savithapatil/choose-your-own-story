@@ -762,7 +762,7 @@ function gabbyFind(){
                 const $backgroundImgDiv = $("#backgroundImgDiv");
                 $backgroundImgDiv.replaceWith(`
                 <div id="backgroundImgDiv">
-                <img src="Pictures/Background/monster.png" alt="weird Shrine" width="35%">
+                <img src="Pictures/Background/Police_Car.png" alt="weird Shrine" width="35%">
               </div> 
                 `);
               
@@ -787,7 +787,7 @@ function gabbyFind(){
                 const $backgroundImgDiv = $("#backgroundImgDiv");
                 $backgroundImgDiv.replaceWith(`
                 <div id="backgroundImgDiv">
-                <img src="Pictures/Background/monster.png" alt="weird Shrine" width="35%">
+                <img src="Pictures/CharactersIMG/Male_counselor/Cody_Evil.png" alt="Counselor Evil" width="35%">
               </div> 
                 `);
               
@@ -799,7 +799,7 @@ function gabbyFind(){
                 <div id="replacementDiv" class="center">
   
               
-               <p> Theo was unable to find the landline, nobody showed up to help. Cody escaped. </p>
+               <p> Theo was unable to find the landline, and nobody showed up to help. Cody was able to escape without a trace. </p>
 
                </div>
   
