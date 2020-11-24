@@ -223,7 +223,7 @@ function next3() {
         <div class="textbox_border" style="background: rgb(146, 146, 146);">
           <span  class="nametag" style="background: rgb(146, 146, 146);">JODY:</span> 
             <div  class="textbox_text">
-              <p style=" margin: 15px; text-align: left;">"Now let's go around and have everyone introduce themselves"</p>
+              <p style=" margin: 15px; text-align: left;">"Now let's go around and have everyone introduce themselves."</p>
             </div>
         </div>
       </div>
