@@ -696,22 +696,22 @@ function raccoon() {
     `);
 }
 
-function endOfDay3() {
-    const $backgroundImgDiv = $("#backgroundImgDiv");
-    $backgroundImgDiv.replaceWith(`
-      <div id="backgroundImgDiv">
-      </div> 
-    `);
+// function endOfDay3() {
+//     const $backgroundImgDiv = $("#backgroundImgDiv");
+//     $backgroundImgDiv.replaceWith(`
+//       <div id="backgroundImgDiv">
+//       </div> 
+//     `);
 
-    const $replacementDiv = $("#replacementDiv");
-    $replacementDiv.replaceWith(`
-    <div id="replacementDiv" class="center">
-        <p>End of day 3</p>
-        <p>Achievement page and transition go here</p>
-        <button class="nextButton" onclick="">Next</button>
-    </div>
-    `);
-}
+//     const $replacementDiv = $("#replacementDiv");
+//     $replacementDiv.replaceWith(`
+//     <div id="replacementDiv" class="center">
+//         <p>End of day 3</p>
+//         <p>Achievement page and transition go here</p>
+//         <button class="nextButton" onclick="endOfDay3()">Next</button>
+//     </div>
+//     `);
+// }
 
 function hideButton(elt_id) {
     let id = '#' + elt_id
@@ -720,5 +720,5 @@ function hideButton(elt_id) {
 
 function endOfDay3() {
     updateachievements('day3')
-    window.href.location = "achievements3.html"
+    window.location.href = "achievements3.html"
   }

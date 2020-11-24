@@ -443,7 +443,7 @@ function strangeGoo() {
       <br>
 
       <br>
-        <button class="nextButton" onclick="">Next</button>
+        <button class="nextButton" onclick="next()">Next</button>
     </div>
     `);
     return;
@@ -477,7 +477,7 @@ getName();
         </div>
       </div>
       <br>   
-      <button class="nextButton" onclick="">Next</button>
+      <button class="nextButton" onclick="next()">Next</button>
 
       
   `);
@@ -486,5 +486,5 @@ getName();
 
 function next() {
   updateachievements('day2')
-  window.href.location = "achievements2.html"
+  window.location.href = "achievements2.html"
 }
