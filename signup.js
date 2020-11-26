@@ -6,10 +6,6 @@ authentication.onAuthStateChanged(user => {
 
 
 
-
-//const email = document.getElementById(email_value);
-//const password = ge
-
 //Signup code
 const signupform = document.querySelector('#signup-form');
 signupform.addEventListener('submit', (e) => {
