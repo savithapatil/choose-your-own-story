@@ -848,6 +848,9 @@ function gabbyFind(){
                <p>You had sent Gabby to look for the landline. She was able to find the landline and she called the police. The police showed up before Cody was able to escape. <br>
                Cody is arrested. You and the remaining campers are rescued.</p>
 
+               <button class = "choiceButton" onclick = "next()"> Congrats on Finishing! View Your Achievements Here </button>
+               </div>
+
                </div>
   
                 `);
