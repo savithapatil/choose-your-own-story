@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Sign Up Page</title>
-        <link href="style.css" type="text/css" rel="stylesheet"/>
+        <link href="signup.css" type="text/css" rel="stylesheet"/>
         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>  
         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>   
@@ -12,27 +12,33 @@
         
     </head>
     <body>
-        <div id = "Signup">
-            <h1>Sign Up Page</h1>
+        <div style="background: rgb(67, 133, 129); margin-left: 35%; margin-right: 35%; margin-top:4%; padding:1%; border-radius: 10px;">
+        <div style="background:white; padding:4%;  border-radius: 10px;">
+        <div class="center" id = "Signup">
+            <h1>Sign Up</h1>
+            <br>
             <form id = "signup-form">
-                <label for="Email">Enter your email:</label><br>
+                <label class="fontclass" for="Email">Enter your email:</label><br>
                 <input type="email" id="email_value" name="username">
                 <br><br>
     
-                <label for="pw">Create a password (Mininmum 6 chars):</label><br>
+                <label class="fontclass" for="pw">Create a password<br>(Minimum 6 chars):</label><br>
                 <input type="password" id="password_value" name="password">
                 <br><br>
     
-                <label for = "Name"> First Name: </label><br>
+                <label class="fontclass" for="Name">Enter your name: </label><br>
                 <input type = "text" id = "name_value" name = "first_name">
                 <br><br>
     
                 <!-- We used w3schools to find the logic for the show password checkbox -->
                 <!-- https://www.w3schools.com/howto/howto_js_toggle_password.asp -->
-                <button class = ""> Sign Up</button>
-                
+                <button id="signUpButton" class = "">Sign Up</button>
+                <br>
+                <br>
             </div>
             </form>
+            </div>
+            </div>
         
             <script>
                 var firebaseConfig = {
